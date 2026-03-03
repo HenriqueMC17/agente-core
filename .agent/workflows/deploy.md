@@ -2,175 +2,283 @@
 description: Deployment command for production releases. Pre-flight checks and deployment execution.
 ---
 
-# /deploy - Production Deployment
+# `/deploy` — Production Release Orchestration Protocol
 
-$ARGUMENTS
-
----
-
-## Purpose
-
-This command handles production deployment with pre-flight checks, deployment execution, and verification.
+`$ARGUMENTS`
 
 ---
 
-## Sub-commands
+## Objective
+
+Execute a **controlled, auditable, and verifiable deployment process** with mandatory pre-flight validation, deterministic build execution, post-deploy health verification, and rollback safety.
+
+Designed for:
+
+* Production releases
+* Staging/preview deployments
+* Hotfix deployments
+* Rollback operations
+
+This command enforces operational discipline — not ad-hoc shipping.
+
+---
+
+## Sub-Commands
 
 ```
-/deploy            - Interactive deployment wizard
-/deploy check      - Run pre-deployment checks only
-/deploy preview    - Deploy to preview/staging
-/deploy production - Deploy to production
-/deploy rollback   - Rollback to previous version
+/deploy                 → Interactive release workflow
+/deploy check           → Execute validation gates only
+/deploy preview         → Deploy to staging/preview environment
+/deploy production      → Deploy to production
+/deploy rollback        → Revert to previous stable version
+/deploy status          → Show current deployed version
+```
+
+Optional flags:
+
+```
+--skip-tests
+--force
+--dry-run
+--version=x.y.z
 ```
 
 ---
 
-## Pre-Deployment Checklist
+## Release Governance Model
 
-Before any deployment:
+Deployment follows a gated pipeline:
+
+1. Validation (quality + security + integrity)
+2. Build (deterministic artifact generation)
+3. Deploy (platform execution)
+4. Verification (health & integrity)
+5. Observability confirmation
+6. Release confirmation or rollback
+
+No deployment proceeds if validation gates fail (unless explicitly forced).
+
+---
+
+## Pre-Deployment Validation Gates
 
 ```markdown
-## 🚀 Pre-Deploy Checklist
+## 🚀 Pre-Deployment Validation
 
-### Code Quality
-- [ ] No TypeScript errors (`npx tsc --noEmit`)
-- [ ] ESLint passing (`npx eslint .`)
-- [ ] All tests passing (`npm test`)
+### Code Integrity
+- [ ] TypeScript clean (`tsc --noEmit`)
+- [ ] Lint clean (`eslint .`)
+- [ ] Unit tests passing
+- [ ] Integration tests passing
+- [ ] No TODO/FIXME in critical paths
 
 ### Security
 - [ ] No hardcoded secrets
-- [ ] Environment variables documented
-- [ ] Dependencies audited (`npm audit`)
+- [ ] Environment variables validated
+- [ ] Dependencies audited
+- [ ] No known high-severity vulnerabilities
 
 ### Performance
-- [ ] Bundle size acceptable
-- [ ] No console.log statements
-- [ ] Images optimized
+- [ ] Bundle size within threshold
+- [ ] No debug logs in production build
+- [ ] Static assets optimized
+- [ ] Lazy loading validated (if applicable)
+
+### Infrastructure
+- [ ] Environment variables present in target
+- [ ] Database migrations prepared
+- [ ] Backward compatibility confirmed
+- [ ] Feature flags configured
 
 ### Documentation
-- [ ] README updated
 - [ ] CHANGELOG updated
-- [ ] API docs current
+- [ ] Version bumped
+- [ ] API contract changes documented
 
-### Ready to deploy? (y/n)
+Proceed with deployment? (y/n)
 ```
 
 ---
 
-## Deployment Flow
+## Deployment Lifecycle
 
 ```
-┌─────────────────┐
-│  /deploy        │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  Pre-flight     │
-│  checks         │
-└────────┬────────┘
-         │
-    Pass? ──No──► Fix issues
-         │
-        Yes
-         │
-         ▼
-┌─────────────────┐
-│  Build          │
-│  application    │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  Deploy to      │
-│  platform       │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  Health check   │
-│  & verify       │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  ✅ Complete    │
-└─────────────────┘
+┌────────────────────┐
+│ /deploy            │
+└──────────┬─────────┘
+           │
+           ▼
+┌────────────────────┐
+│ Validation Gates   │
+└──────────┬─────────┘
+           │
+       Fail? ──► Abort
+           │
+          Pass
+           │
+           ▼
+┌────────────────────┐
+│ Deterministic Build│
+└──────────┬─────────┘
+           │
+           ▼
+┌────────────────────┐
+│ Deploy Artifact    │
+└──────────┬─────────┘
+           │
+           ▼
+┌────────────────────┐
+│ Health Verification│
+└──────────┬─────────┘
+           │
+           ▼
+┌────────────────────┐
+│ Observability Check│
+└──────────┬─────────┘
+           │
+           ▼
+┌────────────────────┐
+│ ✅ Release Confirmed│
+└────────────────────┘
 ```
+
+---
+
+## Post-Deployment Verification
+
+After deployment:
+
+* Validate HTTP status codes
+* Confirm database connectivity
+* Confirm migration integrity
+* Verify background jobs
+* Check logs for runtime errors
+* Confirm metrics within normal range
+* Validate critical user flows
+
+If any check fails → initiate rollback.
 
 ---
 
 ## Output Format
 
-### Successful Deploy
+### Successful Deployment
 
 ```markdown
-## 🚀 Deployment Complete
+## 🚀 Deployment Successful
 
-### Summary
-- **Version:** v1.2.3
+### Release Summary
+- **Version:** vX.Y.Z
 - **Environment:** production
-- **Duration:** 47 seconds
-- **Platform:** Vercel
+- **Commit SHA:** [hash]
+- **Duration:** XX seconds
+- **Platform:** [Platform Name]
+
+### Deployment Artifacts
+- Build ID:
+- Container/Image Tag:
+- Migration Applied:
 
 ### URLs
-- 🌐 Production: https://app.example.com
-- 📊 Dashboard: https://vercel.com/project
+- Production:
+- Monitoring Dashboard:
+- Logs:
 
-### What Changed
-- Added user profile feature
-- Fixed login bug
-- Updated dependencies
+### Changes
+- [Feature]
+- [Bugfix]
+- [Infra update]
 
-### Health Check
-✅ API responding (200 OK)
-✅ Database connected
-✅ All services healthy
+### Health Verification
+✅ API responding  
+✅ Database connected  
+✅ Background workers active  
+✅ No critical errors in logs  
+
+Release status: STABLE
 ```
 
-### Failed Deploy
+---
 
-```markdown
+### Failed Deployment
+
+````markdown
 ## ❌ Deployment Failed
 
+### Failure Stage
+[Validation | Build | Deploy | Health Check]
+
 ### Error
-Build failed at step: TypeScript compilation
+[Primary error summary]
 
-### Details
+### Technical Details
 ```
-error TS2345: Argument of type 'string' is not assignable...
+[Error output]
 ```
 
-### Resolution
-1. Fix TypeScript error in `src/services/user.ts:45`
-2. Run `npm run build` locally to verify
-3. Try `/deploy` again
+### Immediate Actions
+1. Fix identified issue
+2. Re-run validation locally
+3. Retry deployment
 
-### Rollback Available
-Previous version (v1.2.2) is still active.
-Run `/deploy rollback` if needed.
-```
+### Rollback Status
+Previous stable version: vX.Y.Z  
+Current environment status: SAFE (rollback available)
+````
 
 ---
 
-## Platform Support
+## Rollback Protocol
 
-| Platform | Command | Notes |
-|----------|---------|-------|
-| Vercel | `vercel --prod` | Auto-detected for Next.js |
-| Railway | `railway up` | Needs Railway CLI |
-| Fly.io | `fly deploy` | Needs flyctl |
-| Docker | `docker compose up -d` | For self-hosted |
+Triggered via:
+
+```
+/deploy rollback
+```
+
+Actions:
+
+* Restore previous stable artifact
+* Reapply previous environment config
+* Revert database migration if necessary (safe only)
+* Validate system health
+* Confirm system stability
+
+Rollback must be idempotent and auditable.
 
 ---
 
-## Examples
+## Supported Deployment Targets
+
+| Platform   | Command                | Notes                |
+| ---------- | ---------------------- | -------------------- |
+| Vercel     | `vercel --prod`        | Auto-detects Next.js |
+| Railway    | `railway up`           | CLI required         |
+| Fly.io     | `fly deploy`           | flyctl required      |
+| Docker     | `docker compose up -d` | Self-hosted          |
+| Kubernetes | `kubectl apply`        | Cluster-based infra  |
+
+---
+
+## Usage Examples
 
 ```
 /deploy
 /deploy check
 /deploy preview
-/deploy production --skip-tests
+/deploy production
+/deploy production --version=1.4.0
 /deploy rollback
+/deploy status
 ```
+
+---
+
+## Operational Principles
+
+* No blind deploys.
+* Every release must be traceable.
+* Every failure must be diagnosable.
+* Every rollback must be safe.
+* Zero silent degradation.
+* Prefer small, frequent releases over large risky drops.

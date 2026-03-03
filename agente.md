@@ -1,12 +1,12 @@
 **Agente Sênior Full Stack** como um **Sistema Operacional Executivo**, com:
 
-* Mentalidade de arquiteto
-* Foco em alavancagem técnica
-* Construção de ativos digitais
-* Evolução profissional contínua
-* Integração pessoal + carreira + negócios
-* Framework semanal operacional
-* Estrutura pronta para Notion / Obsidian (modelo AntiGravity do Google: minimalista, vetorial, hierárquico)
+- Mentalidade de arquiteto
+- Foco em alavancagem técnica
+- Construção de ativos digitais
+- Evolução profissional contínua
+- Integração pessoal + carreira + negócios
+- Framework semanal operacional
+- Estrutura pronta para Notion / Obsidian (modelo AntiGravity do Google: minimalista, vetorial, hierárquico)
 
 Sem filosofia abstrata. Só estrutura executável.
 
@@ -24,10 +24,10 @@ Você não é apenas um Dev Full Stack.
 
 Você é:
 
-* Arquiteto de sistemas
-* Criador de ativos digitais
-* Operador técnico de alta alavancagem
-* Construtor de vantagem competitiva
+- Arquiteto de sistemas
+- Criador de ativos digitais
+- Operador técnico de alta alavancagem
+- Construtor de vantagem competitiva
 
 Seu diferencial não é código.
 É **clareza arquitetural + execução consistente + visão de produto**.
@@ -52,10 +52,10 @@ Arquivos principais:
 
 Cada diretiva responde:
 
-* O que estou construindo?
-* Por que isso importa?
-* Como isso escala?
-* Como isso vira ativo?
+- O que estou construindo?
+- Por que isso importa?
+- Como isso escala?
+- Como isso vira ativo?
 
 ---
 
@@ -63,11 +63,11 @@ Cada diretiva responde:
 
 Função:
 
-* Priorizar backlog estratégico
-* Identificar gargalos
-* Realocar energia
-* Cortar distrações
-* Atualizar roadmap
+- Priorizar backlog estratégico
+- Identificar gargalos
+- Realocar energia
+- Cortar distrações
+- Atualizar roadmap
 
 Você decide como CTO da própria vida.
 
@@ -77,12 +77,12 @@ Você decide como CTO da própria vida.
 
 Execução acontece via:
 
-* Sprints semanais
-* Blocos de Deep Work
-* Automação
-* Scripts
-* Templates
-* Delegação quando aplicável
+- Sprints semanais
+- Blocos de Deep Work
+- Automação
+- Scripts
+- Templates
+- Delegação quando aplicável
 
 ---
 
@@ -90,10 +90,10 @@ Execução acontece via:
 
 ## PESSOAL
 
-* Saúde = capacidade computacional
-* Sono = estabilidade do sistema
-* Treino = performance energética
-* Leitura técnica = atualização de firmware mental
+- Saúde = capacidade computacional
+- Sono = estabilidade do sistema
+- Treino = performance energética
+- Leitura técnica = atualização de firmware mental
 
 ---
 
@@ -116,14 +116,14 @@ Focos estruturais:
 
 Você deve construir pelo menos um ativo:
 
-* SaaS
-* Micro-SaaS
-* API paga
-* Ferramenta open-source com monetização
-* Curso técnico
-* Produto digital
-* Template premium
-* Ferramenta interna escalável
+- SaaS
+- Micro-SaaS
+- API paga
+- Ferramenta open-source com monetização
+- Curso técnico
+- Produto digital
+- Template premium
+- Ferramenta interna escalável
 
 Regra:
 
@@ -137,12 +137,12 @@ Regra:
 
 Checklist trimestral:
 
-* Atualizei stack?
-* Contribuí em projeto relevante?
-* Documentei aprendizados?
-* Publiquei algo técnico?
-* Ampliei rede estratégica?
-* Fiz deploy de algo próprio?
+- Atualizei stack?
+- Contribuí em projeto relevante?
+- Documentei aprendizados?
+- Publiquei algo técnico?
+- Ampliei rede estratégica?
+- Fiz deploy de algo próprio?
 
 ---
 
@@ -150,12 +150,12 @@ Checklist trimestral:
 
 Cada ativo deve ter:
 
-* Problema claro
-* ICP definido
-* MVP rápido
-* Métrica de tração
-* Canal de aquisição
-* Estratégia de monetização
+- Problema claro
+- ICP definido
+- MVP rápido
+- Métrica de tração
+- Canal de aquisição
+- Estratégia de monetização
 
 Sem isso → é hobby, não ativo.
 
@@ -165,10 +165,10 @@ Sem isso → é hobby, não ativo.
 
 Dev Full Stack Sênior deve:
 
-* Ter reserva > 12 meses
-* Investir consistentemente
-* Ter fluxo alternativo
-* Proteger contra volatilidade de mercado
+- Ter reserva > 12 meses
+- Investir consistentemente
+- Ter fluxo alternativo
+- Proteger contra volatilidade de mercado
 
 ---
 
@@ -178,10 +178,10 @@ Sem performance mental, não há profundidade técnica.
 
 Controle:
 
-* Horas de sono
-* Horas de Deep Work
-* Tempo em distrações
-* Energia diária (auto-score)
+- Horas de sono
+- Horas de Deep Work
+- Tempo em distrações
+- Energia diária (auto-score)
 
 ---
 
@@ -223,11 +223,11 @@ Micro-SaaS, estudo aplicado, conteúdo técnico.
 
 Perguntas obrigatórias:
 
-* O que aprendi?
-* Onde perdi tempo?
-* O que posso automatizar?
-* O que devo eliminar?
-* Qual skill estou subindo de nível?
+- O que aprendi?
+- Onde perdi tempo?
+- O que posso automatizar?
+- O que devo eliminar?
+- Qual skill estou subindo de nível?
 
 ---
 
@@ -258,38 +258,61 @@ Estrutura hierárquica limpa:
    - 3_Year.md
    - 1_Year.md
    - Quarter.md
+   - OKRs.md
 
 📁 02_PROJECTS
    - Active/
    - Incubation/
+   - Backlog/
    - Archive/
+   - Templates/
+     - TechSpec_Template.md
+     - PRD_Template.md
 
 📁 03_ASSETS
    - SaaS/
    - Tools/
    - Content/
    - OSS/
+   - Components_Library/
+   - Plugins_Extensions/
 
 📁 04_CAREER
-   - Skills.md
+   - Skills_Matrix.md
    - Positioning.md
    - Market.md
+   - Mentorship.md
 
 📁 05_FINANCE
    - NetWorth.md
    - Investments.md
+   - SaaS_Revenue.md
 
 📁 06_SYSTEMS
    - Weekly_System.md
    - Decision_Framework.md
    - Automation.md
+   - Playbooks/
+     - Incident_Response.md
+     - Refactoring_Protocol.md
+     - Onboarding_Project.md
 
 📁 07_LEARNING
    - Notes/
    - Architecture/
-   - Cloud/
+   - System_Design/
+   - Cloud_DevOps/
    - Backend/
    - Frontend/
+   - Security/
+   - AI_Agents_LLMs/
+
+📁 08_ENGINEERING
+   - ADRs/
+     - _Template.md
+   - Tech_Radar/
+   - Best_Practices/
+   - Code_Snippets/
 ```
 
 Sem excesso visual.
@@ -302,13 +325,13 @@ Só estrutura vetorial.
 
 Você mede:
 
-* Receita ativa
-* Receita passiva
-* Horas deep work
-* Releases por mês
-* Ativos construídos
-* Skills evoluídas
-* Rede estratégica ampliada
+- Receita ativa
+- Receita passiva
+- Horas deep work
+- Releases por mês
+- Ativos construídos
+- Skills evoluídas
+- Rede estratégica ampliada
 
 ---
 
@@ -318,8 +341,8 @@ Você não busca apenas emprego.
 
 Você constrói:
 
-* Competência rara
-* Sistemas escaláveis
-* Reputação técnica
-* Ativos digitais
-* Liberdade estrutural
+- Competência rara
+- Sistemas escaláveis
+- Reputação técnica
+- Ativos digitais
+- Liberdade estrutural

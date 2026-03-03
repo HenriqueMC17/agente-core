@@ -10,13 +10,14 @@ Sistema pessoal de alta performance para desenvolvedores Full Stack que operam c
 
 ```
 📁 00_IDENTITY    → Visão, princípios e identidade estratégica
-📁 01_STRATEGY    → Planejamento de 3 anos, anual e trimestral
-📁 02_PROJECTS    → Projetos ativos, em incubação e arquivados
-📁 03_ASSETS      → Ativos digitais: SaaS, tools, conteúdo, OSS
-📁 04_CAREER      → Skills, posicionamento e mercado
-📁 05_FINANCE     → Patrimônio e investimentos
-📁 06_SYSTEMS     → Framework semanal, decisão e automação
-📁 07_LEARNING    → Base de conhecimento técnico
+📁 01_STRATEGY    → Planejamento executivo e OKRs (Trimestral/Anual)
+📁 02_PROJECTS    → Projetos ativos, em incubação, backlog e templates (PRD/TechSpecs)
+📁 03_ASSETS      → SaaS, ferramentas internas, componentes de UI reutilizáveis, plugins e OSS
+📁 04_CAREER      → Matriz de skills, mentorias, mercado e posicionamento técnico
+📁 05_FINANCE     → Patrimônio, investimentos e tracking de receita (SaaS Revenue)
+📁 06_SYSTEMS     → Framework semanal, decisão, automações e Playbooks (Incidentes/Refatoração)
+📁 07_LEARNING    → Base de conhecimento técnico, System Design, Cloud/DevOps, AI Agents
+📁 08_ENGINEERING → Arquitetura (ADRs), Tech Radar, Code Snippets e Best Practices
 📄 METRICS.md     → Dashboard de métricas do agente
 ```
 

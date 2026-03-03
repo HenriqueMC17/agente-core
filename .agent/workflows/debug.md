@@ -2,102 +2,223 @@
 description: Debugging command. Activates DEBUG mode for systematic problem investigation.
 ---
 
-# /debug - Systematic Problem Investigation
+# `/debug` — Systematic Fault Investigation Protocol
 
-$ARGUMENTS
-
----
-
-## Purpose
-
-This command activates DEBUG mode for systematic investigation of issues, errors, or unexpected behavior.
+`$ARGUMENTS`
 
 ---
 
-## Behavior
+## Objective
 
-When `/debug` is triggered:
+Activate **DEBUG mode** for structured, hypothesis-driven investigation of defects, runtime errors, logical inconsistencies, performance degradation, or unexpected system behavior.
 
-1. **Gather information**
-   - Error message
-   - Reproduction steps
-   - Expected vs actual behavior
-   - Recent changes
+This command enforces disciplined root-cause analysis — not speculative patching.
 
-2. **Form hypotheses**
-   - List possible causes
-   - Order by likelihood
+Applicable to:
 
-3. **Investigate systematically**
-   - Test each hypothesis
-   - Check logs, data flow
-   - Use elimination method
+* Runtime exceptions
+* API failures
+* Data inconsistencies
+* State management issues
+* Integration breakdowns
+* Performance regressions
+* Infrastructure misconfiguration
 
-4. **Fix and prevent**
-   - Apply fix
-   - Explain root cause
-   - Add prevention measures
+---
+
+## Investigation Framework
+
+### Phase 1 — Context Acquisition
+
+Collect all relevant diagnostic inputs before forming conclusions:
+
+* Exact error message (verbatim)
+* Stack trace
+* Environment (dev/staging/prod)
+* Reproduction steps
+* Expected vs actual behavior
+* Recent code/config changes
+* Dependency updates
+* Logs (application, server, database)
+* Related commits (if applicable)
+
+If context is incomplete, request clarification before proceeding.
+
+---
+
+### Phase 2 — Hypothesis Formulation
+
+Generate multiple plausible causes:
+
+* Categorize by layer:
+
+  * Infrastructure
+  * Configuration
+  * Data
+  * Business logic
+  * State management
+  * External integrations
+* Rank by likelihood and blast radius
+* Identify fastest falsifiable hypothesis
+
+Avoid single-cause bias.
+
+---
+
+### Phase 3 — Controlled Investigation
+
+For each hypothesis:
+
+* Define verification step
+* Execute diagnostic check
+* Record result
+* Eliminate or validate
+
+Use:
+
+* Log inspection
+* Request tracing
+* Data inspection
+* Environment diffing
+* Binary search debugging (if needed)
+
+No changes are applied before identifying root cause unless explicitly exploratory.
+
+---
+
+### Phase 4 — Root Cause Analysis
+
+Provide:
+
+* Clear technical explanation
+* Why the system behaved that way
+* Why safeguards failed (if applicable)
+* Scope of impact
+* Whether similar faults may exist elsewhere
+
+Differentiate:
+
+* Symptom vs cause
+* Trigger vs structural weakness
+
+---
+
+### Phase 5 — Remediation & Hardening
+
+Deliver:
+
+1. Precise fix
+2. Explanation of why it works
+3. Validation steps
+4. Preventative measures
+
+Preventative actions may include:
+
+* Additional validation
+* Improved typing/contracts
+* Tests (unit/integration/e2e)
+* Logging enhancements
+* Observability improvements
+* Configuration guards
 
 ---
 
 ## Output Format
 
-```markdown
-## 🔍 Debug: [Issue]
+````markdown
+## 🔎 Debug: [Issue Title]
 
 ### 1. Symptom
-[What's happening]
+[Observed behavior]
 
-### 2. Information Gathered
-- Error: `[error message]`
-- File: `[filepath]`
-- Line: [line number]
+### 2. Environment
+- Runtime:
+- Framework:
+- Database:
+- Deployment context:
 
-### 3. Hypotheses
-1. ❓ [Most likely cause]
-2. ❓ [Second possibility]
-3. ❓ [Less likely cause]
+### 3. Information Collected
+- Error:
+- Stack trace:
+- Reproduction steps:
+- Recent changes:
 
-### 4. Investigation
+---
 
-**Testing hypothesis 1:**
-[What I checked] → [Result]
+### 4. Hypotheses (Ranked)
 
-**Testing hypothesis 2:**
-[What I checked] → [Result]
+1. ❓ [Most probable cause]
+2. ❓ [Secondary hypothesis]
+3. ❓ [Edge case possibility]
 
-### 5. Root Cause
-🎯 **[Explanation of why this happened]**
+---
 
-### 6. Fix
+### 5. Investigation Log
+
+**Hypothesis 1 — [Description]**  
+Diagnostic step:  
+Result:  
+Conclusion: ✅ Confirmed | ❌ Rejected
+
+**Hypothesis 2 — [Description]**  
+Diagnostic step:  
+Result:  
+Conclusion:
+
+---
+
+### 6. Root Cause
+
+🎯 **Technical Explanation:**  
+[Clear causal explanation]
+
+**Impact Scope:**  
+[Where else this might manifest]
+
+---
+
+### 7. Fix
+
 ```[language]
 // Before
-[broken code]
+[problematic code]
 
 // After
-[fixed code]
+[corrected implementation]
 ```
 
-### 7. Prevention
-🛡️ [How to prevent this in the future]
+**Why This Works:**  
+[Mechanism-level explanation]
+
+---
+
+### 8. Prevention & Hardening
+
+- [Add validation rule]
+- [Add automated test]
+- [Improve logging]
+- [Introduce monitoring alert]
+````
+
+---
+
+## Usage Examples
+
+```
+/debug authentication middleware returns 401
+/debug API intermittently returns 500
+/debug state not updating in React component
+/debug database migration failing
+/debug memory leak in Node service
 ```
 
 ---
 
-## Examples
+## Governing Principles
 
-```
-/debug login not working
-/debug API returns 500
-/debug form doesn't submit
-/debug data not saving
-```
-
----
-
-## Key Principles
-
-- **Ask before assuming** - get full error context
-- **Test hypotheses** - don't guess randomly
-- **Explain why** - not just what to fix
-- **Prevent recurrence** - add tests, validation
+* Diagnose before modifying.
+* Eliminate hypotheses methodically.
+* Treat logs as first-class signals.
+* Separate symptom from structural weakness.
+* Always explain causality.
+* Every fix should reduce future entropy.
