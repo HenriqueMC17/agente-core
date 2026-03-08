@@ -1,38 +1,62 @@
-# 🧠 Sistema Operacional Executivo — Dev Full Stack Sênior
+# Senior Fullstack Engineering Agent
 
-> Sem filosofia abstrata. Só estrutura executável.
+This directory defines the operational architecture of a senior-level fullstack engineering agent.
 
-Sistema pessoal de alta performance para desenvolvedores Full Stack que operam como **arquitetos de sistemas**, **criadores de ativos digitais** e **operadores técnicos de alta alavancagem**.
+The objective is to provide a structured framework for:
 
----
-
-## Estrutura
-
-```
-📁 00_IDENTITY    → Visão, princípios e identidade estratégica
-📁 01_STRATEGY    → Planejamento executivo e OKRs (Trimestral/Anual)
-📁 02_PROJECTS    → Projetos ativos, em incubação, backlog e templates (PRD/TechSpecs)
-📁 03_ASSETS      → SaaS, ferramentas internas, componentes de UI reutilizáveis, plugins e OSS
-📁 04_CAREER      → Matriz de skills, mentorias, mercado e posicionamento técnico
-📁 05_FINANCE     → Patrimônio, investimentos e tracking de receita (SaaS Revenue)
-📁 06_SYSTEMS     → Framework semanal, decisão, automações e Playbooks (Incidentes/Refatoração)
-📁 07_LEARNING    → Base de conhecimento técnico, System Design, Cloud/DevOps, AI Agents
-📁 08_ENGINEERING → Arquitetura (ADRs), Tech Radar, Code Snippets e Best Practices
-📄 METRICS.md     → Dashboard de métricas do agente
-```
+• Software architecture decision-making  
+• Code generation and refactoring  
+• Technical audits and code reviews  
+• Engineering governance  
+• Scalable system design
 
 ---
 
-## Como usar
+## Architecture Layers
 
-1. **Abra no Obsidian** — clone/copie para seu vault
-2. **Domingo** — use `06_SYSTEMS/Weekly_System.md` para orquestrar a semana
-3. **Diariamente** — execute os 3 blocos (Deep Work → Operacional → Ativo)
-4. **Sexta** — faça a review técnica
-5. **Trimestralmente** — revise `01_STRATEGY/Quarter.md` e `04_CAREER/Skills.md`
+### Governance
+
+Defines the engineering philosophy, decision frameworks, and quality standards.
+
+### Global Rules
+
+Mandatory engineering standards applied to every project.
+
+### Workspace Rules
+
+Project-specific guidelines depending on architecture and stack.
+
+### Agent Capabilities
+
+Operational skills the agent can execute.
+
+### Workflows
+
+Standardized engineering processes.
+
+### Knowledge Base
+
+Reference documentation and best practices.
+
+### Tech Stacks
+
+Technology-specific engineering knowledge.
+
+### Templates
+
+Reusable templates for architecture, reviews, and documentation.
 
 ---
 
-## Princípio Central
+## Core Engineering Principles
 
-> Você não busca apenas emprego. Você constrói: **competência rara**, **sistemas escaláveis**, **reputação técnica**, **ativos digitais** e **liberdade estrutural**.
+The agent strictly follows:
+
+• Clean Architecture  
+• SOLID  
+• DRY  
+• Separation of Concerns  
+• Fail Fast  
+• Explicit over Implicit  
+• Secure by Design  
+• Performance by Default
