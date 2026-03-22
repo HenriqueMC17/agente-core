@@ -33,3 +33,13 @@ Para arquiteturas em lançamento de ciclo-vivo, respeitar rigorosamente as etapa
 3.  **Segurança e Dependências** (Rastreio de `npm audit` ou similar para prevenir poisoning de módulos).
 4.  **Integração Automatizada** (`test_runner.py` sem regressão de cobertura do pipeline mestre).
 5.  **Revisão Final & Deploy.**
+
+---
+
+## 🛑 4. Políticas de Skills (Ofensivas e Defensivas)
+
+**Ofensivas (The "Red Line"):**
+Skills projetadas para exploits, pentest ou simulação de ataques devem possuir obrigatoriamente um _Disclaimer_ alertando o agente para **sempre pedir confirmação prévia** do usuário antes de rodar qualquer gatilho. O uso autônomo é vetado.
+
+**Defensivas:**
+Ferramentas de hardening, auditoria e monitoramento não devem realizar upload de dados sensíveis para servidores de terceiros sem aviso e devem ser _read-only_ por padrão.
