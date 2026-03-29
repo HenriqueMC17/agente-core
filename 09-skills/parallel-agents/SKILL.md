@@ -1,18 +1,16 @@
 ---
 name: parallel-agents
-description: "Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domain expertise or when comprehensive analysis requires multiple perspectives."
-risk: unknown
-source: community
-date_added: "2026-02-27"
+description: Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domain expertise or when comprehensive analysis requires multiple perspectives.
+allowed-tools: Read, Glob, Grep
 ---
 
 # Native Parallel Agents
 
-> Orchestration through Claude Code's built-in Agent Tool
+> Orchestration through Antigravity's built-in Agent Tool
 
 ## Overview
 
-This skill enables coordinating multiple specialized agents through Claude Code's native agent system. Unlike external scripts, this approach keeps all orchestration within Claude's control.
+This skill enables coordinating multiple specialized agents through Antigravity's native agent system. Unlike external scripts, this approach keeps all orchestration within Antigravity's control.
 
 ## When to Use Orchestration
 
@@ -115,7 +113,7 @@ Agents: security-auditor → penetration-tester → synthesis
 
 ---
 
-## Claude Code Built-in Agents
+## Antigravity Built-in Agents
 
 These work alongside custom agents:
 

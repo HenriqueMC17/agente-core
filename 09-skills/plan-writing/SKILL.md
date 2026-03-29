@@ -1,9 +1,7 @@
 ---
 name: plan-writing
-description: "Structured task planning with clear breakdowns, dependencies, and verification criteria. Use when implementing features, refactoring, or any multi-step work."
-risk: unknown
-source: community
-date_added: "2026-02-27"
+description: Structured task planning with clear breakdowns, dependencies, and verification criteria. Use when implementing features, refactoring, or any multi-step work.
+allowed-tools: Read, Glob, Grep
 ---
 
 # Plan Writing
@@ -147,6 +145,7 @@ One sentence: What are we building/fixing?
 ---
 
 ## When to Use
+
 - New project from scratch
 - Adding a feature
 - Fixing a bug (if complex)
