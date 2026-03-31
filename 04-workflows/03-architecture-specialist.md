@@ -22,4 +22,4 @@ O padrão ouro se foi incumbido de gerar uma nova camada sub-agente com intelig�
 - **Retrieval & Context Window:** Arquitetura Vectorial com RAG isolado caso seja uma pipeline densa de dados externos.
 - **Memory Management:** Como ele preserva estado sem vazar pra outro usuário?
 - **LangGraph / MCP / Autogen:** Modele fronteiras determinísticas entre "Quem atua (Edit Mode)" e "Quem audita (Inspector Mode)".
-- **Evaluations / Kaizen Loop:** Agente produz log? Quem e como melhoraremos seu pipeline depois? Implemente `Langfuse`/`W&B` se necessário.
+- **Evaluations / Kaizen Loop:** Agente produz log? Quem e como melhoraremos seu pipeline depois? Implemente `Langfuse`/`LangSmith`/`W&B` se necessário.
