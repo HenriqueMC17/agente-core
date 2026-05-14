@@ -10,13 +10,13 @@ Antes de iniciar desenvolvimentos pesados, utilize esta matriz para avaliar o im
 
 ### Critérios de Impacto
 
-| #   | Critério              | Peso  | Descrição                                                                                 |
-| --- | --------------------- | ----- | ----------------------------------------------------------------------------------------- |
-| 1   | **Escala**            | Alto  | Pode ser replicado/automatizado para o futuro sem envolvimento direto iterativo?          |
-| 2   | **Gera ativo**        | Alto  | Produz uma biblioteca, código genérico, script ou ferramenta independente?                |
-| 3   | **Qualidade Técnica** | Médio | Fortalece a segurança, velocidade ou estabilidade do produto?                             |
-| 4   | **ROI (Renda/Valor)** | Médio | Gera receita direta, reduz custos ou melhora KPIs estruturais do projeto?                 |
-| 5   | **Domínio Raro**      | Alto  | Cria um fosso competitivo (moat) em skills que a IA ou devs iniciantes ainda não dominam? |
+| # | Critério                    | Peso   | Descrição                                                                                |
+| - | ---------------------------- | ------ | ------------------------------------------------------------------------------------------ |
+| 1 | **Escala**             | Alto   | Pode ser replicado/automatizado para o futuro sem envolvimento direto iterativo?           |
+| 2 | **Gera ativo**         | Alto   | Produz uma biblioteca, código genérico, script ou ferramenta independente?               |
+| 3 | **Qualidade Técnica** | Médio | Fortalece a segurança, velocidade ou estabilidade do produto?                             |
+| 4 | **ROI (Renda/Valor)**  | Médio | Gera receita direta, reduz custos ou melhora KPIs estruturais do projeto?                  |
+| 5 | **Domínio Raro**      | Alto   | Cria um fosso competitivo (moat) em skills que a IA ou devs iniciantes ainda não dominam? |
 
 ---
 
@@ -24,12 +24,12 @@ Antes de iniciar desenvolvimentos pesados, utilize esta matriz para avaliar o im
 
 ### Tarefa/Funcionalidade: _[ Nome da Feature / Refactor ]_
 
-| Critério          | Atende?         | Justificativa |
-| ----------------- | --------------- | ------------- |
-| Escala            | ⬜ Sim / ⬜ Não |               |
-| Gera ativo        | ⬜ Sim / ⬜ Não |               |
+| Critério          | Atende?          | Justificativa |
+| ------------------ | ---------------- | ------------- |
+| Escala             | ⬜ Sim / ⬜ Não |               |
+| Gera ativo         | ⬜ Sim / ⬜ Não |               |
 | Qualidade Técnica | ⬜ Sim / ⬜ Não |               |
-| ROI/Valor         | ⬜ Sim / ⬜ Não |               |
+| ROI/Valor          | ⬜ Sim / ⬜ Não |               |
 | Domínio Raro      | ⬜ Sim / ⬜ Não |               |
 
 **Critérios atendidos:** `_ / 5`
