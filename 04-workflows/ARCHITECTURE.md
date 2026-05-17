@@ -1,15 +1,15 @@
-# 12-tooling - Arquitetura de Ferramental Interno e Scripts de Produtividade
+# 04-workflows - Arquitetura de Fluxos de Trabalho Padronizados (BMAD)
 
 ## 🏛️ Visão Estrutural e Arquitetural
 
-A camada de Tooling organiza as ferramentas de produtividade física em diretórios focados por escopo (analyzers, generators, scripts, validators).
-Ela atua como o canivete suíço para manter a consistência semântica e integridade dos links em toda a base de documentação.
+A arquitetura de Workflows atua como a 'Fábrica de Processos' do repositório.
+Ela organiza as fases de desenvolvimento de forma totalmente sequencial e rastreável, impedindo pulos de etapas críticas de garantia de qualidade.
 
 ### 📐 Diagrama de Fluxo e Componentes Semânticos
 
 ```mermaid
 graph TD
-    A["Ferramental Interno e Scripts de Produtividade"] --> B["Políticas de Governança"]
+    A["Fluxos de Trabalho Padronizados (BMAD)"] --> B["Políticas de Governança"]
     B --> C["Motor de Validação Sintática"]
     C --> D["Execução Sandboxed local"]
     D -->|Validação Concluída| E["Feedback e Entrega"]

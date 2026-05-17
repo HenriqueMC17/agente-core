@@ -1,10 +1,10 @@
-# 13-observability - Melhores Práticas e Regras de Ouro de Observabilidade e Métricas Operacionais
+# 04-workflows - Melhores Práticas e Regras de Ouro de Fluxos de Trabalho Padronizados (BMAD)
 
 ## 🚀 Boas Práticas Recomendadas
 
-- Logar de forma estruturada cada nó explorado em pipelines Tree of Thoughts (ToT) e suas pontuações de validação.
-- Rastrear e alertar o consumo excessivo de tokens devido a prompts mal dimensionados ou loops de repetição de IA.
-- Guardar o rastro de depuração de falhas de chamadas de APIs externas para análise retroativa de erros.
+- Seguir estritamente as transições de estado do BMAD: PM -> Architect -> Dev -> QA -> DevOps.
+- Realizar a checagem 'Vibe Checking' (verificação visual DOM vs Canvas baseada no DESIGN.md gerado pelo Stitch).
+- Documentar em tempo real todos os passos de execução em arquivos de tarefas (`task.md`).
 
 ---
 

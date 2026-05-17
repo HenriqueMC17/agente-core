@@ -4,7 +4,7 @@
 
 Fornecer guias operacionais que definem **como a Inteligência Artificial e Múltiplos Agentes** são estruturados, instanciados e consumidos na base do projeto. Representa a gestão da sua própria força computacional generativa.
 
-## 🏗️ Papel na Arquitetura (@agente-senior-fullstack)
+## 🏗️ Papel na Arquitetura (@agente-core)
 
 Camada Metacognitiva. Afina o motor de Inteligência do repositório garantindo predição de qualidade durante _pair-programming_ com LLMs e gerenciando contextos limitados.
 

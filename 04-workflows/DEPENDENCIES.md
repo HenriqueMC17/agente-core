@@ -1,4 +1,4 @@
-# 03-agent-system - Mapeamento de Dependências de Ecossistema de Agentes Especialistas
+# 04-workflows - Mapeamento de Dependências de Fluxos de Trabalho Padronizados (BMAD)
 
 ## 🔗 Dependências Internas (Ecosystem Matrix)
 
@@ -15,8 +15,8 @@ Este módulo interage diretamente com as seguintes camadas internas do repositó
 
 ## 📦 Dependências Externas (Tech Stack 2026)
 
-- Camada de Execução (`06-execution-layer`) para rodar comandos locais.
-- Orquestração Cognitiva (`07-ai-orchestration`) para prover redes deliberativas avançadas (Tree of Thoughts).
+- Ferramental interno (`12-tooling`) para ativação de scripts e validação estrutural.
+- Camada de Observabilidade (`13-observability`) para registrar os tempos de execução de cada estágio.
 
 ---
 
