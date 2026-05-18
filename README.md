@@ -1,37 +1,83 @@
-# 🕵️‍♂️ Agente Senior Fullstack: AI Ecosystem Framework
+# 🕵️‍♂️ [AGENTE-CORE] — AI Enterprise Architecture & Governed Skills Framework
 
-Este repositório é um **framework de governança e capacidades** para um agente de inteligência artificial de nível sênior. Ele organiza instruções, fluxos de trabalho e ferramentas de maneira modular para suportar o desenvolvimento de software de alta complexidade.
+Bem-vindo ao **agente-core**, um framework corporativo pioneiro de **governança, engenharia baseada em conhecimento e competências modulares** projetado para orquestração de Inteligência Artificial de alta performance (AI-First Engineering). 
 
-## 📁 Estrutura do Framework
-
-- **`/00-governance`**: Regras de governança e ética.
-- **`/01-global-rules`**: Instruções globais de comportamento.
-- **`/02-workspace-rules`**: Configurações específicas de ambiente.
-- **`/03-agent-capabilities`**: Definição do que o agente pode ou não fazer.
-- **`/04-workflows`**: Procedimentos padronizados (ex: Deploy, TDD, Review).
-- **`/05-knowledge-base`**: Wiki e base de conhecimento técnico.
-- **`/06-tech-stacks`**: Padrões de tecnologias suportadas.
-- **`/07-ai-integration`**: Modelos e estratégias de integração com LLMs.
-- **`/08-templates`**: Projetos base e scaffolds de código.
-- **`/09-skills`**: **Biblioteca de mais de 1.300 módulos de competência especializada.**
-- **`/10-rules`**: Catálogo detalhado de regras técnicas.
-- **`/11-mcp-integrations`**: Conectores MCP (Model Context Protocol).
-- **`/12-internal-tools`**: Scripts e ferramentas customizadas.
+Este repositório foi totalmente reestruturado sob os mais rígidos princípios de Clean Architecture, organização semântica e governança corporativa, consolidando **28 categorias corporativas** estruturadas em **7 camadas lógicas**.
 
 ---
 
-## 📂 Enfoque: 09-skills
+## 🏛️ A Arquitetura das 7 Camadas Lógicas
 
-A pasta [**09-skills**](./09-skills/) é o núcleo de competências modulares deste framework. 
+O ecossistema divide seus 28 módulos semânticos em camadas funcionais para maximizar a governabilidade e reduzir a sobrecarga cognitiva dos agentes cognitivos:
 
-Cada subpasta dentro dela representa um domínio de conhecimento especializado (como `nextjs-best-practices`, `architect-review`, `ai-engineer`, etc.). Este sistema de extensões permite que o agente:
+### 🛡️ Tier 1: Governança & Compliance
+Garante a integridade ética, limites constitucionais e conformidade jurídica e técnica do comportamento da IA.
+*   [/governance](file:///c:/Dev/agente-core/governance) — Constituição agêntica, compliance e auditoria de IA.
+*   [/rules](file:///c:/Dev/agente-core/rules) — Instruções estritas de conformidade sintática e operacional.
+*   [/standards](file:///c:/Dev/agente-core/standards) — Guias de estilo corporativos, nomenclatura e padrões de código.
+*   [/technical-decisions](file:///c:/Dev/agente-core/technical-decisions) — Registro histórico de decisões de arquitetura (ADRs).
 
-1.  **Contextualização Precisa**: Carregue apenas as instruções relevantes para a tarefa atual.
-2.  **Padronização Corporativa**: Siga os mesmos padrões de "Clean Code" e "Best Practices" em escala.
-3.  **Desenvolvimento Híbrido**: Alterne rapidamente entre tarefas de Arquitetura, Business e Coding com o mais alto nível de expertise.
+### 📐 Tier 2: Estratégia & Arquitetura
+Define o blueprint físico do ecossistema e orienta a evolução tecnológica de longo prazo.
+*   [/architecture](file:///c:/Dev/agente-core/architecture) — Topologia semântica, diagramas e mapas de conexão.
+*   [/execution-flows](file:///c:/Dev/agente-core/execution-flows) — Roteiros de processos e ordenadores táticos de tarefas.
+*   [/roadmaps](file:///c:/Dev/agente-core/roadmaps) — Marcos evolutivos de stack e horizontes de expansão do motor.
 
-Para um índice detalhado de todas as competências, veja o [**Catálogo de Skills**](./09-skills/CATALOG.md).
+### 🧠 Tier 3: Inteligência & Raciocínio
+Controla os modelos de linguagem utilizados, perfis cognitivos e orquestração de memória de contexto.
+*   [/ai-systems](file:///c:/Dev/agente-core/ai-systems) — Configuração de LLMs, pesos lógicos e personas agênticas.
+*   [/prompts](file:///c:/Dev/agente-core/prompts) — Biblioteca premium de prompts estruturados e system instructions.
+*   [/context-maps](file:///c:/Dev/agente-core/context-maps) — Indexação de contexto dinâmico e limites de memória semântica.
+
+### ⚙️ Tier 4: Operações & Integrações
+Garante a conectividade entre o raciocínio digital e a ação física através do ecossistema de APIs e ferramentas.
+*   [/mcp-integrations](file:///c:/Dev/agente-core/mcp-integrations) — Definições e servidores Model Context Protocol (MCP).
+*   [/integrations](file:///c:/Dev/agente-core/integrations) — Conectores externos, Webhooks e APIs de terceiros.
+*   [/automations](file:///c:/Dev/agente-core/automations) — Scripts de automação rotineira e robôs utilitários.
+*   [/internal-tools](file:///c:/Dev/agente-core/internal-tools) — Utilidades locais e ferramentas de CLI de suporte interno.
+
+### 📚 Tier 5: Conhecimento & Padrões
+Consolida o conhecimento de domínio técnico-científico e os padrões universais de engenharia de software.
+*   [/knowledge-base](file:///c:/Dev/agente-core/knowledge-base) — Enciclopédias setoriais, artigos e bases de especialização.
+*   [/patterns](file:///c:/Dev/agente-core/patterns) — Design Patterns, blueprints de clean code e soluções corporativas.
+*   [/references](file:///c:/Dev/agente-core/references) — Dicionários, glossários e documentações externas padrão.
+*   [/playbooks](file:///c:/Dev/agente-core/playbooks) — Manuais táticos de resolução de bugs e mitigação de incidentes.
+
+### 🚀 Tier 6: Execução & Entrega
+Engloba as reais competências agênticas, exemplos práticos e scaffolds de projetos funcionais.
+*   [/modules](file:///c:/Dev/agente-core/modules) — **O motor do framework: biblioteca viva com mais de 1.300 competências.**
+*   [/templates](file:///c:/Dev/agente-core/templates) — Scaffolds, boilerplates e skeletons para início rápido de projetos.
+*   [/examples](file:///c:/Dev/agente-core/examples) — Aplicações demo de referência e laboratórios práticos de código.
+*   [/workflows](file:///c:/Dev/agente-core/workflows) — Pipelines de automação complexa e esteiras de CI/CD.
+
+### 🔍 Tier 7: Qualidade & Ciclo de Vida
+Mapeia a telemetria operacional, relatórios de auditoria e facilita o onboarding humano e digital.
+*   [/audits](file:///c:/Dev/agente-core/audits) — Verificações de segurança, pentests e relatórios de auditoria.
+*   [/diagnostics](file:///c:/Dev/agente-core/diagnostics) — Telemetria de erros, observabilidade ativa e logs de execução.
+*   [/onboarding](file:///c:/Dev/agente-core/onboarding) — Guias de setup rápido e preparação de ambiente de desenvolvimento.
+*   [/operational-guides](file:///c:/Dev/agente-core/operational-guides) — Manuais de instruções operacionais diárias do ecossistema.
+*   [/documentation](file:///c:/Dev/agente-core/documentation) — Wiki de documentação geral e FAQs operacionais.
+*   [/assets](file:///c:/Dev/agente-core/assets) — Identidade visual, mídias e logotipos estruturais do framework.
 
 ---
-> [!NOTE]
-> Este projeto é uma base viva e está em constante evolução conforme novas tecnologias e padrões de IA emergem.
+
+## ⚡ Enfoque Especial: O Catálogo `/modules`
+
+O coração funcional do ecossistema agêntico é o diretório [/modules](file:///c:/Dev/agente-core/modules). 
+
+Ele atua como uma biblioteca distribuída contendo **mais de 1.300 módulos de competências individuais** que cobrem desde práticas de banco de dados e frameworks front-end até segurança enterprise e arquitetura de dados setoriais.
+
+### 🚀 Principais Ativos de Indexação:
+1.  [**Catálogo de Módulos (CATALOG.md)**](file:///c:/Dev/agente-core/modules/CATALOG.md) — Índice completo renderizado em tabelas Markdown para pesquisa rápida por humanos e IAs.
+2.  [**Índice Técnico (skills_index.json)**](file:///c:/Dev/agente-core/modules/skills_index.json) — Banco de dados JSON contendo metadados completos de cada habilidade para consumo programático por motores cognitivos.
+
+---
+
+## 🛡️ Guardrails e Garantia de Integridade
+
+> [!IMPORTANT]
+> **Imutabilidade Sintática:**
+> Nenhuma nova pasta de primeiro nível pode ser criada sem a aprovação do arquiteto-chefe corporativo. Todo arquivo adicionado deve seguir estritamente o layout semântico estabelecido em [/architecture/semantic-tree.md](file:///c:/Dev/agente-core/architecture/semantic-tree.md).
+
+---
+*agente-core — Governança e Raciocínio Cognitivo Orientados por Design em Escala Enterprise.*
