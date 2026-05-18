@@ -6,6 +6,18 @@ Este repositório foi totalmente reestruturado sob os mais rígidos princípios 
 
 ---
 
+## 📜 Governança Suprema & Controle Agêntico
+
+O comportamento operacional, sandboxing de segurança e padrões de interface (Design Engineering) dos agentes cognitivos que operam neste repositório são regulados de forma estrita pela governança agêntica central:
+
+*   [**Constituição Suprema do Projeto (AGENTS.md)**](file:///c:/Dev/agente-core/AGENTS.md) — O documento constitucional regulatório que dita as leis inegociáveis, limites de segurança de sandbox e padrões de prestígio visual (Grade 8px, Contraste APCA, Bento Layouts, Liquid Glass).
+*   [**Diretório Oculto de Controle (`.agents/`)**](file:///c:/Dev/agente-core/.agents) — A pasta física privada onde residem os direcionamentos específicos dos motores e templates de competência:
+    *   [rules/GEMINI.md](file:///c:/Dev/agente-core/.agents/rules/GEMINI.md) — Suprema instrução para controle de context-window, encodings Cp1252/UTF-8 e paralelismo de ferramentas.
+    *   [rules/CLAUDE.md](file:///c:/Dev/agente-core/.agents/rules/CLAUDE.md) — Diretriz operacional para engenharia lógica estrita, suites de QA e fidelidade de componentes.
+    *   [skills/SKILL.md](file:///c:/Dev/agente-core/.agents/skills/SKILL.md) — O template padrão-ouro de manifesto para a **Divulgação Progressiva de Habilidade** de módulos.
+
+---
+
 ## 🏛️ A Arquitetura das 7 Camadas Lógicas
 
 O ecossistema divide seus 28 módulos semânticos em camadas funcionais para maximizar a governabilidade e reduzir a sobrecarga cognitiva dos agentes cognitivos:

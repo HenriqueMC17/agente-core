@@ -13,6 +13,18 @@ Este índice atua como o **Single Source of Truth (SSOT)** do repositório `agen
 
 ---
 
+## 📜 Sistema de Governança e Diretórios Especiais
+
+Além dos 28 diretórios semânticos padrão, o ecossistema é regulado por ativos de governança de alta prioridade localizados na raiz do repositório:
+
+*   [**`AGENTS.md` (Constituição Suprema)**](file:///c:/Dev/agente-core/AGENTS.md) — A constituição do projeto contendo as leis de sandbox, limites de terminal, tratamento cp1252 e padrões de interface (APCA, Bento Grids, 8px, Translucidez).
+*   [**`.agents/` (Diretório Oculto de Controle)**](file:///c:/Dev/agente-core/.agents) — Diretório privado de controle dos motores:
+    *   [rules/GEMINI.md](file:///c:/Dev/agente-core/.agents/rules/GEMINI.md) — Regras de contexto, codificação e chamadas MCP para o Google Gemini.
+    *   [rules/CLAUDE.md](file:///c:/Dev/agente-core/.agents/rules/CLAUDE.md) — Convenções de design engineering, tipagem typescript e suites de QA para Claude/modelos lógicos.
+    *   [skills/SKILL.md](file:///c:/Dev/agente-core/.agents/skills/SKILL.md) — Template padrão-ouro para manifestos de módulos de competência.
+
+---
+
 ## 🔍 Tabela Geral de Indexação Semântica
 
 Abaixo está o índice completo dos 28 diretórios do framework, ordenados alfabeticamente para busca rápida:
@@ -33,7 +45,7 @@ Abaixo está o índice completo dos 28 diretórios do framework, ordenados alfab
 | **integrations** | [integrations](file:///c:/Dev/agente-core/integrations) | Tier 4 (Operações) | Clientes de APIs externas e integrações com serviços em nuvem. |
 | **internal-tools** | [internal-tools](file:///c:/Dev/agente-core/internal-tools) | Tier 4 (Operações) | CLIs internas, scripts de auxílio ao DEV e helpers locais. |
 | **knowledge-base** | [knowledge-base](file:///c:/Dev/agente-core/knowledge-base) | Tier 5 (Conhecimento) | Bases conceituais profundas de domínio e artigos enriquecidos. |
-| **mcp-integrations** | [mcp-integrations](file:///c:/Dev/agente-core/mcp-integrations) | Tier 4 (Operações) | Configurações do Model Context Protocol e servidores MCP. |
+| **mcp-integrations** | [mcp-integrations](file:///c:/Dev/agente-core/mcp-integrations) | Tier 4 (Operações) | Servidores MCP (`mcp_config.json`) e briefings ([Stitch](file:///c:/Dev/agente-core/mcp-integrations/connectors/stitch-mcp.md), [TestSprite](file:///c:/Dev/agente-core/mcp-integrations/connectors/test-sprite.md)). |
 | **modules** | [modules](file:///c:/Dev/agente-core/modules) | Tier 6 (Execução) | Catálogo com mais de 1.300 competências de desenvolvimento ativo. |
 | **onboarding** | [onboarding](file:///c:/Dev/agente-core/onboarding) | Tier 7 (Qualidade) | Manuais de setup inicial de ambiente para novos devs (e IAs). |
 | **operational-guides** | [operational-guides](file:///c:/Dev/agente-core/operational-guides) | Tier 7 (Qualidade) | Guias e manuais de operações diárias do ecossistema. |
