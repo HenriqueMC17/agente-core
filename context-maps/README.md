@@ -1,37 +1,58 @@
-# 👑 [CONTEXT-MAPS] — Motor de Contexto, Sistemas de Memória & Mapeadores Cognitivos
+# 🗺️ [CONTEXT MAPS] — Mapas de Contexto, Grafos de Dependência & Estruturas Semânticas
 
-Área do motor cognitivo. Controla a forma como o contexto do repositório é indexado, compactado, priorizado e entregue aos agentes inteligentes.
+## 📌 1. Visão Geral
+O diretório `/context-maps` funciona como a representação geográfica e conceitual do repositório `agente-core`. Ele armazena as plantas, diagramas e grafos que auxiliam agentes de IA a se situarem espacialmente na base de código.
 
----
+## 🎯 2. Objetivo da Pasta
+Fornecer guias espaciais e semânticos consistentes para reduzir o consumo de tokens das janelas de contexto das IAs, facilitando buscas locais direcionadas e evitando leituras recursivas caras em diretórios inteiros.
 
-## 📂 Árvore Semântica Estrutural
+## 🧠 3. Contexto Operacional
+Sempre que uma nova sessão de desenvolvimento agêntico é iniciada, o orquestrador carrega os mapas deste diretório para munir a IA de uma visão estrutural precisa do repositório antes que qualquer leitura física de arquivo comece.
 
-Abaixo está o mapeamento dos recursos essenciais deste diretório:
+## 🏗️ 4. Arquitetura da Estrutura
+O diretório divide-se nos seguintes mapas estruturais:
+*   `context-maps-readme.md` — Visão centralizada das rotas de navegação do repositório.
+*   `concept-map.md` — Mapeamento conceitual e semântico de conexões de negócios.
+*   `physical-map.md` — Planta física de diretórios e arquivos ativos (árvore estruturada).
+*   `agent-context-core.md` — Roteiro de inicialização de contexto para agentes de IA de alto desempenho.
 
-- `compression/` — Lógicas de compactação semântica e redução de tokens
-- `context-priority/` — Regras de classificação de arquivos por urgência cognitiva
-- `loaders/` — Carregadores dinâmicos de dados do workspace para a memória de LLM
-- `memory-assembly/` — Rotinas de construção e concatenação de blocos de memória
-- `runtime-context/` — Gerenciamento do estado de contexto em tempo de execução
-- `semantic-routing/` — Algoritmos de roteamento semântico de intenções
-- `memory-long-term/` — Módulo corporativo de persistência e memória de longo prazo
-- `memory-short-term/` — Mecanismos de memória operacional e de sessão
-- `memory-semantic/` — Indexação semântica e armazenamento vetorial
-- `memory-project/` — Memórias associativas e de histórico do projeto
+## 🛡️ 5. Responsabilidades
+*   **Eficiência Semântica:** Prover sumários e localizadores rápidos de competências para reduzir leituras redundantes.
+*   **Navegabilidade:** Garantir que links absolutos e caminhos estejam consistentemente atualizados.
+*   **Redução de Custo Cognitivo:** Facilitar a rápida assimilação da estrutura do repositório por novos engenheiros ou agentes recém-instanciados.
 
----
+## 🔄 6. Fluxos Relacionados
+*   **Inicialização Cognitiva:** Primeira etapa obrigatória na inicialização de qualquer agente executor em sandbox.
 
-## 🧠 Contexto Operacional (Para Humanos & IA)
+## ⚙️ 7. Integrações
+*   **Graph Databases (Neo4j) / Vector Stores:** Mapeamento conceitual exportável para bancos de grafos de alta performance corporativos.
 
-> [!IMPORTANT]
-> **DIRETRIZ DE AGENTE:**
-> Este diretório dita como os agentes pensam e lembram. Alterações aqui impactam diretamente a latência e o consumo de contexto dos agentes.
+## 📦 8. Dependências
+*   **`automations/`**: Depende de scripts executáveis locais (como `auto-doc-generator.ps1`) para reconstruir dinamicamente a planta física markdown.
 
----
+## 🎨 9. Padrões Utilizados
+*   **Semantic Hierarchical Mapping:** Organização da documentação espacial em níveis progressivos de detalhe (Visão Global -> Pasta -> Arquivo).
+*   **Mermaid Visualization:** Grafos visuais acoplados a todas as explicações de conexões de arquivos.
 
-## 🔗 Conexões Semânticas Recomendadas
+## 📜 10. Convenções
+*   Todos os hiperlinks internos inseridos nos mapas de contexto devem utilizar obrigatoriamente links locais absolutos (`file:///c:/Dev/agente-core/...`).
+*   Modificações na estrutura lógica de pastas devem ser imediatamente refletidas no `physical-map.md` para evitar desvios conceptuais em runtime de IA.
 
-Para complementar o entendimento operacional ou buscar referências de conformidade técnica, consulte:
+## 🔗 11. Relação com Outras Áreas
+*   [**`/architecture`**](file:///c:/Dev/agente-core/architecture) — Fornece os limites conceituais e divisões físicas que balizam a geração dos mapas deste diretório.
+*   [**`/roadmaps`**](file:///c:/Dev/agente-core/roadmaps) — Aponta as áreas futuras do repositório que necessitarão de novos mapeamentos espaciais.
 
-- [/ai-systems](file:///c:/Dev/agente-core/ai-systems) — Quem consome o contexto gerado por estes motores
-- [/diagnostics](file:///c:/Dev/agente-core/diagnostics) — Medição de latência e consumo de tokens
+## 🛠️ 12. Exemplos de Uso
+Um desenvolvedor Staff, ao ingressar no projeto, abre `agent-context-core.md` para compreender imediatamente quais pastas são ativas, quais são redundantes e a precedência absoluta de execução das suítes locais.
+
+## 💡 13. Boas Práticas
+*   Mantenha a planta física compacta e objetiva. Evite listar exaustivamente arquivos temporários ou de build (`node_modules`, `.git`, etc.) que poluem o mapa.
+*   Use nomes semânticos claros nos nós de diagramas Mermaid para facilitar a leitura por interpretadores de grafos de LLM.
+
+## 🚨 14. Troubleshooting
+*   *Problema: O agente de IA está se perdendo na estrutura de diretórios ou tentando acessar arquivos que foram movidos.*
+    *   *Solução:* Execute a automação de documentação para regenerar `physical-map.md` e force a IA a recarregar o arquivo atualizado na memória de sessão.
+
+## 🚀 15. Roadmap Evolutivo
+*   **Q3 2026:** Geração e sincronização de grafos de dependência tridimensionais interativos na UI do dashboard corporativo.
+*   **Q4 2026:** Atualização instantânea e automática do banco vetorial semântico de contexto a cada alteração aprovada em pull request (Continuous Contextualization).

@@ -1,30 +1,58 @@
-# 👑 [ARCHITECTURE] — Desenho Arquitetural, Topologia & Single Source of Truth
+# 🏛️ [ARCHITECTURE] — Engenharia de Sistemas, Estrutura Física & Árvores Semânticas
 
-Ponto de partida estratégico e arquitetura de alto nível do framework. Consolida os blueprints visuais, topologia de sistemas e mapas semânticos.
+## 📌 1. Visão Geral
+O diretório `/architecture` define a planta física, a hierarquia lógica e as regras de zoneamento de componentes de software de todo o ecossistema `agente-core`. Ele serve como a fonte única da verdade para a conformidade do layout e da organização de arquivos.
 
----
+## 🎯 2. Objetivo da Pasta
+Mapear e assegurar a integridade estrutural do repositório, ditando como os diretórios se relacionam de forma a evitar acúmulos redundantes, dependências circulares e desalinhamento de domínios.
 
-## 📂 Árvore Semântica Estrutural
+## 🧠 3. Contexto Operacional
+Os sistemas e agentes em runtime leem este diretório para compreender a organização do workspace e validar a corretude dos caminhos lógicos antes de gerarem novos módulos ou reestruturarem pastas.
 
-Abaixo está o mapeamento dos recursos essenciais deste diretório:
+## 🏗️ 4. Arquitetura da Estrutura
+O diretório divide-se nos seguintes mapas:
+*   `global-index.md` — O índice físico absoluto que mapeia cada recurso.
+*   `governance-architecture.md` — A lógica de fluxo arquitetural da governança.
+*   `semantic-tree.md` — A árvore conceitual de caminhos regulados por domínios.
 
-- `governance-architecture.md` — Arquitetura de controle e governança agêntica
-- `semantic-tree.md` — Mapa visual e estrutural das conexões do repositório
-- `global-index.md` — Índice consolidado de ativos e módulos
+## 🛡️ 5. Responsabilidades
+*   **Zoneamento:** Garantir que novos pacotes ou arquivos sejam alocados no diretório temático correto.
+*   **Consistência Semântica:** Impedir nomes de caminhos ambíguos.
+*   **Orquestração de Dependências:** Mapear e rastrear a árvore de chamada de funções.
 
----
+## 🔄 6. Fluxos Relacionados
+*   **Verificação de Lint de Caminhos:** O validador de links cruzados e estruturas físicas corre contra os mapas definidos neste diretório.
+*   **Refatorações de Grande Escala:** Sempre guiadas pelo mapa de transições arquiteturais de `global-index.md`.
 
-## 🧠 Contexto Operacional (Para Humanos & IA)
+## ⚙️ 7. Integrações
+*   **MCP File System Connector:** Expõe o mapa arquitetural para agentes de ferramentas MCP navegarem com rapidez e baixo consumo de tokens.
 
-> [!IMPORTANT]
-> **DIRETRIZ DE AGENTE:**
-> Ao projetar novos componentes ou realizar refatorações, os agentes devem ler estes mapas para evitar acoplamento indesejado e seguir a clean architecture estabelecida.
+## 📦 8. Dependências
+*   **`governance/`**: Fornece os limites regulatórios gerais que determinam as divisões de segurança física do repositório.
 
----
+## 🎨 9. Padrões Utilizados
+*   **Clean Architecture:** Separação estrita de camadas (infraestrutura, dados, domínio, aplicação).
+*   **Domain-Driven Design (DDD):** Delimitação clara de contextos de negócio.
 
-## 🔗 Conexões Semânticas Recomendadas
+## 📜 10. Convenções
+*   Nenhum arquivo de código executável deve residir diretamente nas pastas de governança técnica ou padrões.
+*   Toda nova pasta criada no repositório deve ser registrada em `semantic-tree.md`.
 
-Para complementar o entendimento operacional ou buscar referências de conformidade técnica, consulte:
+## 🔗 11. Relação com Outras Áreas
+*   [**`/standards`**](file:///c:/Dev/agente-core/standards) — Transforma as regras abstratas em limites físicos de codificação.
+*   [**`/templates`**](file:///c:/Dev/agente-core/templates) — Fornece os esqueletos físicos para as pastas aqui desenhadas.
 
-- [/governance](file:///c:/Dev/agente-core/governance) — Governança e compliance do ecossistema
-- [/technical-decisions](file:///c:/Dev/agente-core/technical-decisions) — Justificativas e histórico arquitetural
+## 🛠️ 12. Exemplos de Uso
+Um agente cognitivo que necessite adicionar uma nova skill de validação de dados de checkout consulta o `semantic-tree.md` para garantir que deve alocá-la em `/modules/checkout-validation` e não em diretórios raiz de infraestrutura.
+
+## 💡 13. Boas Práticas
+*   Mantenha a hierarquia profunda de subpastas limitada a 4 níveis para evitar dispersão de contexto.
+*   Evite caminhos relativos em diagramas de fluxo; prefira links baseados em `file:///`.
+
+## 🚨 14. Troubleshooting
+*   *Problema: O validador structural-validator.ps1 acusa desvio estrutural.*
+    *   *Solução:* Verifique se a nova pasta criada possui o README correspondente e está mapeada no `global-index.md` do repositório.
+
+## 🚀 15. Roadmap Evolutivo
+*   **Q3 2026:** Geração automatizada de diagramas Mermaid em tempo real a partir da análise da árvore estática de arquivos.
+*   **Q4 2026:** Verificação de acoplamento e coesão automatizada via análise sintática de dependências no pipeline.
