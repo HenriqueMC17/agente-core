@@ -4,6 +4,16 @@ Este documento estabelece a **Constituição Suprema e Inegociável** para qualq
 
 Toda modificação de código, execução de terminal, orquestração de prompts e tomada de decisão arquitetural deve aderir de forma estrita às leis aqui consolidadas.
 
+> [!IMPORTANT]
+> **Adendos Constitucionais de Vanguarda (Padrões 2026):**
+> O framework `agente-core` é estritamente regido pelas seguintes especificações atômicas detalhadas que complementam esta constituição:
+> *   **Governança de PRs de IA**: [ai-pull-request-governance.md](file:///c:/Dev/agente-core/governance/ai-pull-request-governance.md) — Controle atômico, mitigação de whiplash e verificação fatorada de PRs.
+> *   **Estratégia C-Suite & Modelos**: [c-suite-ai-strategy.md](file:///c:/Dev/agente-core/governance/c-suite-ai-strategy.md) — Gestão executiva, mitigação de drift e ciclo de vida de IA.
+> *   **Engenharia de Contexto**: [context-engineering.md](file:///c:/Dev/agente-core/rules/context-engineering.md) — Diretrizes de Mínimo Contexto Viável (MVC), posicionamento e tags XML.
+> *   **Raciocínio Sistema 2 & COVE**: [agent-reasoning-cove.md](file:///c:/Dev/agente-core/rules/agent-reasoning-cove.md) — Heurística ToT, lookahead e validação COVE.
+> *   **Design Engineering Premium**: [design-engineering-premium.md](file:///c:/Dev/agente-core/standards/design-engineering-premium.md) — Grids de 8px, Dark Mode 2.0 (L0/L1/L2) e APCA.
+> *   **Topologias de Memória LOCOMO**: [memory-topologies-locomo.md](file:///c:/Dev/agente-core/architecture/memory-topologies-locomo.md) — ROI de contexto e 5 topologias de memória externa.
+
 ---
 
 ## 🏛️ 1. Hierarquia Normativa e Constitucional
