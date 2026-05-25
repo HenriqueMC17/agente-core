@@ -1,108 +1,118 @@
 # Protocolo de Excelência em Interface (Design Engineering Premium)
 
-Este documento estabelece as normas técnicas, matemáticas e filosóficas obrigatórias para a construção de interfaces corporativas e sistemas visuais de alta fidelidade no ecossistema `agente-core`. 
+## 📌 Visão Geral
 
-O design no cenário tecnológico de 2026 é tratado estritamente como um problema de engenharia: sistemático, performático e matematicamente rigoroso.
+Este documento estabelece as normas técnicas, matemáticas e de física visual obrigatórias para a construção de interfaces de usuário (UI) de altíssimo prestígio no ecossistema `agente-core`. 
 
----
-
-## 1. Visão Estratégica: A Engenharia de Design (*Craft*)
-
-A transição da estética utilitária plana para a era da **Design Engineering** representa o amadurecimento do software. A excelência visual não é decorativa; é um indicador da integridade da engenharia subjacente. Uma interface com ritmo visual preciso e movimentos fluidos sinaliza que a segurança, a performance e a gestão de dados possuem o mesmo rigor aplicado ao alinhamento de um pixel.
-
-### Pilares Fundamentais:
-*   **Velocidade como Recurso de Design:** Um software sem latência que responde de forma mágica transforma o tempo de processamento em uma experiência fluida de recepção.
-*   **Estética Blueprint:** Inspirada no design suíço e em diagramas arquitetônicos, utiliza grades matemáticas visíveis de baixa opacidade para estruturar o layout, comunicando transparência, precisão e estabilidade.
+Em 2026, o design de interface é tratado como uma disciplina de engenharia rigorosa, combinando precisão geométrica com performance gráfica impecável.
 
 ---
 
-## 2. Fundações Estruturais: Grades, Espaçamento e Tipografia
+## 🎨 1. Estética Blueprint e Tipografia Técnica
 
-A consistência matemática é o único antídoto contra o "vale da estranheza" (*uncanny valley*) em interfaces profissionais.
+O visual corporativo deve refletir transparência e integridade técnica por meio da estética de diagrama arquitetônico (*Blueprint*).
 
-### 2.1. O Sistema de Espaçamento de 8px
-Todo o layout deve ser construído sobre uma unidade base de **8px**. Variações são permitidas apenas por necessidade de ajuste óptico pontual (±1px).
-
-| Elemento de Interface | Medida (Desktop) | Medida (Mobile) | Objetivo / Impacto Visual |
-| :--- | :--- | :--- | :--- |
-| **Grid de Blueprint** | 16px / 32px | 16px | Scaffold estrutural e rigor técnico visível. |
-| **Gutter Size (Calhas)** | 24px | 16px | Define o ritmo respiratório do layout. |
-| **Layout Padding** | 24px a 64px | 16px a 24px | Isola o foco cognitivo e aumenta a clareza. |
-| **Micro-espaçamento** | 4px / 8px | 4px / 8px | Agrupa logicamente labels, ícones e controles. |
-
-### 2.2. Tipografia Técnica
-A tipografia atua como a camada primária de navegação estrutural.
-*   **Fontes:** Utilize **Geist** (projetada a partir de sua versão *monospace* para maior legibilidade em ambientes de dados densos) ou **SF Pro**.
-*   **Alinhamento de Dados:** Para tabelas e exibição de métricas numéricas, é mandatório o uso de fontes mono-espaçadas ou a propriedade CSS `font-variant-numeric: tabular-nums` para garantir alinhamento vertical perfeito.
-*   **Contraste APCA:** O contraste de texto e componentes deve seguir o padrão **APCA** (*Advanced Perceptual Contrast Algorithm*), superando as limitações do WCAG 2 tradicional com maior precisão perceptual.
+- **Matriz Geométrica de Blueprint:**
+  - Layouts devem evidenciar sua estrutura matemática. Utilize grades de baixa opacidade (linhas de 1px em `#1A1A1A` ou `#2D2D2D` com opacidade reduzida a `4%` - `8%`) separando colunas e seções de dados.
+- **Tipografia Geist (Vercel):**
+  - **Geist Sans:** A fonte sem-serifa padrão para títulos, textos de navegação e parágrafos.
+  - **Geist Mono:** Utilizada para tabelas de dados, indicadores numéricos, chaves identificadoras e logs de sistema.
+  - **Alinhamento Numérico:** Em tabelas e listas numéricas, é obrigatório aplicar a diretiva CSS `font-variant-numeric: tabular-nums` para forçar largura uniforme de caracteres e garantir alinhamento vertical perfeito de colunas.
+- **APCA Contrast (Advanced Perceptual Contrast Algorithm):**
+  - O contraste de texto e componentes de controle deve ser medido utilizando o algoritmo APCA. O WCAG 2 tradicional é considerado obsoleto.
+  - Para textos comuns, o nível mínimo de contraste deve ser **Lc 75** (contraste ótimo). Para textos grandes ou cabeçalhos em negrito, o mínimo é **Lc 60**.
 
 ---
 
-## 3. Materialidade e Profundidade: Dark Mode 2.0 e Glassmorphism
+## 🖤 2. Materialidade e Profundidade: Dark Mode Tri-Layer
 
-Substituímos o design plano por superfícies que possuem volume, comportamento físico e iluminação.
-
-### 3.1. Dark Mode Premium (Default Standard)
-Em 2026, o Dark Mode é o padrão profissional para análises prolongadas de dados. É proibido o uso de preto puro (`#000000`).
+O design plano (*flat*) é proibido. As interfaces devem possuir profundidade física simulando camadas de empilhamento de materiais e iluminação realista.
 
 ```
-[Layer 2 (Elevated): #2D2D2D] (Modais e Menus)
++-------------------------------------------------------------+
+| Layer 2 (Elevated): #2D2D2D (Bordas finas de 1px a 15% white)|  <-- Modais, Popovers, Dropdowns
++-------------------------------------------------------------+
       ^
-[Layer 1 (Card): #1A1A1A] (Superfícies de Conteúdo)
++-------------------------------------------------------------+
+| Layer 1 (Card): #1A1A1A (Bordas finas de 1px a 8% white)    |  <-- Cards, Tabelas, Sidebar
++-------------------------------------------------------------+
       ^
-[Layer 0 (Base): #0D0D0D] (Fundo Primário)
++-------------------------------------------------------------+
+| Layer 0 (Base): #0D0D0D                                     |  <-- Fundo Primário
++-------------------------------------------------------------+
 ```
 
-*   **Layer 0 (Base):** `#0D0D0D` — O fundo de menor elevação da aplicação.
-*   **Layer 1 (Card):** `#1A1A1A` — Superfícies de agrupamento de conteúdo.
-*   **Layer 2 (Elevated):** `#2D2D2D` — Modais, popovers e menus flutuantes.
-*   **Iluminação:** Como sombras são ineficazes no fundo escuro, utilize bordas finas semi-transparentes de `1px` (*Crisp Borders*) combinadas com sombras em camadas (*Layered Shadows* — mínimo de 2 camadas: uma para luz de ambiente, outra para projeção de foco).
-
-### 3.2. Glassmorphism 2.0 (Indicadores de IA)
-O efeito de vidro fosco é restrito à sinalização de elementos transitórios ou saídas geradas por IA em tempo real.
-*   **Parâmetros:** `backdrop-filter: blur(12px)` a `blur(20px)` com opacidade de fundo entre **8% e 15%**.
-*   **Aceleração de Hardware:** Sempre aplique `transform: translateZ(0)` ou `will-change: transform` para forçar a renderização por GPU e evitar engasgos (*jank*) de rolagem.
-*   **Performance CSS:** Proibido o uso de `transition: all;`. Liste detalhadamente as propriedades animadas. Utilize blocos `@supports` para resiliência em browsers legados.
-
----
-
-## 4. Padrões de Interação e Feedback Dinâmico
-
-### 4.1. Streaming Text (SSE)
-Para saídas gerativas de IA via *Server-Sent Events*, é obrigatória a inclusão de um cursor vertical de `2px` piscando na frequência de **500ms** posicionado no final do rastro de texto para indicar processamento ativo.
-
-### 4.2. Skeleton Loaders Sem Deslocamento
-Skeletons de carregamento devem espelhar exatamente (1:1) as dimensões físicas dos componentes finais para mitigar o **CLS** (*Cumulative Layout Shift*). Utilize gradientes lineares com animação suave de *shimmer*.
-
-### 4.3. Indicadores de Confiança de IA
-Sinalize a confiabilidade de dados sintetizados por IA através de:
-*   Bordas codificadas por cor (verde para alta confiança, âmbar para incerteza lógica).
-*   Badges percentuais de certeza.
-*   Exibição clara de citações de fontes de referência (*Source Citations*).
+- **Layer 0 (Base - Background):** `#0D0D0D` - A camada de menor elevação de tela.
+- **Layer 1 (Card - Surface):** `#1A1A1A` - Superfície para agrupamento de widgets, formulários e painéis.
+- **Layer 2 (Elevated - Overlay):** `#2D2D2D` - Camada para diálogos, menus flutuantes, tooltips e modais.
+- **Crisp Borders (Bordas Finas de 1px):** Sombras puras são ineficazes sobre fundos escuros. Substitua-as por bordas internas de `1px` com cores sólidas levemente mais claras ou gradientes semi-transparentes de branco (`rgba(255, 255, 255, 0.08)` em Layer 1; `rgba(255, 255, 255, 0.15)` em Layer 2) para separar cirurgicamente as elevações.
+- **Layered Shadows:** Utilize sombras ambientais em camadas para simular oclusão de luz. Exemplo em CSS:
+  ```css
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    0 8px 16px -4px rgba(0, 0, 0, 0.7);
+  ```
 
 ---
 
-## 5. Performance, Teclado e Formulários
+## 🍹 3. Liquid Glass (Vidro Líquido Acelerado por GPU)
 
-*   **Acessibilidade:** Utilize `aria-live="polite"` em contêineres de texto em streaming para que leitores de tela processem o conteúdo sem interromper abruptamente a audição do usuário. Use `:focus-visible` para anéis de foco nítidos.
-*   **Comportamento de Teclado em Formulários:** Em inputs de linha única, a tecla `Enter` submete o formulário. Em blocos `<textarea>`, a submissão deve ocorrer exclusivamente via `Cmd/Ctrl + Enter`; a tecla `Enter` isolada deve apenas inserir uma quebra de linha.
-*   **Sem Bloqueio de Submissão:** Nunca desative botões de submit. Permita que o usuário tente enviar para disparar a validação e focar automaticamente no primeiro campo com erro.
-*   **Física de Animação:** Evite durações lineares estáticas. Utilize a função CSS `linear()` para simular movimentação física e aceleração de mola.
-*   **Scrolljacking:** É terminantemente proibido sequestrar a física de rolagem do browser do usuário. Animações devem ser acionadas pela posição do scroll, mantendo o controle total da velocidade com o usuário.
+O efeito de vidro fosco é exclusivo para painéis interativos flutuantes, sidebars dinâmicas e blocos de processamento gerados por IA.
+
+- **Configuração CSS Recomendada:**
+  ```css
+  background-color: rgba(13, 13, 13, 0.4);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  ```
+- **Aceleração Gráfica por Hardware:**
+  - Efeitos de desfoque de fundo são intensos em processamento. Para evitar lentidão na renderização e engasgos (*jank*) de scroll, aplique transformações 3D vazias no elemento para forçar a renderização na GPU:
+    ```css
+    transform: translate3d(0, 0, 0);
+    will-change: transform, backdrop-filter;
+    ```
 
 ---
 
-## 6. Checklist de Excelência (Deploy Ready)
+## 🌀 4. Movimento Físico e Easing de Mola
 
-Antes de realizar o deploy de qualquer interface, verifique:
+Animações lineares ou transições estáticas sem graça transmitem artificialidade. O movimento de elementos de interface deve seguir leis físicas de molas e elasticidade.
 
-1.  [ ] **APCA Contrast:** O texto sobre elementos translúcidos atende ao contraste perceptual mínimo?
-2.  [ ] **Safe Areas:** O layout respeita notches e áreas seguras de aparelhos mobile?
-3.  [ ] **Streaming Active:** O cursor vertical piscando a 500ms está presente na geração de texto?
-4.  [ ] **Zero CLS Skeletons:** As dimensões dos skeletons batem 1:1 com os dados carregados?
-5.  [ ] **GPU Acceleration:** Elementos com blur e filtros utilizam `translateZ(0)`?
-6.  [ ] **Focus Return:** O foco retorna ao elemento de origem após fechar modais?
-7.  [ ] **Tabular Nums:** Números em tabelas usam fontes tabulares e alinhamento vertical perfeito?
-8.  [ ] **Translate Exclusions:** Chaves de código e termos técnicos possuem `translate="no"`?
-9.  [ ] **Hydration-Safe:** Inputs retêm foco e valor após a hidratação do SSR/CSR?
-10. [ ] **Physics Easing:** Transições complexas utilizam funções de mola e easings físicos?
+- **CSS `linear()` Spring Easing:**
+  - Use a nova especificação da função `linear()` para mapear com precisão matemática o retorno elástico (*spring bounce*).
+  - **Fórmula de Mola (CSS linear):**
+    ```css
+    transition: transform 0.6s linear(
+      0, 0.402 7.4%, 0.732 14.8%, 0.852 18.6%, 
+      0.901 20.9%, 1 25.1%, 1.054 29.8%, 1.059 31.9%, 
+      1.05 34.2%, 1 42.6%, 0.985 47.9%, 0.985 53.6%, 1 65%
+    );
+    ```
+- **Proibição de `transition: all`:**
+  - É proibido forçar o navegador a interpolar todas as propriedades CSS de um elemento. Especifique detalhadamente os alvos da transição (ex: `transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;`) para otimizar o tempo de quadro.
+
+---
+
+## ⚡ 5. Micro-interações de Inteligência Artificial
+
+- **Streaming Text Cursor (Server-Sent Events):**
+  - Ao exibir texto gerado em tempo real por LLMs, exiba ao final do bloco de caracteres um cursor vertical de `2px` de largura com animação de piscamento de **500ms**.
+  - **CSS do Cursor:**
+    ```css
+    .ai-cursor::after {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 1.2em;
+      background-color: var(--color-accent);
+      margin-left: 2px;
+      vertical-align: middle;
+      animation: blink 0.5s step-start infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    ```
+- **Skeletons Anti-CLS (Cumulative Layout Shift):**
+  - Os carregadores em esqueleto devem espelhar em proporção exata 1:1 a estrutura geométrica dos componentes reais populados. Isso garante que a rolagem inicial e a montagem do componente real não desloquem visualmente a página.

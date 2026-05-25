@@ -2,30 +2,56 @@
 
 ## 📌 Visão Geral
 
-Diretrizes mandatórias para desenvolvimento client-side, aplicáveis a qualquer ambiente que manipule a abstração de tela, reatividade do usuário e DOM rendering (Web, React Native).
+Este documento estabelece as diretrizes mandatórias para desenvolvimento client-side, aplicáveis a qualquer ambiente que manipule a abstração de tela, reatividade do usuário, estilização e renderização do DOM (Web, Mobile).
 
 ---
 
-## 🎨 1. Componentização e Design System
+## 🏗️ 1. Arquitetura de Componentes e Renderização Server-Side
 
-- **Componentes "Dumb" vs "Smart" (Container/Presentational):**
-  - Seja implacável na separação. Componentes visuais (`Button`, `Card`, `Modal`) não fazem fetching de dados, não sabem de onde a _Promise_ vem, e não têm conexão com `Zustand`/`Redux`/`Context`. Eles apenas recebem `props` e disparam `callbacks`.
-  - Os Hooks ou "Containers/Pages" são os únicos autorizados a injetar estado massivo, carregar rotas filhas e gerenciar `try/catch`.
-- **Tamanho Ciclomático:** Se um arquivo `.tsx` ou `.jsx` passar de 200 linhas de renderização, isole parte de sua lógica em SubComponentes fechados ou abstraia funcionalidades cognitivas longas para _Custom Hooks_ locais (ex: `useAuthForm.ts`).
-
----
-
-## ⚡ 2. Reatividade e Ciclo de Vida
-
-- **Efeitos Colaterais (useEffect):**
-  - Minimize-os vigorosamente. A vasta maioria das sincronizações de UI pode ser feita inferindo estado _durante a renderização_ (Derived State) ou amarrada estritamente aos Event Handlers de onClick/onSubmit.
-  - Se usar fetchers, prefira abstrações reativas puras como `React Query` (SWR), que abstraem cacheamento, pooling e controle de corrida com Stale-while-Revalidate, evitando _race conditions_.
-- **Memoização Agressiva/Condicional:** Não aplique `useMemo` ou `useCallback` preventivamente em todo lugar. Aplique quando: 1) o custo computacional do _derived data_ for genuinamente alto ou 2) para preservar referências de callback que causam re-rendering de listas complexas de filhos _memoizados_.
+- **React Server Components (RSC):**
+  - Adote o paradigma RSC para otimizar o tamanho do bundle no cliente e proteger a comunicação de dados.
+  - **Server Components (Padrão):** Devem ser a escolha inicial para renderização de conteúdo estático ou dados buscados diretamente na camada de banco/serviço. Permitem realizar consultas e acessar segredos de API diretamente no servidor, impedindo que vazem para o cliente.
+  - **Client Components (`'use client'`):** Utilize estritamente nas folhas da árvore de componentes onde há interatividade (manipuladores de eventos, hooks de estado como `useState`/`useEffect` ou APIs de navegador). Mantenha o estado interativo no menor nível possível.
+- **Astro e Islands Architecture:**
+  - Para portais e páginas focadas em marketing, documentação ou e-commerce onde a performance de carregamento inicial é crítica, prefira a arquitetura Astro Islands.
+  - Carregue o HTML estático por padrão e injete interatividade isolada apenas nos componentes dinâmicos (ilhas) sob demanda (`client:visible`, `client:idle`, `client:only`).
 
 ---
 
-## 💅 3. Estilização e Acessibilidade (A11y)
+## ⚡ 2. Hidratação e Performance do DOM
 
-- **System First (Tailwind / CSS-in-JS):** Estilos arbitrários não são bem-vindos (por ex: `p-[17px]`). Use a balança e a paleta do Design System (`p-4` = 16px).
-- **Acessibilidade não é feature:** Uso mandatório e fluído de marcações semânticas (`<nav>`, `<main>`, `<article>`, `<button>` e não `<div onClick...>`).
-  - Foque sempre no `tabIndex` e navegação de teclado por toda a interface corporativa. Forneça rótulos invisíveis (como `sr-only`) interativamente e ARIA-labels dinâmicos com a transição de loading/foco.
+- **Modern Rehydration Adaptive Hydration (MRAH):**
+  - Minimize o tempo de interatividade (TTI) em portais grandes atrasando a hidratação de componentes fora da tela ou não interativos.
+  - Implemente hidratação dinâmica baseada na rolagem de página (Viewport intersection) ou no foco do usuário. Evite que scripts de hidratadores pesados travem a thread principal do navegador durante o carregamento inicial.
+- **Prevenção de Hydration Mismatches:**
+  - Garanta que o HTML gerado no servidor seja idêntico ao renderizado no primeiro passo no cliente.
+  - É proibido usar objetos globais como `window` ou `document`, ou datas baseadas no relógio local do cliente durante a renderização inicial do servidor. Caso precise de dados do cliente, execute-os dentro de um hook `useEffect` ou use componentes dinâmicos com SSR desabilitado.
+
+---
+
+## 💅 3. Estilização e Tailwind CSS v4
+
+- **Compilador Baseado em Rust:**
+  - O ecossistema deve adotar o Tailwind CSS v4 para obter tempos de compilação ultrarrápidos graças ao motor escrito em Rust.
+- **Eliminação do `tailwind.config.js`:**
+  - Em conformidade com o Tailwind v4, configurações de temas, fontes, cores e extensões devem ser feitas diretamente no arquivo CSS principal utilizando diretivas de folha de estilo nativas (como `@theme`, `@utility`).
+  - Evite arquivos de configuração JS pesados que atrasam pipelines de build.
+- **Design System e Consistência Visual:**
+  - Utilize apenas tokens aprovados pelo sistema de design. Classes arbitrárias fora da escala de 8px (ex: `w-[233px]` ou `p-[11px]`) são terminantemente proibidas, a menos que sejam validadas por um caso de uso aprovado.
+
+---
+
+## 🔒 4. Segurança em JavaScript e Manipulação Segura de Dados
+
+- **Prevenção de Prototype Pollution:**
+  - Em cenários onde dados JSON externos ou dinâmicos são mesclados de forma recursiva, proteja o código contra poluição de protótipo de JavaScript.
+  - Ao usar objetos como dicionários ou tabelas hash dinâmicas, crie-os com `Object.create(null)` para garantir que eles não herdem propriedades do protótipo padrão de `Object` (ex: `__proto__`, `constructor`).
+  - Congele protótipos em bibliotecas críticas ou valide esquemas rigorosamente usando ferramentas de validação de tipagem como Zod.
+
+---
+
+## ♿ 5. Acessibilidade (A11y) como Requisito de Projeto
+
+- **HTML Semântico:** Utilize tags HTML semânticas adequadas (`<main>`, `<nav>`, `<article>`, `<header>`, `<button>`) em vez de divs com manipuladores de clique artificiais.
+- **Navegabilidade por Teclado:** Elementos interativos devem suportar focabilidade limpa, anéis de foco visuais de alta legibilidade (`outline-offset`) e navegação lógica via tecla Tab.
+- **APCA Contrast:** Elementos textuais e de interface devem seguir as diretrizes do APCA (Advanced Perceptual Contrast Algorithm), garantindo contraste dinâmico perceptivo adequado para diferentes tamanhos e pesos de fonte.
