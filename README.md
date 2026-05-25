@@ -25,13 +25,19 @@ O ecossistema divide seus 28 módulos semânticos em camadas funcionais para max
 ### 🛡️ Tier 1: Governança & Compliance
 Garante a integridade ética, limites constitucionais e conformidade jurídica e técnica do comportamento da IA.
 *   [/governance](file:///c:/Dev/agente-core/governance) — Constituição agêntica, compliance e auditoria de IA.
+    *   [AI Pull Request Governance](file:///c:/Dev/agente-core/governance/ai-pull-request-governance.md) — Controle atômico e protocolo COVE para geração de código.
+    *   [C-Suite AI Strategy](file:///c:/Dev/agente-core/governance/c-suite-ai-strategy.md) — Estratégia executiva, mitigação de drift e ciclo de vida de modelos.
 *   [/rules](file:///c:/Dev/agente-core/rules) — Instruções estritas de conformidade sintática e operacional.
+    *   [Context Engineering Guide](file:///c:/Dev/agente-core/rules/context-engineering.md) — MVC (Mínimo Contexto Viável), RdR e estruturação de tags XML.
+    *   [Agent Reasoning & COVE](file:///c:/Dev/agente-core/rules/agent-reasoning-cove.md) — Indução do Sistema 2, paradigma ToT e busca heurística.
 *   [/standards](file:///c:/Dev/agente-core/standards) — Guias de estilo corporativos, nomenclatura e padrões de código.
+    *   [Design Engineering Premium](file:///c:/Dev/agente-core/standards/design-engineering-premium.md) — Especificações visuais 2026, grids 8px, Dark Mode 2.0 e APCA.
 *   [/technical-decisions](file:///c:/Dev/agente-core/technical-decisions) — Registro histórico de decisões de arquitetura (ADRs).
 
 ### 📐 Tier 2: Estratégia & Arquitetura
 Define o blueprint físico do ecossistema e orienta a evolução tecnológica de longo prazo.
 *   [/architecture](file:///c:/Dev/agente-core/architecture) — Topologia semântica, diagramas e mapas de conexão.
+    *   [Memory Topologies LOCOMO](file:///c:/Dev/agente-core/architecture/memory-topologies-locomo.md) — 5 camadas lógicas de memória e custos de window-context.
 *   [/execution-flows](file:///c:/Dev/agente-core/execution-flows) — Roteiros de processos e ordenadores táticos de tarefas.
 *   [/roadmaps](file:///c:/Dev/agente-core/roadmaps) — Marcos evolutivos de stack e horizontes de expansão do motor.
 

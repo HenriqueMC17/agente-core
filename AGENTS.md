@@ -10,7 +10,7 @@ Toda modificação de código, execução de terminal, orquestração de prompts
 
 O sistema de governança agêntica opera sob uma estrutura piramidal de conformidade técnica rígida. Em caso de ambiguidade ou conflito de diretrizes, a prioridade de resolução segue esta ordem decrescente absoluta:
 
-```
+```text
        [NÍVEL 0] FLARE Framework (Faithful Logic-Aided Reasoning)
         ▲  [NÍVEL 1] GEMINI.md (Suprema Diretiva de Engine)
        ▲▲  [NÍVEL 2] AGENTS.md (Esta Constituição do Projeto)
@@ -22,7 +22,7 @@ O sistema de governança agêntica opera sob uma estrutura piramidal de conformi
 1. **`GEMINI.md` (.agents/rules/GEMINI.md):** Suprema instrução operacional de baixo nível para motores Google, ditando segurança física, integridade da máquina host e mitigação de erros de terminal.
 2. **`AGENTS.md` (Esta Constituição):** A Carta Magna do repositório, ditando a filosofia do "Craft", Clean Architecture e interface de prestígio.
 3. **`.agents/rules/` (Rules de Modelo):** Diretivas específicas (como `CLAUDE.md`) focadas nas capacidades e limitações específicas de raciocínio de cada modelo.
-4. **`/rules` e `/governance`:** As regras gerais do framework para as 28 categorias e desenvolvimento de software corporativo.
+4. **`/rules` e `/governance`:** As regras gerais do framework para as 28 categorias e desenvolvimento de software corporativo, com destaque para as diretrizes de [Engenharia de Contexto](file:///c:/Dev/agente-core/rules/context-engineering.md), [Raciocínio & COVE](file:///c:/Dev/agente-core/rules/agent-reasoning-cove.md), [Governança de PR](file:///c:/Dev/agente-core/governance/ai-pull-request-governance.md) e [Estratégia Corporativa](file:///c:/Dev/agente-core/governance/c-suite-ai-strategy.md).
 
 ---
 
@@ -31,7 +31,7 @@ O sistema de governança agêntica opera sob uma estrutura piramidal de conformi
 Agentes autônomos operam sob uma Sandbox lógica e física no host. Qualquer tentativa de violar estes limites resultará em falha imediata do Vibe Check e rejeição de PR:
 
 *   **Positive Security (Segurança Positiva):** Todas as ações permitidas em runtime devem passar por validação explícita de sandbox e verificação formal do ciclo BMAD, proibindo qualquer spawn de processo ou escrita fora das áreas pré-aprovadas.
-*   **Mitigação da Whiplash de Aceleração:** A altíssima produtividade e velocidade dos agentes agênticos trazem um risco estatisticamente superior de introdução de regressões lógicas e bugs sutis. Para mitigar esse efeito, cada incremento de código deve vir obrigatoriamente acompanhado de sua respectiva suíte de testes de cobertura (mínimo de 80%) e modularidade rígida.
+*   **Mitigação da Whiplash de Aceleração:** A altíssima produtividade e velocidade dos agentes agênticos trazem um risco estatisticamente superior de introdução de regressões lógicas e bugs sutis. Para mitigar esse efeito, cada incremento de código deve vir obrigatoriamente acompanhado de sua respectiva suíte de testes de cobertura (mínimo de 80%) e modularidade rígida, seguindo o protocolo estrito de [Governança de Pull Requests de IA](file:///c:/Dev/agente-core/governance/ai-pull-request-governance.md).
 *   **Proibição Absoluta do Comando `cd`:** NUNCA execute comandos `cd` no terminal PowerShell. Todas as execuções de comandos devem passar o caminho absoluto ou o diretório de trabalho corrente (`Cwd`) nas propriedades da ferramenta do sistema.
 *   **Allow-list de Comandos de Terminal:** Apenas comandos não destrutivos de Git (`status`, `add`, `commit`, `diff`), Python (`python verify_*.py`), e utilitários locais de teste (`npm run test`, `vitest`) são pré-aprovados. Comandos destrutivos globais (como `rm -rf` irrestrito) exigem **Supervisão Ativa** e aprovação expressa do usuário humano.
 *   **Tratamento Defensivo contra Codificação de Terminal (Windows - Cp1252):** O terminal Windows PowerShell opera em encoding local (`cp1252`). Scripts executados por agentes que imprimem emojis ou caracteres complexos UTF-8 sem tratamento defensivo (como `encoding='utf-8'` explícito em leituras/escritas e captura genérica de exceptions de encoding) sofrerão crash. É lei blindar os scripts contra falhas de console.
@@ -44,7 +44,7 @@ Agentes autônomos operam sob uma Sandbox lógica e física no host. Qualquer te
 A estrutura física do repositório `agente-core` é **imutável em sua raiz semântica**. 
 Nenhum agente tem autoridade para criar novas pastas ou arquivos de primeiro nível fora das **28 categorias estruturadas em 7 camadas**.
 
-```
+```text
 Raiz [agente-core]
  ├── .agents/                    <-- [NÃO MAPPED] Controle de IA (Seguro e Privado)
  ├── .git/                       <-- [NÃO MAPPED] Controle de Versão Git
@@ -95,7 +95,7 @@ Para evitar sobrecarga de contexto do modelo (reduzindo a latência do Time to F
 
 ## 💎 5. Padrões de Interface e "Design Engineering" (Edição 2026)
 
-Toda interface projetada ou codificada por agentes neste workspace deve atingir o nível máximo de prestígio e artesanato técnico (*Craft*). A estética deve ser **Technical Blueprint**, demonstrando rigor matemático e respeito absoluto ao usuário:
+Toda interface projetada ou codificada por agentes neste workspace deve atingir o nível máximo de prestígio e artesanato técnico (*Craft*). A estética deve ser **Technical Blueprint**, demonstrando rigor matemático e respeito absoluto ao usuário, conforme estabelecido no manual de [Design Engineering Premium](file:///c:/Dev/agente-core/standards/design-engineering-premium.md):
 
 ### Rigor Visual e Layout
 *   **Bento Grid Standard:** Organizar dashboards e apresentações corporativas densas em layouts modulares compartimentados.
@@ -134,7 +134,7 @@ O desenvolvimento técnico de qualquer componente segue 5 fases rígidas de orqu
 
 ## 🧠 7. Estrutura de Memória e Escalonamento de Contexto (LOCOMO 2026)
 
-Para maximizar a eficiência do raciocínio e evitar a lentidão ou dispersão de atenção dos modelos generativos durante longas interações, o ecossistema estabelece regras rígidas de gestão de contexto:
+Para maximizar a eficiência do raciocínio e evitar a lentidão ou dispersão de atenção dos modelos generativos durante longas interações, o ecossistema estabelece regras rígidas de gestão de contexto detalhadas nos guias de [Engenharia de Contexto](file:///c:/Dev/agente-core/rules/context-engineering.md) e [Topologias de Memória LOCOMO](file:///c:/Dev/agente-core/architecture/memory-topologies-locomo.md):
 
 *   **Mitigação de Lost-in-the-Middle:** A eficiência do raciocínio de modelos com janelas gigantes degrada de forma acentuada a partir de 32k tokens se dados não estruturados forem injetados em massa. Mantenha a memória ativa sempre otimizada sob o padrão **MVC (Minimum Viable Context)**.
 *   **Workflow RAG-to-RdR:** Em vez de realizar RAG (Retrieval-Augmented Generation) injetando centenas de linhas de código bruto no prompt, use o padrão **RdR (Retrieval-driven Reasoning)**. O agente localiza o metadado no índice semântico, carrega cirurgicamente a assinatura da skill desejada e acopla somente as definições de tipo estritas na janela de contexto de trabalho.
