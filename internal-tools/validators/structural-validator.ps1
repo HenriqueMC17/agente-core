@@ -4,30 +4,53 @@ param (
 
 $ErrorActionPreference = "Continue"
 
-$dirs = Get-ChildItem -Path $BasePath -Directory | Where-Object { $_.Name -match "^(0[0-9]|1[0-7])-" }
-$requiredFiles = @("README.md", "ARCHITECTURE.md", "RESPONSIBILITIES.md", "DEPENDENCIES.md", "WORKFLOWS.md", "BEST-PRACTICES.md")
+# Lista constitucional das 28 categorias corporativas permitidas na raiz do repositório
+$ConstitutionalDirs = @(
+    "governance", "rules", "standards", "technical-decisions", # Camada 1
+    "architecture", "execution-flows", "roadmaps",             # Camada 2
+    "ai-systems", "prompts", "context-maps",                   # Camada 3
+    "mcp-integrations", "integrations", "automations", "internal-tools", # Camada 4
+    "knowledge-base", "patterns", "references", "playbooks",   # Camada 5
+    "modules", "templates", "examples", "workflows",           # Camada 6
+    "audits", "diagnostics", "onboarding", "operational-guides", "documentation", "assets" # Camada 7
+)
+
+# Diretórios ocultos ou de controle do sistema que são explicitamente permitidos na raiz
+$AllowedSystemDirs = @(
+    ".git", ".agents", ".github", ".vscode", ".idea", "node_modules"
+)
 
 $allValid = $true
 
-foreach ($d in $dirs) {
-    $missingFiles = @()
-    foreach ($f in $requiredFiles) {
-        $path = Join-Path $d.FullName $f
-        if (-not (Test-Path $path)) {
-            $missingFiles += $f
-        }
+# 1. Verificar se todos os diretórios constitucionais existem e contêm README.md
+foreach ($d in $ConstitutionalDirs) {
+    $dirPath = Join-Path $BasePath $d
+    if (-not (Test-Path $dirPath -PathType Container)) {
+        Write-Warning "VAL-ERR: O diretório constitucional '$d' está faltando na raiz."
+        $allValid = $false
+        continue
     }
-    
-    if ($missingFiles.Count -gt 0) {
-        Write-Warning "Module $($d.Name) is missing: $($missingFiles -join ', ')"
+
+    $readmePath = Join-Path $dirPath "README.md"
+    if (-not (Test-Path $readmePath -PathType Leaf)) {
+        Write-Warning "VAL-ERR: README.md não encontrado em '$d/'."
+        $allValid = $false
+    }
+}
+
+# 2. Verificar se existem diretórios extras não autorizados na raiz do repositório
+$actualDirs = Get-ChildItem -Path $BasePath -Directory | Select-Object -ExpandProperty Name
+foreach ($dirName in $actualDirs) {
+    if ($ConstitutionalDirs -notcontains $dirName -and $AllowedSystemDirs -notcontains $dirName) {
+        Write-Warning "VAL-ERR: Diretório não autorizado encontrado na raiz: '$dirName/' (Violação de Governança Suprema)."
         $allValid = $false
     }
 }
 
 if ($allValid) {
-    Write-Output "SUCCESS: All 18 modules pass the structural validation."
+    Write-Output "SUCCESS: Todos os 28 diretórios do framework passam na validação estrutural."
     exit 0
 } else {
-    Write-Error "FAILURE: Structural validation failed."
+    Write-Error "FAILURE: A validação estrutural falhou devido a inconsistências de governança."
     exit 1
 }

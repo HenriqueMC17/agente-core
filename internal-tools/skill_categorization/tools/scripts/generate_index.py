@@ -6,7 +6,16 @@ from collections.abc import Mapping
 from datetime import date, datetime
 
 import yaml
-from _project_paths import find_repo_root
+
+def find_repo_root(start_path):
+    current = os.path.abspath(start_path)
+    while True:
+        if os.path.exists(os.path.join(current, "AGENTS.md")) or os.path.exists(os.path.join(current, ".git")):
+            return current
+        parent = os.path.dirname(current)
+        if parent == current:
+            return os.path.abspath(start_path)
+        current = parent
 
 # Ensure UTF-8 output for Windows compatibility
 if sys.platform == 'win32':
@@ -320,7 +329,7 @@ def generate_index(skills_dir, output_file):
     return skills
 
 if __name__ == "__main__":
-    base_dir = str(find_repo_root(__file__))
-    skills_path = os.path.join(base_dir, "skills")
-    output_path = os.path.join(base_dir, "skills_index.json")
+    base_dir = find_repo_root(os.path.dirname(__file__))
+    skills_path = os.path.join(base_dir, "modules")
+    output_path = os.path.join(base_dir, "modules", "skills_index.json")
     generate_index(skills_path, output_path)
