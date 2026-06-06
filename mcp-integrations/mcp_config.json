@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-settings.json",
+  "mcpServers": {
+    "stitch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@google/stitch-mcp-server"
+      ],
+      "env": {
+        "STITCH_API_KEY": "env:STITCH_API_KEY",
+        "STITCH_PROJECT_ID": "4044680601076201931"
+      },
+      "settings": {
+        "preferredModel": "GEMINI_3_PRO",
+        "defaultDeviceType": "DESKTOP"
+      }
+    },
+    "TestSprite": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@testsprite/mcp-server"
+      ],
+      "env": {
+        "TESTSPRITE_TOKEN": "env:TESTSPRITE_TOKEN",
+        "TESTSPRITE_PROJECT_PATH": "c:\\Dev\\agente-core"
+      },
+      "settings": {
+        "serverMode": "development",
+        "autoOpenDashboard": true
+      }
+    },
+    "supabase-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "env:SUPABASE_ACCESS_TOKEN",
+        "SUPABASE_PROJECT_REF": "env:SUPABASE_PROJECT_REF"
+      }
+    },
+    "vercel": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@vercel/mcp-server"
+      ],
+      "env": {
+        "VERCEL_TOKEN": "env:VERCEL_TOKEN",
+        "VERCEL_PROJECT_ID": "env:VERCEL_PROJECT_ID",
+        "VERCEL_ORG_ID": "env:VERCEL_ORG_ID"
+      }
+    },
+    "figma": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@figma/mcp-server"
+      ],
+      "env": {
+        "FIGMA_ACCESS_TOKEN": "env:FIGMA_ACCESS_TOKEN"
+      }
+    },
+    "convex": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@convex-dev/mcp-server"
+      ],
+      "env": {
+        "CONVEX_DEPLOY_KEY": "env:CONVEX_DEPLOY_KEY"
+      }
+    },
+    "firecrawl-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mantis/firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "env:FIRECRAWL_API_KEY"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "env:CONTEXT7_API_KEY"
+      }
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@shadcn/mcp-server"
+      ]
+    }
+  }
+}

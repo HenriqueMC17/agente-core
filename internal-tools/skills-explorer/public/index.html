@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>agente-core // SKILLS EXPLORER</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Blueprint Background Grid Lines -->
+  <div class="blueprint-grid"></div>
+
+  <!-- Main Container -->
+  <div class="app-container">
+    
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="header-logo">
+        <div class="logo-icon">🕵️‍♂️</div>
+        <div class="logo-text">
+          <h1>AGENTE-CORE</h1>
+          <span class="mono text-xs text-muted">v8.5.0 // SKILLS EXPLORER</span>
+        </div>
+      </div>
+      
+      <!-- MAIN NAVIGATION MENU -->
+      <nav class="main-nav mono text-xs">
+        <button id="nav-btn-skills" class="nav-tab active">
+          <i data-lucide="compass" class="icon-xs"></i> EXPLORADOR DE SKILLS
+        </button>
+        <button id="nav-btn-notebooklm" class="nav-tab">
+          <i data-lucide="book-open" class="icon-xs"></i> PORTAL NOTEBOOKLM
+        </button>
+      </nav>
+      
+      <!-- API Config Panel -->
+      <div class="api-config-panel card-l1">
+        <div class="config-header">
+          <i data-lucide="key" class="icon-sm text-accent"></i>
+          <span class="mono text-xs">CONFIGURAÇÃO DE IA LOCAL (ZERO TOKENS)</span>
+        </div>
+        <div class="config-body">
+          <select id="llm-provider" class="input-select mono text-xs">
+            <option value="gemini">Google Gemini</option>
+            <option value="claude">Anthropic Claude</option>
+            <option value="openai">OpenAI GPT</option>
+          </select>
+          <input type="password" id="api-key" placeholder="Insira sua API Key local..." class="input-text text-xs" />
+          <button id="save-api-config" class="btn btn-accent text-xs">
+            <i data-lucide="save" class="icon-xs"></i> Salvar
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- BENTO GRID SYSTEM -->
+    <main id="skills-view" class="bento-grid view-pane">
+      
+      <!-- BENTO ITEM 1: SEARCH & FILTER SIDEBAR -->
+      <aside class="bento-item sidebar card-l1">
+        <div class="sidebar-header">
+          <div class="search-box">
+            <i data-lucide="search" class="search-icon"></i>
+            <input type="text" id="search-input" placeholder="Buscar competências (ex: python, git)..." class="input-text" />
+          </div>
+          
+          <div class="filter-row">
+            <select id="category-filter" class="input-select text-xs">
+              <option value="">Todas Categorias</option>
+            </select>
+          </div>
+          
+          <div class="risk-filter-row text-xs mono">
+            <span class="text-muted" style="margin-right: 6px;">RISCO:</span>
+            <button class="risk-btn active" data-risk="">ALL</button>
+            <button class="risk-btn" data-risk="safe">SAFE</button>
+            <button class="risk-btn" data-risk="critical">CRIT</button>
+            <button class="risk-btn" data-risk="offensive">OFF</button>
+          </div>
+        </div>
+
+        <!-- Repo Stats -->
+        <div class="stats-row border-b">
+          <div class="stat-box">
+            <span class="stat-value mono text-accent" id="stat-total-skills">0</span>
+            <span class="stat-label text-muted">Skills</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value mono text-accent" id="stat-categories">0</span>
+            <span class="stat-label text-muted">Categorias</span>
+          </div>
+          <div class="stat-box">
+            <button id="trigger-reindex" class="btn btn-ghost text-xs" title="Regenerar índice local">
+              <i data-lucide="refresh-cw" class="icon-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Skills List -->
+        <div class="skills-list-container">
+          <ul id="skills-list" class="skills-list">
+            <!-- Loaded dynamically -->
+            <li class="loading-placeholder">
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text-short"></div>
+            </li>
+            <li class="loading-placeholder">
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text-short"></div>
+            </li>
+            <li class="loading-placeholder">
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text-short"></div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- BENTO ITEM 2: MAIN DETAIL & WORKSPACE PANEL -->
+      <section class="bento-item workspace card-l1">
+        
+        <!-- Welcome Screen (Visible when no skill selected) -->
+        <div id="welcome-screen" class="welcome-screen">
+          <div class="welcome-content">
+            <div class="welcome-icon">🕵️‍♂️</div>
+            <h2>Explorer de Competências</h2>
+            <p class="text-muted">Selecione uma skill na lista lateral para visualizar os detalhes, editar o conteúdo ou solicitar ajustes inteligentes usando IA local.</p>
+            <div class="features-list text-xs mono">
+              <div><i data-lucide="check-circle" class="text-accent icon-xs"></i> 1.300+ HABILIDADES INDEXADAS</div>
+              <div><i data-lucide="check-circle" class="text-accent icon-xs"></i> ZERO CONSUMO DE TOKENS ANTIGRAVITY</div>
+              <div><i data-lucide="check-circle" class="text-accent icon-xs"></i> BACKUPS AUTOMÁTICOS AO SALVAR</div>
+              <div><i data-lucide="check-circle" class="text-accent icon-xs"></i> INTEGRAÇÃO DIRETA COM GEMINI, CLAUDE & GPT</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Content Display (Hidden by default) -->
+        <div id="skill-detail-container" class="skill-detail-container hidden">
+          
+          <!-- Skill Header -->
+          <div class="skill-detail-header border-b">
+            <div class="skill-info">
+              <span class="category-tag text-xs mono" id="skill-category">CATEGORIA</span>
+              <h2 id="skill-title">Título da Skill</h2>
+              <div class="skill-path-row text-xs mono text-muted">
+                <i data-lucide="file-text" class="icon-xs"></i>
+                <span id="skill-path">modules/path/to/SKILL.md</span>
+              </div>
+            </div>
+            
+            <div class="action-buttons">
+              <button id="btn-save-disk" class="btn btn-primary">
+                <i data-lucide="save" class="icon-sm"></i> Salvar no Disco
+              </button>
+            </div>
+          </div>
+
+          <!-- Tabs Navigation -->
+          <div class="tabs-nav border-b">
+            <button class="tab-btn active" data-tab="tab-viewer">
+              <i data-lucide="eye" class="icon-xs"></i> Visualizador
+            </button>
+            <button class="tab-btn" data-tab="tab-editor">
+              <i data-lucide="edit-3" class="icon-xs"></i> Editor de Código
+            </button>
+            <button class="tab-btn" data-tab="tab-ai-playground">
+              <i data-lucide="sparkles" class="icon-xs"></i> IA Ajustes (Zero-Tokens)
+            </button>
+            <button class="tab-btn" data-tab="tab-diff" id="tab-diff-btn" disabled>
+              <i data-lucide="git-commit" class="icon-xs"></i> Visualizar Diff
+            </button>
+          </div>
+
+          <!-- Tabs Content -->
+          <div class="tabs-content-container">
+            
+            <!-- TAB 1: VIEWER -->
+            <div id="tab-viewer" class="tab-content active">
+              <div class="viewer-layout">
+                <!-- Bento info cards -->
+                <div class="info-grid">
+                  <div class="info-card">
+                    <div class="info-card-header text-muted mono text-xs">RESUMO DA COMPETÊNCIA</div>
+                    <p id="skill-summary" class="text-sm">Carregando resumo...</p>
+                  </div>
+                  <div class="info-card">
+                    <div class="info-card-header text-muted mono text-xs">METADADOS TÉCNICOS</div>
+                    <table class="metadata-table text-xs mono">
+                      <tr>
+                        <td>Tipo:</td>
+                        <td id="meta-type" class="text-accent">skill</td>
+                      </tr>
+                      <tr>
+                        <td>ID do Índice:</td>
+                        <td id="meta-id">n/a</td>
+                      </tr>
+                      <tr>
+                        <td>Caminho Completo:</td>
+                        <td id="meta-fullpath" class="text-muted">n/a</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="rendered-markdown-container">
+                  <div class="info-card-header text-muted mono text-xs margin-b">CONTEÚDO DO DOCUMENTO (SKILL.md)</div>
+                  <div id="markdown-body" class="markdown-body">
+                    <!-- Raw markdown content displayed prettily -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 2: EDITOR -->
+            <div id="tab-editor" class="tab-content">
+              <div class="editor-split-container">
+                <div class="editor-layout">
+                  <div class="editor-header-bar mono text-xs text-muted">
+                    <span>EDITANDO: <span id="editor-file-label">SKILL.md</span></span>
+                    <span id="editor-char-counter">0 caracteres</span>
+                  </div>
+                  <textarea id="raw-editor" class="code-editor mono text-sm" spellcheck="false"></textarea>
+                </div>
+                <div class="preview-layout">
+                  <div class="editor-header-bar mono text-xs text-muted">
+                    <span>PREVIEW EM TEMPO REAL</span>
+                  </div>
+                  <div id="live-split-preview" class="split-preview markdown-body"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 3: IA PLAYGROUND (ZERO-TOKENS) -->
+            <div id="tab-ai-playground" class="tab-content">
+              <div class="ai-playground-layout">
+                <div class="ai-prompt-panel">
+                  <div class="form-group">
+                    <label for="ai-template" class="mono text-xs text-muted">TEMPLATE DE PROMPT OPERACIONAL</label>
+                    <select id="ai-template" class="input-select text-xs">
+                      <option value="custom">Prompt Personalizado (Livre)</option>
+                      <option value="error-handling">Adicionar Tratamento de Erros e Exceções</option>
+                      <option value="examples">Expandir Exemplos de Uso e Payloads</option>
+                      <option value="translate">Traduzir Skill para Português (Preservando Códigos)</option>
+                      <option value="refactor">Refatorar Estrutura de Código/Assinaturas</option>
+                      <option value="enrich">Enriquecer Seção de Regras e Compliance</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="ai-prompt" class="mono text-xs text-muted">INSTRUÇÕES DE AJUSTE (O QUE A IA DEVE ALTERAR?)</label>
+                    <textarea id="ai-prompt" placeholder="Ex: Adicione uma seção detalhando o tratamento de erros HTTP 429 e 500 no código de exemplo, seguindo o padrão Clean Architecture..." class="input-text text-sm" rows="4"></textarea>
+                  </div>
+
+                  <div class="ai-action-bar">
+                    <button id="btn-run-ai" class="btn btn-accent">
+                      <i data-lucide="sparkles" class="icon-sm"></i> Solicitar Ajuste (IA Local)
+                    </button>
+                    <div id="ai-status" class="ai-status text-xs mono text-muted hidden">
+                      <span class="spinner"></span> Processando...
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AI Response Panel -->
+                <div class="ai-response-panel">
+                  <div class="info-card-header text-muted mono text-xs margin-b">RETORNO DA GERAÇÃO LOCAL (STREAMING EM TEMPO REAL)</div>
+                  
+                  <div class="ai-response-container">
+                    <div id="ai-output-stream" class="ai-output-text mono text-sm" data-placeholder="Aguardando envio do prompt..."></div>
+                  </div>
+
+                  <div class="ai-response-actions border-t hidden" id="ai-response-actions">
+                    <div class="mono text-xs text-accent">✓ Geração Concluída! Revise as alterações abaixo.</div>
+                    <div class="btn-group">
+                      <button id="btn-ai-apply" class="btn btn-accent text-xs">
+                        <i data-lucide="check" class="icon-xs"></i> Aplicar Ajustes no Editor
+                      </button>
+                      <button id="btn-ai-discard" class="btn btn-ghost text-xs">
+                        Descartar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 4: DIFF VIEW -->
+            <div id="tab-diff" class="tab-content">
+              <div class="diff-layout">
+                <div class="info-card-header text-muted mono text-xs margin-b">DIFF VISUAL (ANTES vs DEPOIS DO AJUSTE)</div>
+                <div class="diff-container mono text-xs" id="diff-view-body">
+                  <!-- Visual diff markup will be generated here -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- BENTO GRID SYSTEM FOR NOTEBOOKLM GATEWAY -->
+    <main id="notebooklm-view" class="bento-grid view-pane hidden">
+      
+      <!-- BENTO ITEM 1: NOTEBOOK SIDEBAR -->
+      <aside class="bento-item sidebar card-l1">
+        <div class="sidebar-header">
+          <button id="btn-new-notebook" class="btn btn-accent" style="width: 100%;">
+            <i data-lucide="plus" class="icon-sm"></i> Novo Card de Prompt
+          </button>
+        </div>
+        <div class="skills-list-container">
+          <ul id="notebook-files-list" class="skills-list">
+            <!-- Loaded dynamically -->
+          </ul>
+        </div>
+      </aside>
+
+      <!-- BENTO ITEM 2: NOTEBOOK WORKSPACE -->
+      <section class="bento-item workspace card-l1">
+        
+        <!-- Welcome Screen (Visible when no file selected) -->
+        <div id="notebook-welcome-screen" class="welcome-screen">
+          <div class="welcome-content">
+            <div class="welcome-icon">📘</div>
+            <h2>Portal NotebookLM</h2>
+            <p class="text-muted">Crie, edite e organize prompts ou notas de contexto em arquivos Markdown locais prontos para serem anexados no seu NotebookLM.</p>
+            <button id="btn-start-notebook-prompt" class="btn btn-accent">
+              <i data-lucide="plus" class="icon-sm"></i> Criar Meu Primeiro Card
+            </button>
+          </div>
+        </div>
+
+        <!-- Notebook File Editor Container (Hidden by default) -->
+        <div id="notebook-detail-container" class="skill-detail-container hidden">
+          
+          <!-- Notebook Header -->
+          <div class="skill-detail-header border-b">
+            <div class="skill-info" style="display: flex; align-items: center; gap: 12px; flex-grow: 1;">
+              <input type="text" id="notebook-file-name" placeholder="nome-do-arquivo" class="input-text mono" style="font-size: 0.95rem; font-weight: 600; width: 280px;" />
+              <select id="notebook-category" class="input-select text-xs">
+                <option value="prompt">Prompt Mestre</option>
+                <option value="instruction">Instruções de Ajuste</option>
+                <option value="note">Nota de Contexto</option>
+                <option value="code">Snippet de Código</option>
+              </select>
+              <span class="text-xs text-muted mono">/prompts/notebooklm/</span>
+            </div>
+            
+            <div class="btn-group">
+              <button id="btn-save-notebook" class="btn btn-accent">
+                <i data-lucide="save" class="icon-sm"></i> Salvar no Disco
+              </button>
+              <button id="btn-delete-notebook" class="btn btn-ghost text-xs" style="color: var(--color-rose);">
+                <i data-lucide="trash-2" class="icon-sm"></i> Excluir
+              </button>
+            </div>
+          </div>
+
+          <!-- Tabs Navigation -->
+          <div class="tabs-nav border-b">
+            <button class="tab-btn-nb active" data-tab-nb="nb-tab-editor">
+              <i data-lucide="edit-3" class="icon-xs"></i> Redação & Markdown
+            </button>
+            <button class="tab-btn-nb" data-tab-nb="nb-tab-variables">
+              <i data-lucide="sliders" class="icon-xs"></i> Injetor de Variáveis
+            </button>
+            <button class="tab-btn-nb" data-tab-nb="nb-tab-refiner">
+              <i data-lucide="sparkles" class="icon-xs"></i> Refinador de IA (Zero-Tokens)
+            </button>
+          </div>
+
+          <!-- Tabs Content -->
+          <div class="tabs-content-container">
+            
+            <!-- TAB 1: EDITOR -->
+            <div id="nb-tab-editor" class="tab-content-nb active" style="display: flex; flex-direction: column; height: 100%;">
+              <div class="editor-split-container">
+                <div class="editor-layout" style="flex: 1; display: flex; flex-direction: column; height: 100%;">
+                  <div class="editor-header-bar mono text-xs text-muted">
+                    <span>DRAFT DO PROMPT</span>
+                    <span id="notebook-char-counter">0 caracteres</span>
+                  </div>
+                  <textarea id="notebook-editor" class="code-editor mono text-sm" placeholder="Escreva aqui seu prompt ou nota de contexto para o NotebookLM..." style="height: 100%; flex-grow: 1;"></textarea>
+                </div>
+                <div class="preview-layout" style="flex: 1; display: flex; flex-direction: column; height: 100%;">
+                  <div class="editor-header-bar mono text-xs text-muted">
+                    <span>PREVIEW DO MARKDOWN</span>
+                  </div>
+                  <div id="notebook-live-preview" class="split-preview markdown-body" style="height: 100%; flex-grow: 1; overflow-y: auto;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAB 2: IA REFINER -->
+            <div id="nb-tab-refiner" class="tab-content-nb" style="display: none; height: 100%;">
+              <div class="ai-playground-layout" style="padding: 12px; height: 100%;">
+                
+                <div class="ai-prompt-panel">
+                  <div class="form-group">
+                    <label for="refine-preset" class="mono text-xs text-muted">AÇÃO DO REFINADOR</label>
+                    <select id="refine-preset" class="input-select text-xs">
+                      <option value="structure">Polir Estrutura e Clareza para LLM</option>
+                      <option value="systematize">Converter em Prompt de Instruções Sistêmicas</option>
+                      <option value="condense">Condensar Informações (Economia de Contexto)</option>
+                      <option value="examples">Gerar Exemplos de Teste do Prompt</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="refine-instructions" class="mono text-xs text-muted">INSTRUÇÕES ADICIONAIS (OPCIONAL)</label>
+                    <textarea id="refine-instructions" placeholder="Ex: Deixe o tom mais assertivo e explique detalhadamente as restrições..." class="input-text text-sm" rows="3"></textarea>
+                  </div>
+
+                  <div class="ai-action-bar">
+                    <button id="btn-run-refiner" class="btn btn-accent">
+                      <i data-lucide="sparkles" class="icon-sm"></i> Refinar Prompt
+                    </button>
+                    <div id="refiner-status" class="ai-status text-xs mono text-muted hidden">
+                      <span class="spinner"></span> Refinando...
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AI Response Panel -->
+                <div class="ai-response-panel">
+                  <div class="info-card-header text-muted mono text-xs margin-b">PROMPT REFINADO (STREAMING EM TEMPO REAL)</div>
+                  
+                  <div class="ai-response-container">
+                    <div id="refiner-output" class="ai-output-text mono text-sm" data-placeholder="Aguardando início do refinamento..."></div>
+                  </div>
+
+                  <div class="ai-response-actions border-t hidden" id="refiner-response-actions">
+                    <div class="mono text-xs text-accent">✓ Refinamento Concluído!</div>
+                    <div class="btn-group">
+                      <button id="btn-refiner-apply" class="btn btn-accent text-xs">
+                        <i data-lucide="check" class="icon-xs"></i> Substituir no Editor
+                      </button>
+                      <button id="btn-refiner-discard" class="btn btn-ghost text-xs">
+                        Descartar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- TAB 3: VARIABLES INJECTOR -->
+            <div id="nb-tab-variables" class="tab-content-nb" style="display: none; height: 100%;">
+              <div class="ai-playground-layout" style="padding: 12px; height: 100%;">
+                
+                <div class="ai-prompt-panel">
+                  <div class="info-card-header text-muted mono text-xs margin-b">VARIÁVEIS DETECTADAS EM {{...}}</div>
+                  <div id="variables-inputs-container" class="variables-form-container">
+                    <!-- Dynamically generated inputs -->
+                    <p class="text-xs text-muted mono">Nenhuma variável detectada no prompt. Escreva {{nome_da_variavel}} no seu rascunho de texto.</p>
+                  </div>
+                </div>
+
+                <div class="ai-response-panel">
+                  <div class="info-card-header text-muted mono text-xs margin-b">PROMPT FINAL COMPILADO</div>
+                  
+                  <div class="ai-response-container" style="padding: 0;">
+                    <textarea id="compiled-prompt-output" class="code-editor mono text-sm" readonly style="height: 100%; border: none; background: transparent; padding: 14px;" placeholder="O prompt compilado aparecerá aqui conforme você preenche as variáveis..."></textarea>
+                  </div>
+
+                  <div class="ai-response-actions border-t">
+                    <button id="btn-copy-compiled" class="btn btn-accent text-xs">
+                      <i data-lucide="copy" class="icon-xs"></i> Copiar Compilado
+                    </button>
+                    <button id="btn-download-compiled" class="btn btn-ghost text-xs">
+                      <i data-lucide="download" class="icon-xs"></i> Baixar como .md
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="app-footer border-t text-xs mono text-muted">
+      <div>STATUS DO SERVIDOR: <span id="server-status" class="text-accent">ONLINE</span></div>
+      <div>c:\Dev\agente-core // Interface de Ajustes de Baixo Custo</div>
+      <div id="console-log-bar">Pronto para operação.</div>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
