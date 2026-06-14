@@ -4,8 +4,8 @@ description: Azure Fabric Management SDK for Python. Use for managing Microsoft 
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure Fabric Management SDK for Python
 
 Manage Microsoft Fabric capacities and resources programmatically.

@@ -4,8 +4,8 @@ description: Modern Angular (v20+) expert with deep knowledge of Signals, Standa
 risk: safe
 source: self
 date_added: '2026-02-27'
+category: web-development
 ---
-
 # Angular Expert
 
 Master modern Angular development with Signals, Standalone Components, Zoneless applications, SSR/Hydration, and the latest reactive patterns.

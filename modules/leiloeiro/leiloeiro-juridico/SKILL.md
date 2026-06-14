@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: leiloeiro
 ---
-
 # SKILL JURÍDICA — LEILÕES DE IMÓVEIS
 
 ## Overview

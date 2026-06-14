@@ -3,8 +3,8 @@ name: pandas
 description: Pandas
 risk: unknown
 source: community
+category: general
 ---
-
 404: Not Found
 
 ## When to Use

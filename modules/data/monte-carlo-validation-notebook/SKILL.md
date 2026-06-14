@@ -1,17 +1,24 @@
 ---
 name: monte-carlo-validation-notebook
-description: "Generates SQL validation notebooks for dbt PR changes with before/after comparison queries."
+description: Generates SQL validation notebooks for dbt PR changes with before/after comparison queries.
 category: data
 risk: safe
 source: community
 source_repo: monte-carlo-data/mc-agent-toolkit
 source_type: community
-date_added: "2026-04-08"
+date_added: '2026-04-08'
 author: monte-carlo-data
-tags: [data-observability, validation, dbt, monte-carlo, sql-notebook]
-tools: [claude, cursor, codex]
+tags:
+- data-observability
+- validation
+- dbt
+- monte-carlo
+- sql-notebook
+tools:
+- claude
+- cursor
+- codex
 ---
-
 > **Tip:** This skill works well with Sonnet. Run `/model sonnet` before invoking for faster generation.
 
 Generate a SQL Notebook with validation queries for dbt changes.
@@ -688,3 +695,7 @@ Focus on: how to install, configure connections, and run MC Bridge. Don't dump t
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to monte-carlo-validation-notebook.

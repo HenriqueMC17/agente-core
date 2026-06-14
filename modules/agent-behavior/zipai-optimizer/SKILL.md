@@ -1,12 +1,11 @@
 ---
 id: zipai-optimizer
 name: zipai-optimizer
-version: "11.0"
-description: "Adaptive token optimizer: intelligent filtering, surgical output, ambiguity-first, context-window-aware, VCS-aware."
+version: '11.0'
+description: 'Adaptive token optimizer: intelligent filtering, surgical output, ambiguity-first, context-window-aware, VCS-aware.'
 category: agent-behavior
 risk: safe
 ---
-
 # ZipAI: Context & Token Optimizer
 
 <rules>
@@ -81,3 +80,7 @@ risk: safe
 - **Ideation Constrained:** Do not use this protocol during pure creative brainstorming or open-ended design phases where exhaustive exploration and maximum token verbosity are required.
 - **Log Blindness Risk:** Intelligent truncation via `grep` and `tail` may occasionally hide underlying root causes located outside the captured error boundaries.
 - **Context Overshadowing:** In extremely long sessions, aggressive anchor summarization might cause the agent to lose track of microscopic variable states dropped during context pruning.
+
+
+## When to Use
+Use this skill when you need to perform operations related to zipai-optimizer.

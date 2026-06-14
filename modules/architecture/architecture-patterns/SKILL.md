@@ -1,11 +1,11 @@
 ---
 name: architecture-patterns
-description: "Master proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design to build maintainable, testable, and scalable systems."
+description: Master proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design to build maintainable, testable, and scalable systems.
 risk: none
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: architecture
 ---
-
 # Architecture Patterns
 
 Master proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design to build maintainable, testable, and scalable systems.
@@ -48,3 +48,7 @@ Works well with: `event-sourcing-architect`, `saga-orchestration`, `workflow-aut
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to architecture-patterns.

@@ -1,12 +1,18 @@
 ---
 name: burpsuite-project-parser
-description: Searches and explores Burp Suite project files (.burp) from the command line. Use when searching response headers or bodies with regex patterns, extracting security audit findings, dumping proxy history or site map data, or analyzing HTTP traffic captured in a Burp project.
+description: Searches and explores Burp Suite project files (.burp) from the command line. Use when searching response headers or bodies with regex patterns, extracting security audit findings, dumping proxy history or site map data, or analyzing HTTP traffic...
 allowed-tools:
-  - Bash
-  - Read
+- Bash
+- Read
 risk: unknown
 source: community
+category: security
 ---
+# Burpsuite-Project-Parser
+
+## Overview
+Searches and explores Burp Suite project files (.burp) from the command line. Use when searching response headers or bodies with regex patterns, extracting security audit findings, dumping proxy history or site map data, or analyzing HTTP traffic captured in a Burp project.
+
 
 # Burp Project Parser
 

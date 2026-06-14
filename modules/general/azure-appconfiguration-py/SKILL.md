@@ -4,8 +4,8 @@ description: Azure App Configuration SDK for Python. Use for centralized configu
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure App Configuration SDK for Python
 
 Centralized configuration management with feature flags and dynamic settings.

@@ -1,12 +1,12 @@
 ---
 name: database-migrations-migration-observability
-description: "Migration monitoring, CDC, and observability infrastructure"
+description: Migration monitoring, CDC, and observability infrastructure
 risk: unknown
 source: community
-tags: "database, cdc, debezium, kafka, prometheus, grafana, monitoring"
-date_added: "2026-02-27"
+tags: database, cdc, debezium, kafka, prometheus, grafana, monitoring
+date_added: '2026-02-27'
+category: database
 ---
-
 # Migration Observability and Real-time Monitoring
 
 You are a database observability expert specializing in Change Data Capture, real-time migration monitoring, and enterprise-grade observability infrastructure. Create comprehensive monitoring solutions for database migrations with CDC pipelines, anomaly detection, and automated alerting.
@@ -423,3 +423,7 @@ This plugin integrates with:
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to database-migrations-migration-observability.

@@ -1,11 +1,11 @@
 ---
 name: superpowers-lab
-description: "Lab environment for Claude superpowers"
+description: Lab environment for Claude superpowers
 risk: safe
-source: "https://github.com/obra/superpowers-lab"
-date_added: "2026-02-27"
+source: https://github.com/obra/superpowers-lab
+date_added: '2026-02-27'
+category: general
 ---
-
 # Superpowers Lab
 
 ## Overview

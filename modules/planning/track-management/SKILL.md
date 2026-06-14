@@ -4,8 +4,8 @@ description: Use this skill when creating, managing, or working with Conductor t
 risk: safe
 source: community
 date_added: '2026-02-27'
+category: planning
 ---
-
 # Track Management
 
 Guide for creating, managing, and completing Conductor tracks - the logical work units that organize features, bugs, and refactors through specification, planning, and implementation phases.
@@ -40,3 +40,7 @@ Guide for creating, managing, and completing Conductor tracks - the logical work
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to track-management.

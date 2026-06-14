@@ -4,8 +4,8 @@ description: Azure API Center Management SDK for Python. Use for managing API in
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure API Center Management SDK for Python
 
 Manage API inventory, metadata, and governance in Azure API Center.

@@ -4,8 +4,8 @@ description: Azure AI Document Intelligence SDK for .NET. Extract text, tables, 
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure.AI.DocumentIntelligence (.NET)
 
 Extract text, tables, and structured data from documents using prebuilt and custom models.

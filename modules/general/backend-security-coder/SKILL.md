@@ -4,8 +4,8 @@ description: Expert in secure backend coding practices specializing in input val
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 ## Use this skill when
 
 - Working on backend security coder tasks or workflows

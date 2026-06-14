@@ -5,8 +5,8 @@ risk: unknown
 source: community
 version: 1.0.0
 license: MIT
+category: mobile
 ---
-
 ## When to Use API Routes
 
 Use API routes when you need:

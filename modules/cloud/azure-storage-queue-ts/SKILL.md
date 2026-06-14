@@ -4,8 +4,8 @@ description: Azure Queue Storage JavaScript/TypeScript SDK (@azure/storage-queue
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # @azure/storage-queue (TypeScript/JavaScript)
 
 SDK for Azure Queue Storage operations — send, receive, peek, and manage messages in queues.

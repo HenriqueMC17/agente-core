@@ -6,15 +6,15 @@ source: community
 version: 1.0.0
 author: kadu
 tags:
-  - fp-ts
-  - error-handling
-  - either
-  - task-either
-  - typescript
-  - validation
-  - practical
+- fp-ts
+- error-handling
+- either
+- task-either
+- typescript
+- validation
+- practical
+category: development
 ---
-
 # Practical Error Handling with fp-ts
 
 This skill teaches you how to handle errors without try/catch spaghetti. No academic jargon - just practical patterns for real problems.

@@ -4,8 +4,8 @@ description: Azure Blob Storage JavaScript/TypeScript SDK (@azure/storage-blob) 
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # @azure/storage-blob (TypeScript/JavaScript)
 
 SDK for Azure Blob Storage operations — upload, download, list, and manage blobs and containers.

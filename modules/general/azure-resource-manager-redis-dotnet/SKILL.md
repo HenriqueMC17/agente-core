@@ -4,8 +4,8 @@ description: Azure Resource Manager SDK for Redis in .NET.
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure.ResourceManager.Redis (.NET)
 
 Management plane SDK for provisioning and managing Azure Cache for Redis resources via Azure Resource Manager.

@@ -1,11 +1,11 @@
 ---
 name: frontend-design
-description: "You are a frontend designer-engineer, not a layout generator."
+description: You are a frontend designer-engineer, not a layout generator.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Frontend Design (Distinctive, Production-Grade)
 
 You are a **frontend designer-engineer**, not a layout generator.

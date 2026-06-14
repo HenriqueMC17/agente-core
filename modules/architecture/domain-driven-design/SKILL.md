@@ -1,12 +1,12 @@
 ---
 name: domain-driven-design
-description: "Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns."
+description: Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns.
 risk: safe
 source: self
-tags: "[ddd, domain, bounded-context, architecture]"
-date_added: "2026-02-27"
+tags: '[ddd, domain, bounded-context, architecture]'
+date_added: '2026-02-27'
+category: architecture
 ---
-
 # Domain-Driven Design
 
 ## Use this skill when
@@ -72,3 +72,7 @@ Then route to the right next skill and list artifacts we must produce this week.
 - This skill does not replace direct workshops with domain experts.
 - It does not provide framework-specific code generation.
 - It should not be used as a justification to over-engineer simple systems.
+
+
+## When to Use
+Use this skill when you need to perform operations related to domain-driven-design.

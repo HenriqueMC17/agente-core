@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: general
 ---
-
 # AI Studio Image — Especialista em Imagens Humanizadas
 
 ## Overview

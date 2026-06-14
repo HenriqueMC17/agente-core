@@ -1,11 +1,11 @@
 ---
 name: nft-standards
-description: "Master ERC-721 and ERC-1155 NFT standards, metadata best practices, and advanced NFT features."
+description: Master ERC-721 and ERC-1155 NFT standards, metadata best practices, and advanced NFT features.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # NFT Standards
 
 Master ERC-721 and ERC-1155 NFT standards, metadata best practices, and advanced NFT features.
@@ -401,3 +401,7 @@ contract OptimizedNFT is ERC721A {
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to nft-standards.

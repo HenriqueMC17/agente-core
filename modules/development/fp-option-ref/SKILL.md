@@ -4,9 +4,14 @@ description: Quick reference for Option type. Use when user needs to handle null
 risk: unknown
 source: community
 version: 1.0.0
-tags: [fp-ts, option, nullable, maybe, quick-reference]
+tags:
+- fp-ts
+- option
+- nullable
+- maybe
+- quick-reference
+category: development
 ---
-
 # Option Quick Reference
 
 Option = value that might not exist. `Some(value)` or `None`.

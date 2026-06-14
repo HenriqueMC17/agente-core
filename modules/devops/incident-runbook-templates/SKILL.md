@@ -1,11 +1,11 @@
 ---
 name: incident-runbook-templates
-description: "Production-ready templates for incident response runbooks covering detection, triage, mitigation, resolution, and communication."
+description: Production-ready templates for incident response runbooks covering detection, triage, mitigation, resolution, and communication.
 risk: critical
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: devops
 ---
-
 # Incident Runbook Templates
 
 Production-ready templates for incident response runbooks covering detection, triage, mitigation, resolution, and communication.
@@ -401,3 +401,7 @@ psql -c "VACUUM FULL large_table;"
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to incident-runbook-templates.

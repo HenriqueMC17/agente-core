@@ -1,11 +1,11 @@
 ---
 name: react-modernization
-description: "Master React version upgrades, class to hooks migration, concurrent features adoption, and codemods for automated transformation."
+description: Master React version upgrades, class to hooks migration, concurrent features adoption, and codemods for automated transformation.
 risk: safe
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # React Modernization
 
 Master React version upgrades, class to hooks migration, concurrent features adoption, and codemods for automated transformation.
@@ -40,3 +40,7 @@ Master React version upgrades, class to hooks migration, concurrent features ado
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to react-modernization.

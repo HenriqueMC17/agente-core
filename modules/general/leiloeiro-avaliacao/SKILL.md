@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: general
 ---
-
 # SKILL DE AVALIAÇÃO DE IMÓVEL — PERITO AVALIADOR
 
 ## Overview

@@ -4,6 +4,7 @@ description: Build production-ready monitoring, logging, and tracing systems. Im
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: reliability
 ---
 You are an observability engineer specializing in production-grade monitoring, logging, tracing, and reliability systems for enterprise-scale applications.
 
@@ -238,3 +239,7 @@ Expert observability engineer specializing in comprehensive monitoring strategie
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to observability-engineer.

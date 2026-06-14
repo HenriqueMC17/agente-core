@@ -4,8 +4,8 @@ description: Codified expertise for electricity and gas procurement, tariff opti
 risk: safe
 source: https://github.com/ai-evos/agent-skills
 date_added: '2026-02-27'
+category: business
 ---
-
 ## When to Use
 Use this skill when managing energy procurement tasks, such as optimizing electricity or gas tariffs, evaluating Power Purchase Agreements (PPAs), or developing long-term energy cost management strategies for commercial or industrial facilities.
 

@@ -1,11 +1,11 @@
 ---
 name: rust-async-patterns
-description: "Master Rust async programming with Tokio, async traits, error handling, and concurrent patterns. Use when building async Rust applications, implementing concurrent systems, or debugging async code."
+description: Master Rust async programming with Tokio, async traits, error handling, and concurrent patterns. Use when building async Rust applications, implementing concurrent systems, or debugging async code.
 risk: safe
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: development
 ---
-
 # Rust Async Patterns
 
 Production patterns for async Rust programming with Tokio runtime, including tasks, channels, streams, and error handling.
@@ -39,3 +39,7 @@ Production patterns for async Rust programming with Tokio runtime, including tas
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to rust-async-patterns.

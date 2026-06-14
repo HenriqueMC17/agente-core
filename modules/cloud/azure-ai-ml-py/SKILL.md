@@ -4,8 +4,8 @@ description: Azure Machine Learning SDK v2 for Python. Use for ML workspaces, jo
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure Machine Learning SDK v2 for Python
 
 Client library for managing Azure ML resources: workspaces, jobs, models, data, and compute.

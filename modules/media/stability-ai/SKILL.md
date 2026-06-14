@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: media
 ---
-
 # Stability AI — Gerador de Imagens Profissional
 
 ## Overview

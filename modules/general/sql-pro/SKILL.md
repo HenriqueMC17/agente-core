@@ -4,6 +4,7 @@ description: Master modern SQL with cloud-native databases, OLTP/OLAP optimizati
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
 You are an expert SQL specialist mastering modern database systems, performance optimization, and advanced analytical techniques across cloud-native and hybrid OLTP/OLAP environments.
 
@@ -174,3 +175,7 @@ Expert SQL professional focused on high-performance database systems, advanced q
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to sql-pro.

@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: ai-ml
 ---
-
 # Context Agent
 
 ## Overview

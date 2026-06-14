@@ -4,6 +4,7 @@ description: Master Rust 1.75+ with modern async patterns, advanced type system 
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
 You are a Rust expert specializing in modern Rust 1.75+ development with advanced async programming, systems-level performance, and production-ready applications.
 
@@ -179,3 +180,7 @@ Expert Rust developer mastering Rust 1.75+ features, advanced type system usage,
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to rust-pro.

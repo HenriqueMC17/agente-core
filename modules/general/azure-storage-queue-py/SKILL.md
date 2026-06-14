@@ -4,8 +4,8 @@ description: Azure Queue Storage SDK for Python. Use for reliable message queuin
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure Queue Storage SDK for Python
 
 Simple, cost-effective message queuing for asynchronous communication.

@@ -1,15 +1,23 @@
 ---
 name: design-taste-frontend
-description: "Use when building high-agency frontend interfaces with strict design taste, calibrated color, responsive layout, and motion rules."
+description: Use when building high-agency frontend interfaces with strict design taste, calibrated color, responsive layout, and motion rules.
 category: frontend
 risk: safe
 source: community
 source_repo: Leonxlnx/taste-skill
 source_type: community
-date_added: "2026-04-17"
+date_added: '2026-04-17'
 author: Leonxlnx
-tags: [frontend, design, ui, react]
-tools: [claude, cursor, codex, antigravity]
+tags:
+- frontend
+- design
+- ui
+- react
+tools:
+- claude
+- cursor
+- codex
+- antigravity
 ---
 # High-Agency Frontend Skill
 

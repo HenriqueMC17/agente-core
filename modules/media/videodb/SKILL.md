@@ -4,12 +4,11 @@ description: Video and audio perception, indexing, and editing. Ingest files/URL
 category: media
 risk: safe
 source: community
-tags: "[video, editing, transcription, subtitles, search, streaming, ai-generation, media, live-streams, desktop-capture]"
-date_added: "2026-02-27"
+tags: '[video, editing, transcription, subtitles, search, streaming, ai-generation, media, live-streams, desktop-capture]'
+date_added: '2026-02-27'
 allowed-tools: Read Grep Glob Bash(python:*)
-argument-hint: "[task description]"
+argument-hint: '[task description]'
 ---
-
 # VideoDB Skill
 
 **Perception + memory + actions for video, live streams, and desktop sessions.**

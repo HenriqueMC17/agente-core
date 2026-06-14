@@ -5,8 +5,8 @@ risk: unknown
 source: community
 version: 1.0.1
 license: MIT
+category: general
 ---
-
 # Expo UI Guidelines
 
 ## When to Use

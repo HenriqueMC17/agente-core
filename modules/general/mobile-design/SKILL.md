@@ -1,9 +1,10 @@
 ---
 name: mobile-design
-description: "(Mobile-First · Touch-First · Platform-Respectful)"
+description: (Mobile-First · Touch-First · Platform-Respectful)
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
 # Mobile Design System
 

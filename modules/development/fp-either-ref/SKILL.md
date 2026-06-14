@@ -4,9 +4,14 @@ description: Quick reference for Either type. Use when user needs error handling
 risk: unknown
 source: community
 version: 1.0.0
-tags: [fp-ts, either, error-handling, validation, quick-reference]
+tags:
+- fp-ts
+- either
+- error-handling
+- validation
+- quick-reference
+category: development
 ---
-
 # Either Quick Reference
 
 Either = success or failure. `Right(value)` or `Left(error)`.

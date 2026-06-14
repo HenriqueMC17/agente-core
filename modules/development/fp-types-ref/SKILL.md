@@ -4,9 +4,15 @@ description: Quick reference for fp-ts types. Use when user asks which type to u
 risk: safe
 source: community
 version: 1.0.0
-tags: [fp-ts, typescript, quick-reference, option, either, task]
+tags:
+- fp-ts
+- typescript
+- quick-reference
+- option
+- either
+- task
+category: development
 ---
-
 # fp-ts Quick Reference
 
 ## When to Use

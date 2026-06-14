@@ -1,11 +1,11 @@
 ---
 name: xlsx-official
-description: "Unless otherwise stated by the user or existing template"
+description: Unless otherwise stated by the user or existing template
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Requirements for Outputs
 
 ## All Excel files

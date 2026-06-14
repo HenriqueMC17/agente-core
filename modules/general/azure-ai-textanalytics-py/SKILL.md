@@ -4,8 +4,8 @@ description: Azure AI Text Analytics SDK for sentiment analysis, entity recognit
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure AI Text Analytics SDK for Python
 
 Client library for Azure AI Language service NLP capabilities including sentiment, entities, key phrases, and more.

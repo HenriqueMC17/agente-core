@@ -1,10 +1,10 @@
 ---
-source: "https://github.com/huggingface/skills/tree/main/skills/huggingface-community-evals"
+source: https://github.com/huggingface/skills/tree/main/skills/huggingface-community-evals
 name: hugging-face-community-evals
 description: Run local evaluations for Hugging Face Hub models with inspect-ai or lighteval.
 risk: unknown
+category: general
 ---
-
 # Overview
 
 ## When to Use

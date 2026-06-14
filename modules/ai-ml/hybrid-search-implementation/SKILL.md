@@ -1,11 +1,11 @@
 ---
 name: hybrid-search-implementation
-description: "Combine vector and keyword search for improved retrieval. Use when implementing RAG systems, building search engines, or when neither approach alone provides sufficient recall."
+description: Combine vector and keyword search for improved retrieval. Use when implementing RAG systems, building search engines, or when neither approach alone provides sufficient recall.
 risk: safe
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: ai-ml
 ---
-
 # Hybrid Search Implementation
 
 Patterns for combining vector similarity and keyword-based search.
@@ -38,3 +38,7 @@ Patterns for combining vector similarity and keyword-based search.
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to hybrid-search-implementation.

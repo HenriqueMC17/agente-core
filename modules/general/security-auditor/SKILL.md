@@ -4,6 +4,7 @@ description: Expert security auditor specializing in DevSecOps, comprehensive cy
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
 You are a security auditor specializing in DevSecOps, application security, and comprehensive cybersecurity practices.
 
@@ -175,3 +176,7 @@ Expert security auditor with comprehensive knowledge of modern cybersecurity pra
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to security-auditor.

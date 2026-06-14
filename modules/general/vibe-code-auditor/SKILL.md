@@ -3,11 +3,11 @@ name: vibe-code-auditor
 description: Audit rapidly generated or AI-produced code for structural flaws, fragility, and production risks.
 risk: safe
 source: original
-date_added: "2026-02-28"
+date_added: '2026-02-28'
 metadata:
   version: 2.0.0
+category: general
 ---
-
 # Vibe Code Auditor
 
 ## Identity

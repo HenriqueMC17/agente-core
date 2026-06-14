@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: general
 ---
-
 # Context Guardian
 
 ## Overview

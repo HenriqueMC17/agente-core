@@ -6,11 +6,13 @@ Este documento estabelece as normas técnicas, matemáticas e de física visual 
 
 Em 2026, o design de interface é tratado como uma disciplina de engenharia rigorosa, combinando precisão geométrica com performance gráfica impecável.
 
+Para especificações detalhadas sobre padronização de layouts e ecossistemas estéticos, consulte o compêndio completo em [Mastering AntiGravity and Google Stitch The Loop Design Manual](file:///c:/Dev/Docs/Mastering%20AntiGravity%20and%20Google%20Stitch%20The%20Loop%20Design%20Manual).
+
 ---
 
 ## 🎨 1. Estética Blueprint e Tipografia Técnica
 
-O visual corporativo deve refletir transparência e integridade técnica por meio da estética de diagrama arquitetônico (*Blueprint*).
+O visual corporativo deve refletir transparência e integridade técnica por meio da estética de diagrama arquitetônico (*Blueprint*). Para diretrizes visuais premium, consulte o [2026 Enterprise Interface Standardization Manual_ A Reference for Design, Product, and Engineering.md](file:///c:/Dev/Docs/Mastering%20AntiGravity%20and%20Google%20Stitch%20The%20Loop%20Design%20Manual/2026%20Enterprise%20Interface%20Standardization%20Manual_%20A%20Reference%20for%20Design,%20Product,%20and%20Engineering.md).
 
 - **Matriz Geométrica de Blueprint:**
   - Layouts devem evidenciar sua estrutura matemática. Utilize grades de baixa opacidade (linhas de 1px em `#1A1A1A` ou `#2D2D2D` com opacidade reduzida a `4%` - `8%`) separando colunas e seções de dados.
@@ -28,7 +30,7 @@ O visual corporativo deve refletir transparência e integridade técnica por mei
 
 O design plano (*flat*) é proibido. As interfaces devem possuir profundidade física simulando camadas de empilhamento de materiais e iluminação realista.
 
-```
+```text
 +-------------------------------------------------------------+
 | Layer 2 (Elevated): #2D2D2D (Bordas finas de 1px a 15% white)|  <-- Modais, Popovers, Dropdowns
 +-------------------------------------------------------------+
@@ -78,6 +80,7 @@ O efeito de vidro fosco é exclusivo para painéis interativos flutuantes, sideb
 ## 🌀 4. Movimento Físico e Easing de Mola
 
 Animações lineares ou transições estáticas sem graça transmitem artificialidade. O movimento de elementos de interface deve seguir leis físicas de molas e elasticidade.
+- Para obter especificações detalhadas sobre timelines de movimento e animações acionadas por rolagem física acelerada por GPU, consulte [Mastering the Flow_ A Conceptual Compendium of Scroll-Driven Animation.md](file:///c:/Dev/Docs/Mastering%20AntiGravity%20and%20Google%20Stitch%20The%20Loop%20Design%20Manual/Mastering%20the%20Flow_%20A%20Conceptual%20Compendium%20of%20Scroll-Driven%20Animation.md).
 
 - **CSS `linear()` Spring Easing:**
   - Use a nova especificação da função `linear()` para mapear com precisão matemática o retorno elástico (*spring bounce*).

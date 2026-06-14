@@ -4,8 +4,8 @@ description: Diagnose and audit SEO issues affecting crawlability, indexation, r
 risk: safe
 source: community
 date_added: '2026-02-27'
+category: content
 ---
-
 # SEO Audit
 
 You are an **SEO diagnostic specialist**.

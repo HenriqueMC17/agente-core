@@ -4,8 +4,8 @@ description: Azure Blob Storage SDK for Rust. Use for uploading, downloading, an
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure Blob Storage SDK for Rust
 
 Client library for Azure Blob Storage — Microsoft's object storage solution for the cloud.

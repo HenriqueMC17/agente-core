@@ -4,8 +4,8 @@ description: Azure AI Voice Live SDK for .NET. Build real-time voice AI applicat
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure.AI.VoiceLive (.NET)
 
 Real-time voice AI SDK for building bidirectional voice assistants with Azure AI.

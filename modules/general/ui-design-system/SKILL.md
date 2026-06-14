@@ -1,8 +1,8 @@
 ---
 name: ui-design-system
 description: Guidelines and patterns for modern professional web UI design using Tailwind CSS and Lucide React.
+category: general
 ---
-
 # UI Design System: Tailwind CSS & Lucide React
 
 This skill provides guidelines, best practices, and standard patterns for creating modern, professional, and visually stunning web interfaces using Tailwind CSS and Lucide React icons. This design system focuses on high-quality aesthetics, usability, and consistent engineering principles.
@@ -144,3 +144,7 @@ For areas requiring a premium, modern feel (like marketing pages, hero sections,
 ---
 
 **Final Rule**: The ultimate goal is to build interfaces that feel deeply **engineered** and meticulously crafted. Every pixel, shadow radius, hover state, and color transition should feel intentional and purposeful.
+
+
+## When to Use
+Use this skill when you need to perform operations related to ui-design-system.

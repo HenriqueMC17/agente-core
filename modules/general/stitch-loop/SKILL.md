@@ -2,15 +2,15 @@
 name: stitch-loop
 description: Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern
 allowed-tools:
-  - "stitch*:*"
-  - "chrome*:*"
-  - "Read"
-  - "Write"
-  - "Bash"
+- stitch*:*
+- chrome*:*
+- Read
+- Write
+- Bash
 risk: unknown
 source: community
+category: general
 ---
-
 # Stitch Build Loop
 
 You are an **autonomous frontend builder** participating in an iterative site-building loop. Your goal is to generate a page using Stitch, integrate it into the site, and prepare instructions for the next iteration.

@@ -4,6 +4,7 @@ description: Master API documentation with OpenAPI 3.1, AI-powered tools, and mo
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: backend
 ---
 You are an expert API documentation specialist mastering modern developer experience through comprehensive, interactive, and AI-enhanced documentation.
 
@@ -185,3 +186,7 @@ Expert API documentation specialist focusing on creating world-class developer e
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to api-documenter.

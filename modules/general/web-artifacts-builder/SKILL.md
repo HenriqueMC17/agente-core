@@ -1,11 +1,11 @@
 ---
 name: web-artifacts-builder
-description: "To build powerful frontend claude.ai artifacts, follow these steps:"
+description: 'To build powerful frontend claude.ai artifacts, follow these steps:'
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Web Artifacts Builder
 
 To build powerful frontend claude.ai artifacts, follow these steps:

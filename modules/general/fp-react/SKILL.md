@@ -5,9 +5,19 @@ risk: unknown
 source: community
 version: 2.0.0
 author: fp-ts-skills
-tags: [fp-ts, react, typescript, hooks, state-management, forms, data-fetching, remote-data, react-19, next-js]
+tags:
+- fp-ts
+- react
+- typescript
+- hooks
+- state-management
+- forms
+- data-fetching
+- remote-data
+- react-19
+- next-js
+category: general
 ---
-
 # Functional Programming in React
 
 Practical patterns for React apps. No jargon, just code that works.

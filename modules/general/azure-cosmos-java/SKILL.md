@@ -4,8 +4,8 @@ description: Azure Cosmos DB SDK for Java. NoSQL database operations with global
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure Cosmos DB SDK for Java
 
 Client library for Azure Cosmos DB NoSQL API with global distribution and reactive patterns.

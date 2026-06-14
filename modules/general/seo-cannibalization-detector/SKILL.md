@@ -4,8 +4,8 @@ description: Analyzes multiple provided pages to identify keyword overlap and po
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 ## Use this skill when
 
 - Working on seo cannibalization detector tasks or workflows
@@ -125,3 +125,7 @@ Focus on clear differentiation. Each page should serve a unique purpose with dis
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to seo-cannibalization-detector.

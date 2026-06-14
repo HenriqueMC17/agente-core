@@ -4,8 +4,8 @@ description: Write idiomatic C++ code with modern features, RAII, smart pointers
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: code
 ---
-
 ## Use this skill when
 
 - Working on cpp pro tasks or workflows
@@ -60,3 +60,7 @@ Follow C++ Core Guidelines. Prefer compile-time errors over runtime errors.
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to cpp-pro.

@@ -1,11 +1,11 @@
 ---
 name: billing-automation
-description: "Master automated billing systems including recurring billing, invoice generation, dunning management, proration, and tax calculation."
+description: Master automated billing systems including recurring billing, invoice generation, dunning management, proration, and tax calculation.
 risk: safe
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Billing Automation
 
 Master automated billing systems including recurring billing, invoice generation, dunning management, proration, and tax calculation.
@@ -48,3 +48,7 @@ Master automated billing systems including recurring billing, invoice generation
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to billing-automation.

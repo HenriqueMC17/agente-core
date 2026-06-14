@@ -4,8 +4,8 @@ description: Expert C4 Code-level documentation specialist. Analyzes code direct
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: architecture
 ---
-
 # C4 Code Level: [Directory Name]
 
 ## Use this skill when
@@ -244,3 +244,7 @@ When analyzing code, provide:
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to c4-code.

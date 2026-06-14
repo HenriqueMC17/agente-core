@@ -3,8 +3,8 @@ name: skin-health-analyzer
 description: Analyze skin health data, identify skin problem patterns, assess skin health status. Supports correlation analysis with nutrition, chronic diseases, and medication data.
 risk: safe
 source: community
+category: general
 ---
-
 # 皮肤健康分析技能
 
 ## 技能概述

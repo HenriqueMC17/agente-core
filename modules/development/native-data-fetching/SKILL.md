@@ -5,8 +5,8 @@ risk: unknown
 source: community
 version: 1.0.0
 license: MIT
+category: development
 ---
-
 # Expo Networking
 
 **You MUST use this skill for ANY networking work including API requests, data fetching, caching, or network debugging.**

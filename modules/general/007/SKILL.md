@@ -18,8 +18,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: general
 ---
-
 # 007 — Licenca para Auditar
 
 ## Overview

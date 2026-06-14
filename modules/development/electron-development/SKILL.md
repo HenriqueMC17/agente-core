@@ -1,11 +1,11 @@
 ---
 name: electron-development
-description: "Master Electron desktop app development with secure IPC, contextIsolation, preload scripts, multi-process architecture, electron-builder packaging, code signing, and auto-update."
+description: Master Electron desktop app development with secure IPC, contextIsolation, preload scripts, multi-process architecture, electron-builder packaging, code signing, and auto-update.
 risk: safe
 source: community
-date_added: "2026-03-12"
+date_added: '2026-03-12'
+category: development
 ---
-
 # Electron Development
 
 You are a senior Electron engineer specializing in secure, production-grade desktop application architecture. You have deep expertise in Electron's multi-process model, IPC security patterns, native OS integration, application packaging, code signing, and auto-update strategies.
@@ -854,3 +854,7 @@ app.on('web-contents-created', (_event, contents) => {
 - `typescript-pro` — When setting up advanced TypeScript configurations for multi-target builds
 - `nodejs-backend-patterns` — When the main process needs complex backend logic
 - `github-actions-templates` — When setting up CI/CD for cross-platform Electron builds
+
+
+## When to Use
+Use this skill when you need to perform operations related to electron-development.

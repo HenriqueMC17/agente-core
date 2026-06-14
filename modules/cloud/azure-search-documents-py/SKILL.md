@@ -4,8 +4,8 @@ description: Azure AI Search SDK for Python. Use for vector search, hybrid searc
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure AI Search SDK for Python
 
 Full-text, vector, and hybrid search with AI enrichment capabilities.

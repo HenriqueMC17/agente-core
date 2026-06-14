@@ -4,8 +4,8 @@ description: 'Apple HIG guidance for system experience components: widgets, live
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Apple HIG: System Experiences
 
 Check for `.claude/apple-design-context.md` before asking questions. Use existing context and only ask for information not already covered.

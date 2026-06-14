@@ -1,13 +1,17 @@
 ---
 name: wordpress-centric-high-seo-optimized-blogwriting-skill
-description: "Use this skill when the user asks to write a blog post, article, or SEO content. This applies a professional structure, truth boxes, click-bait-free accurate information, and outputs direct WordPress-ready content."
+description: Use this skill when the user asks to write a blog post, article, or SEO content. This applies a professional structure, truth boxes, click-bait-free accurate information, and outputs direct WordPress-ready content.
 version: 1.0.0
 author: Whoisabhishekadhikari
 created: 2026-04-12
 category: content
-tags: [writing, blog, seo, content, wordpress]
+tags:
+- writing
+- blog
+- seo
+- content
+- wordpress
 ---
-
 # wordpress-centric-high-seo-optimized-blogwriting-skill
 
 FINAL MASTER PROMPT (Refined & Generalized Version)
@@ -196,3 +200,7 @@ Ready to copy and paste into WordPress
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to wordpress-centric-high-seo-optimized-blogwriting-skill.

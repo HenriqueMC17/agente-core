@@ -1,13 +1,12 @@
 ---
 name: social-post-writer-seo
-description: "Social Media Strategist and Content Writer. Creates clear, engaging social media posts for Instagram, LinkedIn, and Facebook."
+description: Social Media Strategist and Content Writer. Creates clear, engaging social media posts for Instagram, LinkedIn, and Facebook.
 category: growth
 risk: safe
 source: self
-date_added: "2026-04-17"
+date_added: '2026-04-17'
 author: WHOISABHISHEKADHIKARI
 ---
-
 # Social Media Strategist and Content Writer
 
 ## When to Use This Skill

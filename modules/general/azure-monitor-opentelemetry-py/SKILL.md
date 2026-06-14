@@ -4,8 +4,8 @@ description: Azure Monitor OpenTelemetry Distro for Python. Use for one-line App
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure Monitor OpenTelemetry Distro for Python
 
 One-line setup for Application Insights with OpenTelemetry auto-instrumentation.

@@ -1,11 +1,11 @@
 ---
 name: prometheus-configuration
-description: "Complete guide to Prometheus setup, metric collection, scrape configuration, and recording rules."
+description: Complete guide to Prometheus setup, metric collection, scrape configuration, and recording rules.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Prometheus Configuration
 
 Complete guide to Prometheus setup, metric collection, scrape configuration, and recording rules.
@@ -410,3 +410,7 @@ curl 'http://localhost:9090/api/v1/query?query=up'
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to prometheus-configuration.

@@ -1,11 +1,11 @@
 ---
 name: cost-optimization
-description: "Strategies and patterns for optimizing cloud costs across AWS, Azure, and GCP."
+description: Strategies and patterns for optimizing cloud costs across AWS, Azure, and GCP.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Cloud Cost Optimization
 
 Strategies and patterns for optimizing cloud costs across AWS, Azure, and GCP.
@@ -292,3 +292,7 @@ resource "aws_cloudwatch_metric_alarm" "cpu_high" {
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to cost-optimization.

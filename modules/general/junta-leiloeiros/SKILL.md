@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: general
 ---
-
 # Skill: Leiloeiros das Juntas Comerciais do Brasil
 
 ## Overview

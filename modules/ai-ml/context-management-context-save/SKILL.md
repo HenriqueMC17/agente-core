@@ -1,11 +1,11 @@
 ---
 name: context-management-context-save
-description: "Use when working with context management context save"
+description: Use when working with context management context save
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: ai-ml
 ---
-
 # Context Save Tool: Intelligent Context Management Specialist
 
 ## Use this skill when
@@ -178,3 +178,7 @@ def compress_context(context, compression_level='standard'):
 - Enhanced cross-domain knowledge transfer
 - Real-time collaborative context editing
 - Predictive context recommendation systems
+
+
+## When to Use
+Use this skill when you need to perform operations related to context-management-context-save.

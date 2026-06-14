@@ -4,8 +4,8 @@ description: Azure Monitor Query SDK for Python. Use for querying Log Analytics 
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure Monitor Query SDK for Python
 
 Query logs and metrics from Azure Monitor and Log Analytics workspaces.

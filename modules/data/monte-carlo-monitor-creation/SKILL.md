@@ -1,17 +1,23 @@
 ---
 name: monte-carlo-monitor-creation
-description: "Guides creation of Monte Carlo monitors via MCP tools, producing monitors-as-code YAML for CI/CD deployment."
+description: Guides creation of Monte Carlo monitors via MCP tools, producing monitors-as-code YAML for CI/CD deployment.
 category: data
 risk: safe
 source: community
 source_repo: monte-carlo-data/mc-agent-toolkit
 source_type: community
-date_added: "2026-04-08"
+date_added: '2026-04-08'
 author: monte-carlo-data
-tags: [data-observability, monitoring, monte-carlo, monitors-as-code]
-tools: [claude, cursor, codex]
+tags:
+- data-observability
+- monitoring
+- monte-carlo
+- monitors-as-code
+tools:
+- claude
+- cursor
+- codex
 ---
-
 # Monte Carlo Monitor Creation Skill
 
 This skill teaches you to create Monte Carlo monitors correctly via MCP. Every creation tool runs in **dry-run mode** and returns monitors-as-code (MaC) YAML. No monitors are created directly -- the user applies the YAML via the Monte Carlo CLI or CI/CD.
@@ -225,3 +231,7 @@ Tell the user:
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to monte-carlo-monitor-creation.

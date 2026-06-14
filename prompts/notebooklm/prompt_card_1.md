@@ -1,0 +1,1 @@
+O objetivo é estruturar uma estratégia de adoção DevOps utilizando as quatro fases de transformação (Avaliação, Design, Implementação e Capacitação) descritas no contexto, enfatizando a redução de custos operacionais e a mitigação de falhas em produção.

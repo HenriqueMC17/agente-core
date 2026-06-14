@@ -5,8 +5,8 @@ allowed-tools: Read, Grep, Glob, Bash, Task
 license: LICENSE
 risk: unknown
 source: community
+category: general
 ---
-
 # Django Performance Review
 
 Review Django code for **validated** performance issues. Research the codebase to confirm issues before reporting. Report only what you can prove.

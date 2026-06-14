@@ -1,11 +1,11 @@
 ---
 name: backtesting-frameworks
-description: "Build robust, production-grade backtesting systems that avoid common pitfalls and produce reliable strategy performance estimates."
+description: Build robust, production-grade backtesting systems that avoid common pitfalls and produce reliable strategy performance estimates.
 risk: safe
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Backtesting Frameworks
 
 Build robust, production-grade backtesting systems that avoid common pitfalls and produce reliable strategy performance estimates.
@@ -45,3 +45,7 @@ Build robust, production-grade backtesting systems that avoid common pitfalls an
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to backtesting-frameworks.

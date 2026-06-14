@@ -1,11 +1,11 @@
 ---
 name: turborepo-caching
-description: "Configure Turborepo for efficient monorepo builds with local and remote caching. Use when setting up Turborepo, optimizing build pipelines, or implementing distributed caching."
+description: Configure Turborepo for efficient monorepo builds with local and remote caching. Use when setting up Turborepo, optimizing build pipelines, or implementing distributed caching.
 risk: critical
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: development
 ---
-
 # Turborepo Caching
 
 Production patterns for Turborepo build optimization.
@@ -425,3 +425,7 @@ TURBO_LOG_VERBOSITY=debug turbo build --filter=@myorg/web
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to turborepo-caching.

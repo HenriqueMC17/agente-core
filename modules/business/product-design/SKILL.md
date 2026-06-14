@@ -1,6 +1,6 @@
 ---
 name: product-design
-description: "Design de produto nivel Apple — sistemas visuais, UX flows, acessibilidade, linguagem visual proprietaria, design tokens, prototipagem e handoff. Cobre Figma, design systems, tipografia, cor, espacamento, motion design e principios de design cognitivo."
+description: Design de produto nivel Apple — sistemas visuais, UX flows, acessibilidade, linguagem visual proprietaria, design tokens, prototipagem e handoff. Cobre Figma, design systems, tipografia, cor, espacamento, motion design e principios de design...
 risk: none
 source: community
 date_added: '2026-03-06'
@@ -17,8 +17,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: business
 ---
-
 # PRODUCT DESIGN — Nivel Apple
 
 ## Overview

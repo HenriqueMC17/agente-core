@@ -1,11 +1,11 @@
 ---
 name: saga-orchestration
-description: "Patterns for managing distributed transactions and long-running business processes."
+description: Patterns for managing distributed transactions and long-running business processes.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: architecture
 ---
-
 # Saga Orchestration
 
 Patterns for managing distributed transactions and long-running business processes.
@@ -510,3 +510,7 @@ Works well with: `event-sourcing-architect`, `workflow-automation`, `dbos-*`
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to saga-orchestration.

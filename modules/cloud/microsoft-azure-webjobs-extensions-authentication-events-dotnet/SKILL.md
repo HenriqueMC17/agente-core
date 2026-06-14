@@ -4,8 +4,8 @@ description: Microsoft Entra Authentication Events SDK for .NET. Azure Functions
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Microsoft.Azure.WebJobs.Extensions.AuthenticationEvents (.NET)
 
 Azure Functions extension for handling Microsoft Entra ID custom authentication events.

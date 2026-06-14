@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: marketing
 ---
-
 # Skill: Instagram Integration
 
 ## Overview

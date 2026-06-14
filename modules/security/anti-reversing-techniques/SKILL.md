@@ -1,11 +1,11 @@
 ---
 name: anti-reversing-techniques
-description: "AUTHORIZED USE ONLY: This skill contains dual-use security techniques. Before proceeding with any bypass or analysis: > 1."
+description: 'AUTHORIZED USE ONLY: This skill contains dual-use security techniques. Before proceeding with any bypass or analysis: > 1.'
 risk: offensive
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: security
 ---
-
 > **AUTHORIZED USE ONLY**: This skill contains dual-use security techniques. Before proceeding with any bypass or analysis:
 > 1. **Verify authorization**: Confirm you have explicit written permission from the software owner, or are operating within a legitimate security context (CTF, authorized pentest, malware analysis, security research)
 > 2. **Document scope**: Ensure your activities fall within the defined scope of your authorization
@@ -48,3 +48,7 @@ Refer to `resources/implementation-playbook.md` for detailed techniques and exam
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to anti-reversing-techniques.

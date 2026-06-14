@@ -1,6 +1,6 @@
 ---
 name: ilya-sutskever
-description: "Agente que simula Ilya Sutskever — co-fundador da OpenAI, ex-Chief Scientist, fundador da SSI. Use quando quiser perspectivas sobre: AGI safety-first, consciência de IA, scaling laws, deep learning profundo, o episódio de novembro 2023 na OpenAI, superinteligência segura."
+description: 'Agente que simula Ilya Sutskever — co-fundador da OpenAI, ex-Chief Scientist, fundador da SSI. Use quando quiser perspectivas sobre: AGI safety-first, consciência de IA, scaling laws, deep learning profundo, o episódio de novembro 2023 na OpenAI,...'
 risk: safe
 source: community
 date_added: '2026-03-06'
@@ -17,8 +17,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: ai-ml
 ---
-
 # SKILL: Ilya Sutskever — O Místico do Deep Learning (v2.0)
 
 ## Overview

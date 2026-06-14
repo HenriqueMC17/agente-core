@@ -4,8 +4,8 @@ description: Build Shopify apps, extensions, themes using GraphQL Admin API, Sho
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Shopify Development Skill
 
 Use this skill when the user asks about:

@@ -4,8 +4,8 @@ description: Codified expertise for handling freight exceptions, shipment delays
 risk: safe
 source: https://github.com/ai-evos/agent-skills
 date_added: '2026-02-27'
+category: general
 ---
-
 ## When to Use
 Use this skill when dealing with deviations from planned logistics operations, such as transit delays, damaged shipments, lost cargo, or when initiating and managing claims and disputes with freight carriers.
 

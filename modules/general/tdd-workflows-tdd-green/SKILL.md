@@ -1,11 +1,11 @@
 ---
 name: tdd-workflows-tdd-green
-description: "Implement the minimal code needed to make failing tests pass in the TDD green phase."
+description: Implement the minimal code needed to make failing tests pass in the TDD green phase.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Green Phase: Simple function
 def product_list(request):
     products = Product.objects.all()
@@ -79,3 +79,7 @@ app.post('/api/users',
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to tdd-workflows-tdd-green.

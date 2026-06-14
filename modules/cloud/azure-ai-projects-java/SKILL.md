@@ -4,8 +4,8 @@ description: Azure AI Projects SDK for Java. High-level SDK for Azure AI Foundry
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure AI Projects SDK for Java
 
 High-level SDK for Azure AI Foundry project management with access to connections, datasets, indexes, and evaluations.

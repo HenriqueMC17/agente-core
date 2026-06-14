@@ -6,16 +6,16 @@ source: community
 version: 1.0.0
 author: kadu
 tags:
-  - fp-ts
-  - typescript
-  - async
-  - error-handling
-  - practical
-  - promises
-  - api
-  - fetch
+- fp-ts
+- typescript
+- async
+- error-handling
+- practical
+- promises
+- api
+- fetch
+category: development
 ---
-
 # Practical Async Patterns with fp-ts
 
 Stop writing nested try/catch blocks. Stop losing error context. Start building clean async pipelines that handle errors properly.

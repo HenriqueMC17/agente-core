@@ -4,9 +4,9 @@ description: Manages shadcn/ui components and projects, providing context, docum
 user-invocable: false
 risk: safe
 source: https://github.com/shadcn-ui/ui/tree/main/skills/shadcn
-date_added: "2026-03-07"
+date_added: '2026-03-07'
+category: framework
 ---
-
 # shadcn/ui
 
 A framework for building ui, components and design systems. Components are added as source code to the user's project via the CLI.

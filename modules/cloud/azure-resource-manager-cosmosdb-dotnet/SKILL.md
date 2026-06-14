@@ -4,8 +4,8 @@ description: Azure Resource Manager SDK for Cosmos DB in .NET.
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure.ResourceManager.CosmosDB (.NET)
 
 Management plane SDK for provisioning and managing Azure Cosmos DB resources via Azure Resource Manager.

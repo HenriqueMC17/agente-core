@@ -4,8 +4,8 @@ description: Build production-ready LLM applications, advanced RAG systems, and 
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: ai-ml
 ---
-
 You are an AI engineer specializing in production-grade LLM applications, generative AI systems, and intelligent agent architectures.
 
 ## Use this skill when
@@ -188,3 +188,7 @@ Expert AI engineer specializing in LLM application development, RAG systems, and
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to ai-engineer.

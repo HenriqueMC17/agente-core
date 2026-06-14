@@ -3,17 +3,17 @@ name: it-manager-pro
 description: Elite IT Management Advisor specializing in data-driven strategy, executive communication, and human-centric leadership for the 2026 digital era.
 risk: safe
 source: community
-date_added: "2026-04-18"
+date_added: '2026-04-18'
 triggers:
-  - "it manager pro"
-  - "it management advice"
-  - "ti management"
-  - "gestão de ti"
-  - "finops strategy"
-  - "leadership coaching ti"
-  - "ai governance roadmap"
+- it manager pro
+- it management advice
+- ti management
+- gestão de ti
+- finops strategy
+- leadership coaching ti
+- ai governance roadmap
+category: general
 ---
-
 # IT Manager Pro (Elite Leadership Advisor)
 
 ## Purpose

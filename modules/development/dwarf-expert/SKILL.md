@@ -1,15 +1,21 @@
 ---
 name: dwarf-expert
-description: Provides expertise for analyzing DWARF debug files and understanding the DWARF debug format/standard (v3-v5). Triggers when understanding DWARF information, interacting with DWARF files, answering DWARF-related questions, or working with code that parses DWARF data.
+description: Provides expertise for analyzing DWARF debug files and understanding the DWARF debug format/standard (v3-v5). Triggers when understanding DWARF information, interacting with DWARF files, answering DWARF-related questions, or working with code...
 allowed-tools:
-  - Read
-  - Bash
-  - Grep
-  - Glob
-  - WebSearch
+- Read
+- Bash
+- Grep
+- Glob
+- WebSearch
 risk: unknown
 source: community
+category: development
 ---
+# Dwarf-Expert
+
+## Overview
+Provides expertise for analyzing DWARF debug files and understanding the DWARF debug format/standard (v3-v5). Triggers when understanding DWARF information, interacting with DWARF files, answering DWARF-related questions, or working with code that parses DWARF data.
+
 # Overview
 This skill provides technical knowledge and expertise about the DWARF standard and how to interact with DWARF files. Tasks include answering questions about the DWARF standard, providing examples of various DWARF features, parsing and/or creating DWARF files, and writing/modifying/analyzing code that interacts with DWARF data.
 

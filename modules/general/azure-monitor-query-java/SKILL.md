@@ -4,8 +4,8 @@ description: Azure Monitor Query SDK for Java. Execute Kusto queries against Log
 risk: safe
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure Monitor Query SDK for Java
 
 > **DEPRECATION NOTICE**: This package is deprecated in favor of:

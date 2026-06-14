@@ -4,8 +4,8 @@ description: Azure Batch SDK for Java. Run large-scale parallel and HPC batch jo
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure Batch SDK for Java
 
 Client library for running large-scale parallel and high-performance computing (HPC) batch jobs in Azure.

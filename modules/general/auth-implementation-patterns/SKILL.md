@@ -1,11 +1,11 @@
 ---
 name: auth-implementation-patterns
-description: "Build secure, scalable authentication and authorization systems using industry-standard patterns and modern best practices."
+description: Build secure, scalable authentication and authorization systems using industry-standard patterns and modern best practices.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # Authentication & Authorization Implementation Patterns
 
 Build secure, scalable authentication and authorization systems using industry-standard patterns and modern best practices.
@@ -45,3 +45,7 @@ Build secure, scalable authentication and authorization systems using industry-s
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to auth-implementation-patterns.

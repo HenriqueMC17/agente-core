@@ -4,8 +4,8 @@ description: Azure AI Text Translation SDK for real-time text translation, trans
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure AI Text Translation SDK for Python
 
 Client library for Azure AI Translator text translation service for real-time text translation, transliteration, and language operations.

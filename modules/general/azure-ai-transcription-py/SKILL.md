@@ -4,8 +4,8 @@ description: Azure AI Transcription SDK for Python. Use for real-time and batch 
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure AI Transcription SDK for Python
 
 Client library for Azure AI Transcription (speech-to-text) with real-time and batch transcription.

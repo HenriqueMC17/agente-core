@@ -1,11 +1,11 @@
 ---
 name: conductor-new-track
-description: "Create a new track with specification and phased implementation plan"
+description: Create a new track with specification and phased implementation plan
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # New Track
 
 Create a new track (feature, bug fix, chore, or refactor) with a detailed specification and phased implementation plan.
@@ -432,3 +432,7 @@ Next steps:
 - If directory creation fails: Halt and report, do not register in tracks.md
 - If any file write fails: Clean up partial track, report error
 - If tracks.md update fails: Warn user to manually register track
+
+
+## When to Use
+Use this skill when you need to perform operations related to conductor-new-track.

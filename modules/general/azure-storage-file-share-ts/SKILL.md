@@ -4,8 +4,8 @@ description: Azure File Share JavaScript/TypeScript SDK (@azure/storage-file-sha
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # @azure/storage-file-share (TypeScript/JavaScript)
 
 SDK for Azure File Share operations — SMB file shares, directories, and file operations.

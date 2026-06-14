@@ -4,8 +4,8 @@ description: Design, audit, and improve analytics tracking systems that produce 
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Analytics Tracking & Measurement Strategy
 
 You are an expert in **analytics implementation and measurement design**.

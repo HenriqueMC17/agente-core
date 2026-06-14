@@ -4,8 +4,8 @@ description: Azure Resource Manager SDK for Microsoft Playwright Testing in .NET
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure.ResourceManager.Playwright (.NET)
 
 Management plane SDK for provisioning and managing Microsoft Playwright Testing workspaces via Azure Resource Manager.

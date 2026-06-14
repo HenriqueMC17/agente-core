@@ -4,9 +4,15 @@ description: Quick reference for TaskEither. Use when user needs async error han
 risk: unknown
 source: community
 version: 1.0.0
-tags: [fp-ts, taskeither, async, promise, error-handling, quick-reference]
+tags:
+- fp-ts
+- taskeither
+- async
+- promise
+- error-handling
+- quick-reference
+category: development
 ---
-
 # TaskEither Quick Reference
 
 TaskEither = async operation that can fail. Like `Promise<Either<E, A>>`.

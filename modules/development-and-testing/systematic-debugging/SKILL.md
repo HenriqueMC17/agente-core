@@ -1,11 +1,11 @@
 ---
 name: systematic-debugging
-description: "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
+description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: development-and-testing
 ---
-
 # Systematic Debugging
 
 ## Overview

@@ -4,8 +4,8 @@ description: Azure Identity SDK for .NET. Authentication library for Azure SDK c
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure.Identity (.NET)
 
 Authentication library for Azure SDK clients using Microsoft Entra ID (formerly Azure AD).

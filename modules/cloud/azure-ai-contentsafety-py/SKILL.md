@@ -4,8 +4,8 @@ description: Azure AI Content Safety SDK for Python. Use for detecting harmful c
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure AI Content Safety SDK for Python
 
 Detect harmful user-generated and AI-generated content in applications.

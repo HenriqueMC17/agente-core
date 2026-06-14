@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: backend
 ---
-
 # Telegram Bot API - Integracao Profissional
 
 ## Overview

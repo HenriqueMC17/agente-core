@@ -3,8 +3,8 @@ name: sexual-health-analyzer
 description: Sexual Health Analyzer
 risk: unknown
 source: community
+category: health
 ---
-
 # 性健康分析技能
 
 ## When to Use

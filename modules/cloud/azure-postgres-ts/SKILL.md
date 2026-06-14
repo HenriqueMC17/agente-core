@@ -4,8 +4,8 @@ description: Connect to Azure Database for PostgreSQL Flexible Server from Node.
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure PostgreSQL for TypeScript (node-postgres)
 
 Connect to Azure Database for PostgreSQL Flexible Server using the `pg` (node-postgres) package with support for password and Microsoft Entra ID (passwordless) authentication.

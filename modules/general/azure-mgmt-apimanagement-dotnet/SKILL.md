@@ -4,8 +4,8 @@ description: Azure Resource Manager SDK for API Management in .NET.
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure.ResourceManager.ApiManagement (.NET)
 
 Management plane SDK for provisioning and managing Azure API Management resources via Azure Resource Manager.

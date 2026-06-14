@@ -4,8 +4,8 @@ description: Azure Resource Manager SDK for Arize AI Observability and Evaluatio
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure.ResourceManager.ArizeAIObservabilityEval
 
 .NET SDK for managing Arize AI Observability and Evaluation resources on Azure.

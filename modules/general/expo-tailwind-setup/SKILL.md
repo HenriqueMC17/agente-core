@@ -5,8 +5,8 @@ risk: unknown
 source: community
 version: 1.0.0
 license: MIT
+category: general
 ---
-
 # Tailwind CSS Setup for Expo with react-native-css
 
 This guide covers setting up Tailwind CSS v4 in Expo using react-native-css and NativeWind v5 for universal styling across iOS, Android, and Web.

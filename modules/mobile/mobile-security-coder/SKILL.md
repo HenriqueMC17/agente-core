@@ -4,8 +4,8 @@ description: Expert in secure mobile coding practices specializing in input vali
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: mobile
 ---
-
 ## Use this skill when
 
 - Working on mobile security coder tasks or workflows

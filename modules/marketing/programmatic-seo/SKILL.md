@@ -4,8 +4,8 @@ description: Design and evaluate programmatic SEO strategies for creating SEO-dr
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: marketing
 ---
-
 ---
 
 # Programmatic SEO

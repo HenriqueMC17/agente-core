@@ -1,11 +1,11 @@
 ---
 name: sql-optimization-patterns
-description: "Transform slow database queries into lightning-fast operations through systematic optimization, proper indexing, and query plan analysis."
+description: Transform slow database queries into lightning-fast operations through systematic optimization, proper indexing, and query plan analysis.
 risk: safe
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: database
 ---
-
 # SQL Optimization Patterns
 
 Transform slow database queries into lightning-fast operations through systematic optimization, proper indexing, and query plan analysis.
@@ -41,3 +41,7 @@ Transform slow database queries into lightning-fast operations through systemati
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to sql-optimization-patterns.

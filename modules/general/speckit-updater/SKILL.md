@@ -3,8 +3,8 @@ name: speckit-updater
 description: SpecKit Safe Update
 risk: unknown
 source: community
+category: general
 ---
-
 # SpecKit Safe Update
 
 This skill provides safe update capabilities for GitHub SpecKit installations, preserving customizations while applying template updates.

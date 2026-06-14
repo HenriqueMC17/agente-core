@@ -2,10 +2,10 @@
 name: swiftui-view-refactor
 description: Refactor SwiftUI views into smaller components with stable, explicit data flow.
 risk: safe
-source: "Dimillian/Skills (MIT)"
-date_added: "2026-03-25"
+source: Dimillian/Skills (MIT)
+date_added: '2026-03-25'
+category: general
 ---
-
 # SwiftUI View Refactor
 
 ## Overview

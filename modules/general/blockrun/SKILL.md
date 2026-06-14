@@ -1,11 +1,11 @@
 ---
 name: blockrun
-description: "BlockRun works with Claude Code and Google Antigravity."
+description: BlockRun works with Claude Code and Google Antigravity.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: general
 ---
-
 # BlockRun
 
 **BlockRun works with Claude Code and Google Antigravity.**

@@ -4,8 +4,8 @@ description: Azure Identity SDK for Rust authentication. Use for DeveloperToolsC
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure Identity SDK for Rust
 
 Authentication library for Azure SDK clients using Microsoft Entra ID (formerly Azure AD).

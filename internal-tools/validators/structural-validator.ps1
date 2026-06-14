@@ -47,8 +47,36 @@ foreach ($dirName in $actualDirs) {
     }
 }
 
+# 3. Verificar se todos os arquivos README.md e o AGENTS.md estão em UTF-8 válido (evitando falhas cp1252)
+$FilesToCheck = @()
+foreach ($d in $ConstitutionalDirs) {
+    $readme = Join-Path (Join-Path $BasePath $d) "README.md"
+    if (Test-Path $readme -PathType Leaf) {
+        $FilesToCheck += $readme
+    }
+}
+$FilesToCheck += Join-Path $BasePath "AGENTS.md"
+$FilesToCheck += Join-Path $BasePath "README.md"
+
+try {
+    $utf8Verifier = New-Object System.Text.UTF8Encoding($false, $true)
+    foreach ($f in $FilesToCheck) {
+        if (Test-Path $f -PathType Leaf) {
+            try {
+                $bytes = [System.IO.File]::ReadAllBytes($f)
+                $null = $utf8Verifier.GetString($bytes)
+            } catch {
+                Write-Warning "VAL-ERR: O arquivo '$f' contém caracteres inválidos para UTF-8 (Provável salvamento em ANSI/cp1252)."
+                $allValid = $false
+            }
+        }
+    }
+} catch {
+    Write-Warning "⚠️ Erro ao inicializar o verificador UTF-8 do .NET."
+}
+
 if ($allValid) {
-    Write-Output "SUCCESS: Todos os 28 diretórios do framework passam na validação estrutural."
+    Write-Output "SUCCESS: Todos os 28 diretórios e encodings do framework passam na validação estrutural."
     exit 0
 } else {
     Write-Error "FAILURE: A validação estrutural falhou devido a inconsistências de governança."

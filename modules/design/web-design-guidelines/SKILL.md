@@ -1,11 +1,11 @@
 ---
 name: web-design-guidelines
-description: "Review files for compliance with Web Interface Guidelines."
+description: Review files for compliance with Web Interface Guidelines.
 risk: safe
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: design
 ---
-
 # Web Interface Guidelines
 
 Review files for compliance with Web Interface Guidelines.

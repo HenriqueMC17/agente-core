@@ -1,11 +1,11 @@
 ---
 name: mtls-configuration
-description: "Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when implementing zero-trust networking, certificate management, or securing internal service communication."
+description: Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when implementing zero-trust networking, certificate management, or securing internal service communication.
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: security
 ---
-
 # mTLS Configuration
 
 Comprehensive guide to implementing mutual TLS for zero-trust service mesh communication.
@@ -365,3 +365,7 @@ linkerd viz tap deploy/my-app --to deploy/my-backend
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to mtls-configuration.

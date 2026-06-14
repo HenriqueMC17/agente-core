@@ -6,17 +6,17 @@ source: community
 version: 1.0.0
 author: Claude
 tags:
-  - functional-programming
-  - typescript
-  - data-transformation
-  - fp-ts
-  - arrays
-  - objects
-  - grouping
-  - aggregation
-  - null-safety
+- functional-programming
+- typescript
+- data-transformation
+- fp-ts
+- arrays
+- objects
+- grouping
+- aggregation
+- null-safety
+category: development
 ---
-
 # Practical Data Transformations
 
 This skill covers the data transformations you do every day: working with arrays, reshaping objects, normalizing API responses, grouping data, and safely accessing nested values. Each section shows the imperative approach first, then the functional equivalent, with honest assessments of when each approach shines.

@@ -4,8 +4,8 @@ description: Azure Monitor Ingestion SDK for Java. Send custom logs to Azure Mon
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: cloud
 ---
-
 # Azure Monitor Ingestion SDK for Java
 
 Client library for sending custom logs to Azure Monitor using the Logs Ingestion API via Data Collection Rules.

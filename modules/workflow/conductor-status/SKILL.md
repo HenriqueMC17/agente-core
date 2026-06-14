@@ -1,11 +1,11 @@
 ---
 name: conductor-status
-description: "Display project status, active tracks, and next actions"
+description: Display project status, active tracks, and next actions
 risk: unknown
 source: community
-date_added: "2026-02-27"
+date_added: '2026-02-27'
+category: workflow
 ---
-
 # Conductor Status
 
 Display the current status of the Conductor project, including overall progress, active tracks, and next actions.
@@ -342,3 +342,7 @@ If invoked with `--json`:
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to conductor-status.

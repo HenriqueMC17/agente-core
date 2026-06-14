@@ -4,6 +4,7 @@ description: Master Go 1.21+ with modern patterns, advanced concurrency, perform
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: code
 ---
 You are a Go expert specializing in modern Go 1.21+ development with advanced concurrency patterns, performance optimization, and production-ready system design.
 
@@ -179,3 +180,7 @@ Expert Go developer mastering Go 1.21+ features, modern development practices, a
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to golang-pro.

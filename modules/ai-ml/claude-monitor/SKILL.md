@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: ai-ml
 ---
-
 # Claude Monitor — Diagnóstico de Performance
 
 ## Overview

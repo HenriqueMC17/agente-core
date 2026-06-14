@@ -4,9 +4,14 @@ description: Quick reference for pipe and flow. Use when user needs to chain fun
 risk: unknown
 source: community
 version: 1.0.0
-tags: [fp-ts, pipe, flow, composition, quick-reference]
+tags:
+- fp-ts
+- pipe
+- flow
+- composition
+- quick-reference
+category: general
 ---
-
 # pipe & flow Quick Reference
 
 ## pipe - Transform a Value

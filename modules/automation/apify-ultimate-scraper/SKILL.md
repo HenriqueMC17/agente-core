@@ -1,10 +1,10 @@
 ---
 name: apify-ultimate-scraper
-description: "AI-driven data extraction from 55+ Actors across all major platforms. This skill automatically selects the best Actor for your task."
+description: AI-driven data extraction from 55+ Actors across all major platforms. This skill automatically selects the best Actor for your task.
 risk: unknown
 source: community
+category: automation
 ---
-
 # Universal Web Scraper
 
 AI-driven data extraction from 55+ Actors across all major platforms. This skill automatically selects the best Actor for your task.

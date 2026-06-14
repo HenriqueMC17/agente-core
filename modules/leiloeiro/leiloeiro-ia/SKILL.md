@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: leiloeiro
 ---
-
 # LEILOEIRO JURÍDICO, PERICIAL E DE MERCADO — IA
 
 ## Overview

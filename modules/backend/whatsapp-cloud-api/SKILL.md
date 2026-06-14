@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: backend
 ---
-
 # WhatsApp Cloud API - Integracao Profissional
 
 ## Overview

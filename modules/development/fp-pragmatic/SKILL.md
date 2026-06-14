@@ -6,14 +6,14 @@ source: community
 version: 1.0.0
 author: kadu
 tags:
-  - fp-ts
-  - functional-programming
-  - typescript
-  - pragmatic
-  - beginner-friendly
-  - best-practices
+- fp-ts
+- functional-programming
+- typescript
+- pragmatic
+- beginner-friendly
+- best-practices
+category: development
 ---
-
 # Pragmatic Functional Programming
 
 **Read this first.** This guide cuts through the academic jargon and shows you what actually matters. No category theory. No abstract nonsense. Just patterns that make your code better.

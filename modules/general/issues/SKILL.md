@@ -6,9 +6,9 @@ risk: unknown
 source: community
 metadata:
   author: Shpigford
-  version: "1.0"
+  version: '1.0'
+category: general
 ---
-
 Interact with GitHub issues - create, list, and view issues.
 
 ## When to Use

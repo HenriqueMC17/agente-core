@@ -6,9 +6,10 @@ risk: critical
 source: community
 homepage: https://agentphone.to
 docs: https://docs.agentphone.to
-metadata: {"api_base": "https://api.agentphone.to/v1"}
+metadata:
+  api_base: https://api.agentphone.to/v1
+category: general
 ---
-
 # AgentPhone
 
 AgentPhone is an API-first telephony platform for AI agents. Give your agents phone numbers, voice calls, and SMS — all managed through a simple API.

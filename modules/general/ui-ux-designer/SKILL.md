@@ -4,8 +4,8 @@ description: Create interface designs, wireframes, and design systems. Masters u
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 ## Use this skill when
 
 - Working on ui ux designer tasks or workflows
@@ -210,3 +210,7 @@ Focus on user-centered, accessible design solutions with comprehensive documenta
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
 - Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
+
+
+## When to Use
+Use this skill when you need to perform operations related to ui-ux-designer.

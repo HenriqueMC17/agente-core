@@ -4,8 +4,8 @@ description: Azure Bot Service Management SDK for Python. Use for creating, mana
 risk: unknown
 source: community
 date_added: '2026-02-27'
+category: general
 ---
-
 # Azure Bot Service Management SDK for Python
 
 Manage Azure Bot Service resources including bots, channels, and connections.

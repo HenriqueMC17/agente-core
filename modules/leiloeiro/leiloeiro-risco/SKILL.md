@@ -16,8 +16,8 @@ tools:
 - cursor
 - gemini-cli
 - codex-cli
+category: leiloeiro
 ---
-
 # SKILL DE RISCO — AUDITOR DE RISCO EM LEILÕES
 
 ## Overview
