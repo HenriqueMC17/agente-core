@@ -23,6 +23,8 @@ Para discussões detalhadas sobre ecossistemas CSS, infraestrutura e segurança 
 
 ## ⚡ 2. Hidratação e Performance do DOM
 
+- **O Gargalo da Main Thread e o Interactivity Gap:**
+  - Toda interface reativa deve ser otimizada para diminuir o tempo em que a página fica visualmente carregada mas sem resposta aos cliques (o *Interactivity Gap*). Entenda os limites do processamento da Main Thread e o contraste entre Hidratação Reativa tradicional e a Resumabilidade O(1) no guia [Beyond the Visual_ The Invisible Engine of Modern Web Interactivity.md](file:///c:/Dev/Docs/Desenvolvimento%20de%20Software/Beyond%20the%20Visual_%20The%20Invisible%20Engine%20of%20Modern%20Web%20Interactivity.md).
 - **Modern Rehydration Adaptive Hydration (MRAH):**
   - Minimize o tempo de interatividade (TTI) em portais grandes atrasando a hidratação de componentes fora da tela ou não interativos.
   - Implemente hidratação dinâmica baseada na rolagem de página (Viewport intersection) ou no foco do usuário. Evite que scripts de hidratadores pesados travem a thread principal do navegador durante o carregamento inicial. Para a especificação completa desta arquitetura modular, consulte [Technical Specification_ Modular Rendering & Adaptive Hydration (MRAH) in React.md](file:///c:/Dev/Docs/Programação%20Web/Technical%20Specification_%20Modular%20Rendering%20&%20Adaptive%20Hydration%20(MRAH)%20in%20React.md).

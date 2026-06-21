@@ -23,7 +23,7 @@ Os Grandes Modelos de Linguagem (LLMs), em sua operação natural (*model-free*)
 | **Aplicação Ideal** | Resumos, classificação simples e brainstorms. | Codificação crítica, depuração, métodos formais e arquitetura. |
 
 - **Inference Compute Budget:** O agente deve deliberadamente gastar poder de computação em tempo de inferência para simular múltiplos caminhos lógicos antes de produzir uma saída definitiva.
-- **Speculative Exploration (SPEX):** O agente deve explorar caminhos alternativos de design antes de comprometer edições físicas em arquivos, pesando o custo de infraestrutura contra a precisão da solução. Para detalhes sobre o processo de inferência dinâmico, consulte [Technical Specification_ Dynamic Dual-Process AI Architecture.md](file:///c:/Dev/Docs/Guia%20de%20Engenharia%20de%20Prompt/Technical%20Specification_%20Dynamic%20Dual-Process%20AI%20Architecture.md).
+- **Speculative Exploration (SPEX):** O agente deve explorar caminhos alternativos de design antes de comprometer edições físicas em arquivos, pesando o custo de infraestrutura contra a precisão da solução. Para detalhes sobre o processo de inferência dinâmico, consulte [Technical Specification_ Dynamic Dual-Process AI Architecture.md](file:///c:/Dev/Docs/Guia%20de%20Engenharia%20de%20Prompt/Technical%20Specification_%20Dynamic%20Dual-Process%20AI%20Architecture.md) e o [Strategic Blueprint_ Transitioning to Intent-Centric Software Engineering (2025–2030).md](file:///c:/Dev/Docs/Desenvolvimento%20de%20Software/Strategic%20Blueprint_%20Transitioning%20to%20Intent-Centric%20Software%20Engineering%20(2025%E2%80%932030).md).
 
 ---
 
