@@ -1,21 +1,22 @@
 # 📜 CONSTITUIÇÃO SUPREMA DO PROJETO: DIRETRIZES PARA AGENTES DE IA (`AGENTS.md`)
 
-Este documento estabelece a **Constituição Suprema e Inegociável** para qualquer Agente de Inteligência Artificial (incluindo Antigravity, Claude Code, Moltbot e outros agentes integrados via MCP) que opere dentro do ecossistema `c:\Dev\agente-core`. 
+Este documento estabelece a **Constituição Suprema e Inegociável** para qualquer Agente de Inteligência Artificial (incluindo Antigravity, Claude Code, Moltbot e outros agentes integrados via MCP) que opere dentro do ecossistema `c:\Dev\agente-core`.
 
 Toda modificação de código, execução de terminal, orquestração de prompts e tomada de decisão arquitetural deve aderir de forma estrita às leis aqui consolidadas.
 
 > [!IMPORTANT]
 > **Adendos Constitucionais de Vanguarda (Padrões 2026):**
 > O framework `agente-core` é estritamente regido pelas seguintes especificações atômicas detalhadas que complementam esta constituição:
-> *   **Regras de Backend**: [backend-rules.md](file:///c:/Dev/agente-core/rules/backend-rules.md) — Hexagonal Architecture, ORM vs ODM, Spark, Zig, JVM/.NET/Go/Node.js Thread e GC tuning.
-> *   **Regras de Banco de Dados**: [database-rules.md](file:///c:/Dev/agente-core/rules/database-rules.md) — Heurísticas CBO, Join Reordering, JOB benchmark, assimetria IMDB vs TPC-H e PACELC.
-> *   **Regras de Frontend**: [frontend-rules.md](file:///c:/Dev/agente-core/rules/frontend-rules.md) — React Server Components (RSC), Astro, Tailwind CSS v4, MRAH e segurança em JS.
-> *   **Raciocínio Sistema 2 & COVE**: [agent-reasoning-cove.md](file:///c:/Dev/agente-core/rules/agent-reasoning-cove.md) — Heurística ToT, lookahead, ciclo COVE de 4 etapas e lógica FLARE.
-> *   **Engenharia de Contexto**: [context-engineering.md](file:///c:/Dev/agente-core/rules/context-engineering.md) — Mínimo Contexto Viável (MVC), ordenação de contexto e tags XML estruturadas.
-> *   **Design Engineering Premium**: [design-engineering-premium.md](file:///c:/Dev/agente-core/standards/design-engineering-premium.md) — Grades de 8px, Dark Mode Tri-Layer (L0/L1/L2), APCA, CSS linear() e Liquid Glass.
-> *   **Diretrizes de Desempenho**: [performance-guidelines.md](file:///c:/Dev/agente-core/standards/performance-guidelines.md) — Desagregação de serving (Prefill/Decode), localidade de cache e pipelines de renderização.
-> *   **Governança de PRs de IA**: [ai-pull-request-governance.md](file:///c:/Dev/agente-core/governance/ai-pull-request-governance.md) — Commits atômicos semânticos, evidências de testes manuais e proibição de merge autônomo.
-> *   **Estratégia C-Suite & Modelos**: [c-suite-ai-strategy.md](file:///c:/Dev/agente-core/governance/c-suite-ai-strategy.md) — Gestão executiva sob o CAIO, alinhamento DORA/SPACE com P&L e mitigação de Model Drift.
+>
+> * **Regras de Backend**: [backend-rules.md](file:///c:/Dev/agente-core/rules/backend-rules.md) — Hexagonal Architecture, ORM vs ODM, Spark, Zig, JVM/.NET/Go/Node.js Thread e GC tuning.
+> * **Regras de Banco de Dados**: [database-rules.md](file:///c:/Dev/agente-core/rules/database-rules.md) — Heurísticas CBO, Join Reordering, JOB benchmark, assimetria IMDB vs TPC-H e PACELC.
+> * **Regras de Frontend**: [frontend-rules.md](file:///c:/Dev/agente-core/rules/frontend-rules.md) — React Server Components (RSC), Astro, Tailwind CSS v4, MRAH e segurança em JS.
+> * **Raciocínio Sistema 2 & COVE**: [agent-reasoning-cove.md](file:///c:/Dev/agente-core/rules/agent-reasoning-cove.md) — Heurística ToT, lookahead, ciclo COVE de 4 etapas e lógica FLARE.
+> * **Engenharia de Contexto**: [context-engineering.md](file:///c:/Dev/agente-core/rules/context-engineering.md) — Mínimo Contexto Viável (MVC), ordenação de contexto e tags XML estruturadas.
+> * **Design Engineering Premium**: [design-engineering-premium.md](file:///c:/Dev/agente-core/standards/design-engineering-premium.md) — Grades de 8px, Dark Mode Tri-Layer (L0/L1/L2), APCA, CSS linear() e Liquid Glass.
+> * **Diretrizes de Desempenho**: [performance-guidelines.md](file:///c:/Dev/agente-core/standards/performance-guidelines.md) — Desagregação de serving (Prefill/Decode), localidade de cache e pipelines de renderização.
+> * **Governança de PRs de IA**: [ai-pull-request-governance.md](file:///c:/Dev/agente-core/governance/ai-pull-request-governance.md) — Commits atômicos semânticos, evidências de testes manuais e proibição de merge autônomo.
+> * **Estratégia C-Suite & Modelos**: [c-suite-ai-strategy.md](file:///c:/Dev/agente-core/governance/c-suite-ai-strategy.md) — Gestão executiva sob o CAIO, alinhamento DORA/SPACE com P&L e mitigação de Model Drift.
 
 ---
 
@@ -53,7 +54,7 @@ Agentes autônomos operam sob uma Sandbox lógica e física no host. Qualquer te
 
 ## 📐 3. Integridade da Clean Architecture (7 Camadas / 28 Categorias)
 
-A estrutura física do repositório `agente-core` é **imutável em sua raiz semântica**. 
+A estrutura física do repositório `agente-core` é **imutável em sua raiz semântica**.
 Nenhum agente tem autoridade para criar novas pastas ou arquivos de primeiro nível fora das **28 categorias estruturadas em 7 camadas**:
 
 ```text
@@ -117,11 +118,11 @@ Toda interface projetada ou codificada por agentes neste workspace deve atingir 
 
 O desenvolvimento técnico de qualquer componente segue 5 fases de orquestração multiagente:
 
-1.  **Descoberta (`/pm`):** Mapeamento e storyboarding de jornadas do usuário real.
-2.  **Arquitetura (`/architect`):** Modelagem de schemas de dados e definição do DNA Visual.
-3.  **Implementação (`/dev`):** Escrita e refatoração de código sob a regra do *Turbo Mode* e *Vibe Check* (validação multimodal contra o protótipo visual).
-4.  **Garantia de Qualidade (`/qa`):** Escrita de testes automáticos locais (Vitest/Playwright/TestSprite) com cobertura obrigatória de no mínimo **80%**.
-5.  **Deploy e Auto-Correção (`/devops`):** Publicação via logs de integração na Vercel ou Google Cloud, ativando o *Self-Healing* (auto-correção de logs de build) em caso de falhas de deploy.
+1. **Descoberta (`/pm`):** Mapeamento e storyboarding de jornadas do usuário real.
+2. **Arquitetura (`/architect`):** Modelagem de schemas de dados e definição do DNA Visual.
+3. **Implementação (`/dev`):** Escrita e refatoração de código sob a regra do *Turbo Mode* e *Vibe Check* (validação multimodal contra o protótipo visual).
+4. **Garantia de Qualidade (`/qa`):** Escrita de testes automáticos locais (Vitest/Playwright/TestSprite) com cobertura obrigatória de no mínimo **80%**.
+5. **Deploy e Auto-Correção (`/devops`):** Publicação via logs de integração na Vercel ou Google Cloud, ativando o *Self-Healing* (auto-correção de logs de build) em caso de falhas de deploy.
 
 ---
 
