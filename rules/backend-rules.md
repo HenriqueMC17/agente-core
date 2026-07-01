@@ -4,7 +4,7 @@
 
 Este documento estabelece as diretrizes de arquitetura, segurança, concorrência, otimização de baixo nível e integração de sistemas para o desenvolvimento lógico de aplicações servidoras de alta resiliência no ecossistema `agente-core`.
 
-Para estudos e aprofundamentos detalhados, consulte o compêndio completo em [Bibliotecas, Frameworks, API e Crud](file:///c:/Dev/Docs/Bibliotecas,%20Frameworks,%20API%20e%20Crud).
+Para estudos e aprofundamentos detalhados, consulte o compêndio completo em [Bibliotecas, Frameworks, API e Crud](file:///c:/Dev/Docs/Bibliotecas,%20Frameworks,%20API%20e%20Crud) e o [Manual de Governança Técnica e Padrões de Engenharia](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Manual%20de%20Governança%20Técnica%20e%20Padrões%20de%20Engenharia.md).
 
 ---
 
@@ -40,7 +40,7 @@ Para estudos e aprofundamentos detalhados, consulte o compêndio completo em [Bi
   - **Thread Pool Tuning:** Ajustar os limites mínimo e máximo de threads ativas para coincidir com as restrições físicas de vCPU e memória do contêiner, evitando exaustão por alternância excessiva de contexto (*context switching*).
   - **Garbage Collection (GC):** Em ambientes contêinerizados, o GC deve ser configurado de forma condizente com a carga de trabalho. Para servidores backend de alto throughput, configure runtimes como .NET 10 e Java para rodar em modo **Server GC** (maior consumo de RAM, porém com menor frequência de suspensão de execução). Para mitigar anti-padrões clássicos em contêineres sob estresse severo, siga o [Diagnostic Report_ Production Anti-Patterns in .NET 10 API Ecosystems.md](file:///c:/Dev/Docs/Bibliotecas,%20Frameworks,%20API%20e%20Crud/Diagnostic%20Report_%20Production%20Anti-Patterns%20in%20.NET%2010%20API%20Ecosystems.md).
 - **Matriz de Decisão de Comunicação e APIs:**
-  - O design de integrações distribuídas deve se guiar pela latência, vazão e overhead de serialização de cada protocolo. Avalie as compensações entre REST, GraphQL, gRPC (HTTP/2 + Protobuf), WebSockets e SSE usando o framework em [Technical Decision Matrix_ Communication Protocols for Distributed Architectures.md](file:///c:/Dev/Docs/Bibliotecas,%20Frameworks,%20API%20e%20Crud/Technical%20Decision%20Matrix_%20Communication%20Protocols%20for%20Distributed%20Architectures.md).
+  - O design de integrações distribuídas deve se guiar pela latência, vazão e overhead de serialização de cada protocolo. Avalie as compensações entre REST, GraphQL, gRPC (HTTP/2 + Protobuf), WebSockets e SSE usando o framework em [Technical Decision Matrix_ Communication Protocols for Distributed Architectures.md](file:///c:/Dev/Docs/Bibliotecas,%20Frameworks,%20API%20e%20Crud/Technical%20Decision%20Matrix_%20Communication%20Protocols%20for%20Distributed%20Architectures.md). Para uma comparação de alto nível entre as stacks backend de produção (Python, Node.js, PHP), consulte o [Relatório de Decisão Arquitetural (ADR) - Stacks Backend](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Relatório%20de%20Decisão%20Arquitetural%20(ADR)_%20Avaliação%20Comparativa%20de%20Stacks%20Backend%20(Python,%20Node.js,%20PHP).md).
 
 ---
 

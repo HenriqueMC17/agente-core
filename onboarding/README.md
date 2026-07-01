@@ -10,9 +10,18 @@ Capacitar e acelerar a curva de aprendizado de novos engenheiros e agentes de IA
 Tanto gestores humanos de engenharia quanto orquestradores de sessões agênticas direcionam novos colaboradores (de código ou cognitivos) a consumir e executar as tarefas deste diretório como seu primeiro passo prático de trabalho.
 
 ## 🏗️ 4. Arquitetura da Estrutura
-O diretório armazena os seguintes manuais conceituais de setup e ramp-up:
-*   `onboarding-readme.md` — Painel centralizador e check-list de atividades do novo colaborador.
-*   `developer-sandbox.md` — Roteiro prático detalhado para setup seguro do sandbox local de desenvolvimento de ponta a ponta.
+
+O diretório armazena os seguintes manuais de setup, ramp-up e trilhas de fundamentos essenciais:
+*   [onboarding-readme.md](./README.md) — Painel centralizador e check-list de atividades do novo colaborador.
+*   [responsibilities.md](./responsibilities.md) — Mapeamento de papéis e responsabilidades no time.
+
+### 📚 Trilha de Fundamentos de Engenharia & Onboarding Essencial
+
+Para desenvolvedores juniores ou novos agentes que necessitam de treinamento sobre conceitos básicos do ecossistema, disponibilizamos os seguintes manuais na central de documentação técnica:
+*   [Manual de Governança Técnica e Padrões de Engenharia](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Manual%20de%20Governança%20Técnica%20e%20Padrões%20de%20Engenharia.md) — Diretrizes obrigatórias sobre Clean Architecture, SOLID, transações SQL ACID e segurança de APIs JWT/Zero-Trust.
+*   [Relatório de Decisão Arquitetural (ADR) - Stacks Backend](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Relatório%20de%20Decisão%20Arquitetural%20(ADR)_%20Avaliação%20Comparativa%20de%20Stacks%20Backend%20(Python,%20Node.js,%20PHP).md) — Avaliação comparativa de runtimes, concorrência (Event Loop, WSGI/ASGI e Apache) e trade-offs de infraestrutura.
+*   [Desmistificando o Backend](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Desmistificando%20o%20Backend_%20Um%20Guia%20para%20sua%20Jornada%20Digital.md) — Introdução conceitual didática com analogias sobre Node.js assíncrono, interpretador Python e a fábrica de páginas do PHP/Apache.
+*   [Caderno de Lógica Aplicada](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Caderno%20de%20Lógica%20Aplicada_%20Transformando%20Problemas%20em%20Soluções.md) — Manual de lógica de programação com tomadas de decisão e repetições práticas.
 
 ## 🛡️ 5. Responsabilidades
 *   **Redução de Ramp-Up Time:** Minimizar o tempo decorrido entre o ingresso de um colaborador no time e seu primeiro commit produtivo e conforme.
