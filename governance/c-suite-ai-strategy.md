@@ -53,3 +53,23 @@ Para justificar o investimento em automação de infraestrutura declarativa (IaC
     - **Overhead de Engenharia (MTTR elevado):** Equipes altamente remuneradas gastando centenas de horas de trabalho localizando erros manuais pós-deploy em vez de desenvolver novas funcionalidades de negócio.
     - **Perda de Confiança do Cliente:** Aumento do churn e multas por violação de Acordos de Nível de Serviço (SLAs).
   - **Diretriz C-Suite:** Todo e qualquer deploy no ecossistema `agente-core` deve ser 100% automatizado via pipeline GitOps declarativo e livre de intervenção manual no servidor de produção.
+
+---
+
+## 📑 5. Rastreabilidade de Ativos via AI-BOM (AI Bill of Materials)
+
+- **AI-BOM (AI Bill of Materials) Obrigatório:**
+  - Qualquer alteração na esteira de ferramentas, inclusão de novos conectores MCP ou atualização em modelos de linguagem exige a atualização automática ou geração do inventário **AI-BOM**.
+  - O AI-BOM mapeia detalhadamente o fornecedor do modelo, versão de pesos, fonte de dados de treinamento, escopo de permissões corporativas e chaves de licença aplicáveis.
+
+---
+
+## ⚖️ 6. EU AI Act Compliance & Business Rules Engine (BRE) Integration
+
+- **Compliance com o EU AI Act:**
+  - Toda aplicação corporativa baseada em inteligência artificial deve ter seus riscos categorizados de acordo com o framework de regulação europeu (**EU AI Act**: Risco Inaceitável, Alto Risco, Risco Limitado e Risco Mínimo).
+  - Para detalhes da regulamentação e taxonomia, consulte [The EU AI Act_ A Glossary of Risk and Regulation.md](file:///c:/Dev/Docs/Systemic%20Failure%20and%20Resilience%20Lessons%20from%20Global%20IT%20Disruptions/The%20EU%20AI%20Act_%20A%20Glossary%20of%20Risk%20and%20Regulation.md).
+- **Integração com Business Rules Engine (BRE):**
+  - Regulação sem trava técnica gera débito corporativo. É mandatório acoplar os modelos estocásticos de IA a **Motores de Regras de Negócio (BRE)** determinísticos e imutáveis.
+  - Se a IA gerar um plano ou saída lógica que viole as regras registradas no BRE (ex: limites de crédito, sanções ou privacidade), a transação é automaticamente rejeitada pelo motor antes de qualquer impacto no mundo real. Veja as diretrizes em [Strategic Governance Plan_ AI Act Compliance via Business Rules Engine Integration.md](file:///c:/Dev/Docs/Systemic%20Failure%20and%20Resilience%20Lessons%20from%20Global%20IT%20Disruptions/Strategic%20Governance%20Plan_%20AI%20Act%20Compliance%20via%20Business%20Rules%20Engine%20Integration.md).
+

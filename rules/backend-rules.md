@@ -54,3 +54,18 @@ Para estudos e aprofundamentos detalhados, consulte o compêndio completo em [Bi
 - **Defesa Estratégica em APIs JWT:**
   - Proteja o tráfego contra explorações de identidade clássicas (como alteração para `alg: none` e sequestro de sessão). É obrigatória a rotação segura de chaves assimétricas via JWKS (JSON Web Key Sets) e a implementação de validação rigorosa de emissores (*iss*) e audiências (*aud*). Para diretrizes de hardening detalhadas, veja o [Technical Opinion_ Strategic Architectural Defense Against JWT Vulnerabilities and Identity Exploitation.md](file:///c:/Dev/Docs/Bibliotecas,%20Frameworks,%20API%20e%20Crud/Technical%20Opinion_%20Strategic%20Architectural%20Defense%20Against%20JWT%20Vulnerabilities%20and%20Identity%20Exploitation.md).
 - **Graceful Shutdown (SIGTERM / SIGINT):** O backend deve interromper a aceitação de novas requisições em runtime, terminar o processamento de transações em andamento de forma segura, drenar o pool de conexões com o banco de dados e serviços externos, e apenas após essa rotina desligar o processo de forma limpa.
+
+---
+
+## ⚡ 5. Mechanical Sympathy, Cache Locality e Zero Secrets by Design
+
+- **Mechanical Sympathy e Layout SoA (Structure-of-Arrays):**
+  - Em pipelines de processamento de dados em massa, a movimentação de dados entre RAM e cache é o gargalo primário. O código gerado deve migrar do padrão clássico AoS (Array-of-Structures) para **SoA (Structure-of-Arrays)**, garantindo que buscas sequenciais pré-carreguem linhas de cache contíguas de 64 bytes sem desperdício de ciclo de clock.
+  - Para detalhes de implementação de hardware, consulte [Technical Performance & Security Specification_ High-Scale API Standards.md](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Technical%20Performance%20%26%20Security%20Specification_%20High-Scale%20API%20Standards.md) e [Foundations Manual_ Mechanical Sympathy and the Physical Reality of Code.md](file:///c:/Dev/Docs/Desenvolvimento%20de%20Software/Foundations%20Manual_%20Mechanical%20Sympathy%20and%20the%20Physical%20Reality%20of%20Code.md).
+- **Prevenção de False Sharing:**
+  - Estruturas de dados manipuladas concorrentemente por múltiplas threads de CPU devem obrigatoriamente alinhar seus dados e buffers aos **limites de cache line de 64 bytes** (ex: padding ou alinhamento de memória explícito), eliminando a invalidação cruzada de cache e latências invisíveis no hardware multi-core.
+- **Serving Disaggregation & Hardware Acceleration (LLM Inference):**
+  - Pipelines de inferência pesada de IA devem adotar a **desagregação física de serving** (separando instâncias de Prefill de alta vazão de instâncias de Decode de baixa latência) e bibliotecas de atenção aceleradas por hardware como **FlashAttention-3**.
+- **Zero Secrets by Design (Segurança Passiva e Ativa):**
+  - É **estritamente proibido** consolidar qualquer código ou configuração contendo chaves de API, senhas, tokens JWT ou segredos hardcoded. O agente deve utilizar injeção de variáveis de ambiente (`process.env`, `os.getenv`) com validadores de esquema estritos em tempo de boot (ex: Zod/Envalid). Qualquer código com segredo hardcoded é bloqueado automaticamente antes da revisão humana.
+

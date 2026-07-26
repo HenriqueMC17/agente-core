@@ -1,8 +1,100 @@
-node_modules/
+# ==============================================================================
+# 🛡️ AGENTE-CORE ENTERPRISE GITIGNORE SPECIFICATION (PADRÃO 2026)
+# ==============================================================================
+
+# 🔑 1. Environment & Secrets (Zero Secrets by Design)
 .env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+credentials.json
+secrets.json
+service-account*.json
+
+# 📦 2. Node.js & JavaScript/TypeScript Runtimes
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 dist/
 build/
-.vscode/
-.idea/
+out/
+.next/
+.nuxt/
+.astro/
+.turbo/
 coverage/
-.env.local
+.nyc_output/
+
+# 🐍 3. Python, AI & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+*.egg-info/
+.eggs/
+*.egg
+
+# 💻 4. OS & System Junk Files (Windows, macOS, Linux)
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+*~
+*.swp
+*.swo
+*.tmp
+*.temp
+*.bak
+
+# 🛠️ 5. IDE, Editors & Workspace Settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+
+# 📝 6. Logs, Caches & Temporary Artifacts
+*.log
+logs/
+tmp/
+temp/
+.cache/
+.eslintcache
+.stylelintcache

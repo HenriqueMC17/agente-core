@@ -59,3 +59,18 @@ Para discussões detalhadas sobre ecossistemas CSS, infraestrutura e segurança 
 - **HTML Semântico:** Utilize tags HTML semânticas adequadas (`<main>`, `<nav>`, `<article>`, `<header>`, `<button>`) em vez de divs com manipuladores de clique artificiais.
 - **Navegabilidade por Teclado:** Elementos interativos devem suportar focabilidade limpa, anéis de foco visuais de alta legibilidade (`outline-offset`) e navegação lógica via tecla Tab.
 - **APCA Contrast:** Elementos textuais e de interface devem seguir as diretrizes do APCA (Advanced Perceptual Contrast Algorithm), garantindo contraste dinâmico perceptivo adequado para diferentes tamanhos e pesos de fonte.
+
+---
+
+## 🚫 6. Restrições Impeditivas: FSD Alignment e Contratos de Formulários
+
+- **Alinhamento FSD & Proibição de Hidratação Monolítica:**
+  - É **proibida a hidratação monolítica estrutural** (React legado). Todos os componentes devem alinhar-se à arquitetura FSD (Feature-Sliced Design) e RSC (React Server Components), sendo renderizados no servidor por padrão.
+  - A diretiva `"use client"` é **proibida no topo de páginas ou contêineres de layout**. Ela só deve ser declarada em nós folha mínimos e isolados que exijam interatividade do usuário.
+- **Isolamento de Threads de Navegador (Compositor vs Main Thread):**
+  - Efeitos de rolagem e animações visuais pesadas devem ser delegados estritamente à **Compositor Thread** (via propriedades CSS GPU-accelerated como `transform` e `opacity`), liberando a **Main Thread** para o processamento de cliques do usuário e eliminando o *Interactivity Gap*. Para fundamentação técnica, veja [Bridging the Interactivity Gap_ How Modern Browsers Bring Web Pages to Life.md](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Bridging%20the%20Interactivity%20Gap_%20How%20Modern%20Browsers%20Bring%20Web%20Pages%20to%20Life.md).
+- **Contratos de Entrega de Formulários (HTML Forms):**
+  - Qualquer interface de coleta de dados deve explicitar seu contrato de entrega (`action` e `method`).
+  - **Método GET (Cartão Postal):** Permitido exclusivamente para buscas e filtros compartilháveis, limitado a 3.000 caracteres, onde a visibilidade na URL é um recurso de navegabilidade.
+  - **Método POST (Envelope Selado):** Obrigatório para submissões de credenciais, formulários de cadastro e payloads extensas, garantindo sigilo no HTTP Request Body. Consulte o guia [Demystifying HTML Forms_ The Bridge Between Users and Servers.md](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Demystifying%20HTML%20Forms_%20The%20Bridge%20Between%20Users%20and%20Servers.md).
+

@@ -1,5 +1,5 @@
 param (
-    [string]$BasePath = "c:\Dev\agente-core"
+    [string]$BasePath = "c:\Dev\.agente-core"
 )
 
 $ErrorActionPreference = "Continue"

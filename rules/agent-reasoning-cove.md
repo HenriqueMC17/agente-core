@@ -1,84 +1,48 @@
-# Raciocínio Sistêmico do Agente (Sistema 2, COVE & FLARE)
+# 🧠 Agent Reasoning, Complexity Routing & COVE Framework
 
 ## 📌 Visão Geral
 
-Este documento estabelece as regras e os frameworks de raciocínio lógico obrigatórios para que os agentes autônomos do `agente-core` operem sob comportamento analítico deliberado, minimizando alucinações e erros induzidos por respostas imediatas de predição estatística.
+Este documento define os protocolos de raciocínio cognitivo, decisão deliberativa e verificação lógica dos agentes autônomos no ecossistema `agente-core`, estabelecendo as regras de transição da engenharia procedural para o paradigma de **Software 3.0 (Intent-Centric Engineering & Bounded Autonomy)**.
 
-Para obter orientações estruturadas sobre prompting de precisão e governança de contexto, consulte o compêndio completo em [Guia de Engenharia de Prompt](file:///c:/Dev/Docs/Guia%20de%20Engenharia%20de%20Prompt).
-
----
-
-## 🧠 1. Fundamentos de Cognição Artificial: Sistema 1 vs. Sistema 2
-
-Os Grandes Modelos de Linguagem (LLMs), em sua operação natural (*model-free*), comportam-se como o **Sistema 1** humano: rápidos, estatísticos, associativos e focados na previsão probabilística do próximo token. Para a engenharia de software e tomada de decisões críticas de negócio, devemos forçar o agente a operar no modo **Sistema 2** (*model-based*): lento, deliberado, analítico e baseado em planejamento e restrições.
-
-### 📊 Comparação de Paradigmas Cognitivos
-
-| Atributo | Sistema 1 (Model-free) | Sistema 2 (Model-based) |
-| :--- | :--- | :--- |
-| **Velocidade** | Instantânea / Alta vazão de tokens. | Deliberada / Controlada por ciclos de raciocínio. |
-| **Esforço Computacional** | Mínimo por interação. | Elevado (Inference Compute Budget dedicado). |
-| **Processamento** | Associativo e heurístico direto. | Lógico, verificado e orientado a regras. |
-| **Tratamento de Erros** | Propagação de alucinações. | Autocorreção via loops de feedback ativo. |
-| **Aplicação Ideal** | Resumos, classificação simples e brainstorms. | Codificação crítica, depuração, métodos formais e arquitetura. |
-
-- **Inference Compute Budget:** O agente deve deliberadamente gastar poder de computação em tempo de inferência para simular múltiplos caminhos lógicos antes de produzir uma saída definitiva.
-- **Speculative Exploration (SPEX):** O agente deve explorar caminhos alternativos de design antes de comprometer edições físicas em arquivos, pesando o custo de infraestrutura contra a precisão da solução. Para detalhes sobre o processo de inferência dinâmico, consulte [Technical Specification_ Dynamic Dual-Process AI Architecture.md](file:///c:/Dev/Docs/Guia%20de%20Engenharia%20de%20Prompt/Technical%20Specification_%20Dynamic%20Dual-Process%20AI%20Architecture.md) e o [Strategic Blueprint_ Transitioning to Intent-Centric Software Engineering (2025–2030).md](file:///c:/Dev/Docs/Desenvolvimento%20de%20Software/Strategic%20Blueprint_%20Transitioning%20to%20Intent-Centric%20Software%20Engineering%20(2025%E2%80%932030).md).
+Para fundamentação teórica sobre raciocínio Sistema 1 vs Sistema 2 e conformidade, consulte o [Manifesto for Organizational Transition to Software 3.0](file:///c:/Dev/Docs/Essential%20Developer%20Resource%20Directory/Manifesto%20for%20Organizational%20Transition%20to%20Software%203.0_%20Intent-Centric%20Engineering%20and%20Governed%20Autonomy.md) e a [Constituição Suprema (AGENTS.md)](file:///c:/Dev/.agente-core/AGENTS.md).
 
 ---
 
-## 🌳 2. Paradigma Tree of Thoughts (ToT) e Busca Heurística
+## 🔀 1. Roteamento por Complexidade (Bifasic Routing: System 1 vs. System 2)
 
-Para problemas combinatórios e lógicas complexas onde a primeira escolha de código restringe o sucesso dos passos futuros, os agentes do `agente-core` devem adotar o framework **Tree of Thoughts (ToT)** em substituição ao raciocínio linear simples (*Chain-of-Thought*).
+Para otimizar o custo de processamento de tokens e minimizar a latência do *Time to First Token*, os agentes devem alternar entre os modelos de raciocínio de acordo com o nível de complexidade informacional da tarefa:
 
-- Siga as especificações de busca lógicas e lookahead no [Framework for Deliberative Software Engineering_ A System 2 Solution Methodology.md](file:///c:/Dev/Docs/Guia%20de%20Engenharia%20de%20Prompt/Framework%20for%20Deliberative%20Software%20Engineering_%20A%20System%202%20Solution%20Methodology.md).
+| Nível de Raciocínio | Arquitetura / Engine | Casos de Uso Indicados | Overhead / Custo |
+| :--- | :--- | :--- | :--- |
+| **System 1 (Heurístico)** | Modelo autorregressivo rápido (single pass) | Formatadores, linters, boilerplate, sintaxe simples, refatorações atômicas | Baixo (1 pass de inferência) |
+| **System 2 (Deliberativo)** | Tree of Thoughts (ToT), COVE, verificação neuro-simbólica FLARE | Arquitetura distribuída, resolução de bugs complexos, instabilidade informacional | Alto (múltiplas rodadas de busca/revisão) |
 
-```text
-          [Problema Inicial]
-             /    |    \
-          [Nó A] [Nó B] [Nó C]  <-- Geração de Ideias / Ramos
-            /        \
-       [Nó A.1]    [Nó B.1]     <-- Busca (BFS/DFS) e Lookahead
-         (X)         (Poda)     <-- Poda de ramos inválidos
-```
-
-- **Lookahead (Antecipação):** Simulação mental de passos futuros e projeção dos impactos arquiteturais antes de reescrever um arquivo.
-
-- **Backtracking (Retrocesso):** Identificar quando um ramo de código resultou em falha lógica ou sintática e retroceder ao estado estável anterior (*nó de origem*) para buscar uma rota alternativa.
-
-- **Poda de Ramos (Pruning):** Descarte prematuro de alternativas de design ou código que violem regras explícitas de segurança, integridade ou de estilo.
+- **Gatilho de Transição para System 2:**
+  - Acionado obrigatoriamente sob **instabilidade informacional**, ambiguidade de schema de banco de dados, refatorações de mais de 3 componentes dependentes ou falhas recorrentes de build.
 
 ---
 
-## 🔄 3. O Protocolo Chain-of-Verification (COVE)
+## 🚀 2. Exploração Especulativa (SPEX - Speculative Exploration)
 
-Para garantir o rigor técnico nas entregas de engenharia, o agente implementará o ciclo **COVE** de forma atômica seguindo quatro etapas obrigatórias:
-
-### 3.1. Rascunho Inicial (Draft Generation)
-
-Geração preliminar do código ou da resposta estruturada baseada no contexto inicial e nos requisitos do usuário.
-
-### 3.2. Planejamento de Verificação (Query Generation)
-
-Formulação de uma lista de perguntas críticas, objetivas e self-contained para identificar possíveis falhas no rascunho (ex: *"Esta implementação de concorrência usa Server GC apropriadamente?"*, *"Esta query SQL evita o gargalo de cardinalidade apontado no benchmark JOB?"*).
-
-### 3.3. Execução de Verificação (Verification Execution)
-
-Resolução de cada uma das perguntas de forma isolada. O agente deve responder a essas perguntas sem olhar para o seu próprio rascunho inicial, prevenindo o viés cognitivo de confirmação estatística.
-
-### 3.4. Consolidação (Consolidation)
-
-Cruzamento das respostas de verificação com o rascunho original. Qualquer inconsistência, bug ou violação de regra detectada deve ser corrigida gerando a versão final refatorada de alta confiabilidade.
+- Em execuções de longo curso baseadas em *System 2*, o agente **não deve permanecer ocioso** aguardando confirmações intermediárias para caminhos determinísticos previsíveis.
+- O agente deve utilizar **Exploração Especulativa (SPEX)** para antecipar e simular em paralelo os próximos ramos de execução lógica (ex: preparando suítes de testes unitários enquanto valida a assinatura de uma porta hexagonal), superando a *Reward Dependency Barrier*.
 
 ---
 
-## 🛡️ 4. Lógica Neuro-Simbólica FLARE (Faithful Logic-Aided Reasoning)
+## 🛡️ 3. Software 3.0 & Autonomia Limitada (Bounded Autonomy)
 
-Para auditar e validar modificações de código complexas em produção, o agente adota as comportas de verificação **FLARE**:
+- **Do Código Procedural à Intenção Declarativa:**
+  - Na era Software 3.0, o artefato primário de engenharia não é a sintaxe bruta, mas a especificação legível por máquina da intenção declarativa.
+- **Bounded Autonomy (Autonomia Limitada):**
+  - Rejeitamos a autonomia desrestrita como risco operacional corporativo. Todos os agentes probabilísticos devem operar sob **Bounded Autonomy**, delimitados por scaffolds determinísticos de validação e regras de sandbox atômicas.
 
-- **Tradução para Restrições Lógicas:** O agente deve traduzir as diretrizes textuais do projeto em asserções lógicas formais antes de programar.
-- **Integração de Sistemas Cognitivos Híbridos:** Una modelos probabilísticos estatísticos a motores de regras determinísticos baseados em lógica simbólica para estabilidade operacional. Consulte o estudo aprofundado em [Strategic Analysis_ Integrating Classical Cognitive Architectures with Modern Neuro-Symbolic Systems.md](file:///c:/Dev/Docs/Systemic%20Failure%20and%20Resilience%20Lessons%20from%20Global%20IT%20Disruptions/Strategic%20Analysis_%20Integrating%20Classical%20Cognitive%20Architectures%20with%20Modern%20Neuro-Symbolic%20Systems.md).
-- **Check Gates de Execução:** Antes de concluir a tarefa, o agente executa gates de verificação ativa:
-  1. **Análise Sintática (Syntax Parsing):** Verificação de que o código compilável gerado não contém erros de sintaxe ou de digitação.
-  2. **Validação de Asserções (Assertion Validation):** Testar se a lógica implementada atende estritamente às restrições formais traduzidas.
-  3. **Prova de Coerência com a Constituição:** Garantir que nenhuma alteração de código ou configuração burle o arquivo de constituição supremo [AGENTS.md](file:///c:/Dev/agente-core/AGENTS.md) e o master de regras do projeto.
+---
+
+## 🔄 4. O Ciclo COVE de 4 Etapas (Chain-of-Verification)
+
+Toda modificação de código produzida por agentes sob raciocínio deliberativo deve ser submetida ao protocolo COVE:
+
+1. **Draft Generation (Geração de Rascunho):** Produção do rascunho inicial de código/refatoração.
+2. **Verification Planning (Planejamento de Validação):** Formulação de perguntas de auditoria crítica (ex: "Existe algum vazamento de memória?", "Os tipos correspondem às interfaces?").
+3. **Execution Verification (Execução de Verificação):** Execução independente dos testes e verificadores de sintaxe/link.
+4. **Final Refinement (Refinamento Final):** Emissão do código verificado e blindado contra regressões.
